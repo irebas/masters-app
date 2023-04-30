@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% block title %}Athletes{% endblock %}
+{% block content %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.js"></script>
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/ui-lightness/jquery-ui.css" rel="stylesheet" type="text/css" />
+<br>
+<div class="container-fluid px-4">
+    <form method="POST" autocomplete="off" enctype="multipart/form-data">
+        <div class="row mb-2">
+            <div class="col-md-4">
+               <div class="input-group">
+                <input type="text" id="athletes" class="form-control" placeholder="Type athlete's id" name="athlete_id" value="{{ athlete_id if athlete_id }}"/>
+                 <script>
+                 $( function() {
+                    var availableTags = [
+                        {% for item in athletes %}
+                            "{{ item }}",
+                        {% endfor %}
+                    ];
+                    $( "#athletes" ).autocomplete({
+                      source: availableTags
+                    });
+                 });
+                 </script>
+                <input class="btn btn-primary btn-md" type="submit" name="show" value="Show records">
+               </div>
+            </div>
+        </div>
+    </form>
+    <br>
+    <div class="card mb-4">
+        <div class="card-body">
+            <b>
+            Athlete: {{ athlete.fullname if athlete }}
+            <br>
+            Current club: {{ athlete.club if athlete }}
+            <br>
+            Birthday: {{ athlete.birthday if athlete }}
+            <br>
+            Last entry: {{ athlete.last_entry if athlete }}
+            <br>
+            <a href="{{ swrid if swrid != 'NA' }}">{{ 'Swimrankings link' if swrid != 'NA' and swrid }}</a>
+            </b>
+        </div>
+    </div>
+    <div class="card mb-4">
+        <div class="card-header">
+            <i class="fas fa-table me-1"></i>
+            Athlete's best results:
+        </div>
+    <div class="card-body">
+        <table id="datatablesSimple" class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>Distance</th>
+                    <th>Course</th>
+                    <th>Time</th>
+                    <th>FINA Points</th>
+                    <th>Date</th>
+                    <th>City</th>
+                    <th class="w-25">Meet</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in results %}
+                    <tr>
+                        <td>{{ item.stroke }}</td>
+                        <td>{{ item.course }}</td>
+                        <td>{{ item.swimtime }}</td>
+                        <td>{{ item.fina_points }}</td>
+                        <td>{{ item.date }}</td>
+                        <td>{{ item.meet_city }}</td>
+                        <td><font size="-2">{{ item.meet_name }}</font></td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    </div>
+</div>
+{% endblock %}

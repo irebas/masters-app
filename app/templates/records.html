@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% block title %}National records{% endblock %}
+{% block content %}
+<br>
+<div class="container-fluid px-4">
+    <form method="POST" autocomplete="off" enctype="multipart/form-data">
+        <div class="card mb-4">
+            <div class="card-body">
+               <div class="input-group">
+                <span class="input-group-text" style="border-left: 0; border-right: 0;">Gender:</span>
+                <select name="event_gender" class="form-control form-select">
+                    <option value='{{ event_gender if event_gender }}' selected hidden>{{ event_gender if event_gender }}</option>
+                    {% for item in genders %}
+                        <option value='{{ item }}'>{{ item }}</option>
+                    {% endfor %}
+                </select>
+                <span class="input-group-text" style="border-left: 0; border-right: 0;">Distance:</span>
+                <select name="distance" class="form-control form-select">
+                    <option value='{{ distance if distance }}' selected hidden>{{ distance if distance }}</option>
+                    {% for item in distances %}
+                        <option value='{{ item }}'>{{ item }}</option>
+                    {% endfor %}
+                </select>
+                <input class="btn btn-primary btn-md" type="submit" name="show" value="Show chart">
+               </div>
+            </div>
+        </div>
+    </form>
+    <br>
+
+    {% for key, value in records.items() if records %}
+    <div class="card mb-4">
+        <div class="card-header">
+            <i class="fas fa-table me-1"></i>
+            {{ key }}
+        </div>
+        <div class="card-body">
+            <table id="{{ key }}" class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>Age group</th>
+                        <th>Athlete</th>
+                        <th>Time</th>
+                        <th>Date</th>
+                        <th>City</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in value %}
+                        <tr>
+                            <td>{{ item.age_group }}</td>
+                            <td>
+                                {% if item.type == 'INDIVIDUAL' %}
+                                    {{ item.athlete_id }}
+                                {% else %}
+                                    <b>{{ item.club_name }}</b>
+                                    <br>
+                                    <span style="font-size: 12px">{{ item.fullname }}</span>
+                                {% endif %}
+                            </td>
+                            <td>{{ item.swimtime }}</td>
+                            <td>{{ item.date }}</td>
+                            <td>{{ item.meet_city }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}
