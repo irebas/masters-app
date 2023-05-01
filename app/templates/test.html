@@ -2,15 +2,16 @@
 {% block title %}Test{% endblock %}
 {% block content %}
 
-<form method="GET" autocomplete="off" enctype="multipart/form-data">
-    <div class="row mb-2">
-        <div class="col-md-4">
-           <div class="input-group">
-            <input type="text" id="employee_name">
-            <input class="btn btn-primary btn-md" type="submit" name="show" value="Show records">
-           </div>
-        </div>
-    </div>
-</form>
+{{ id if id }}
+<!--<form method="GET" autocomplete="off" enctype="multipart/form-data">-->
+<!--    <div class="row mb-2">-->
+<!--        <div class="col-md-4">-->
+<!--           <div class="input-group">-->
+<!--                <input type="text" id="athletes" class="form-control" placeholder="Type athlete's name" name="athlete_name">-->
+<!--                <input class="btn btn-primary btn-md" type="submit" name="show" value="Show records">-->
+<!--               </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</form>-->
 
 {% endblock %}

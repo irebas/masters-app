@@ -98,21 +98,28 @@ def athletes():
     results = []
     athletes = Athletes.get_athletes()
     # athlete_info = {'fullname': '', 'club': '', 'birthday': '', ''}
-    if request.method == 'GET':
-        if request.form.get('show'):
-            athlete_name = request.form['athlete_name']
-            df_results = Results.get_best_results(athlete_name)
-            results = df_results.to_dict('records')
-            athlete_info, swrid = Athletes.get_athlete_info(athlete_name)
-            return render_template('athletes.html', results=results, athlete=athlete_info,
-                                   swrid=swrid, athletes=athletes)
+    if request.method == 'POST' and request.form.get('show'):
+        # athlete_id = Athletes.get_athlete_id(request.form['athlete_name'])
+        # return redirect(url_for('app.athletes_endpoint', athlete_id=athlete_id))
+        athlete_name = request.form['athlete_name']
+        df_results = Results.get_best_results(athlete_name)
+        results = df_results.to_dict('records')
+        athlete_info, swrid = Athletes.get_athlete_info(athlete_name)
+        return render_template('athletes.html', results=results, athlete=athlete_info,
+                               swrid=swrid, athletes=athletes)
 
     return render_template('athletes.html', athletes=athletes)
 
 
-@bp_app.route('/test.html', methods=['GET', 'POST'])
-def test():
-    pass
+@bp_app.route('/athletes/<athlete_id>', methods=['GET', 'POST'])
+def athletes_endpoint(athlete_id):
+    athletes = Athletes.get_athletes()
+    athlete_name = Athletes.get_athlete_name(athlete_id)
+    df_results = Results.get_best_results(athlete_name)
+    results = df_results.to_dict('records')
+    athlete_info, swrid = Athletes.get_athlete_info(athlete_name)
+    return render_template('athletes.html', results=results, athlete=athlete_info,
+                           swrid=swrid, athletes=athletes)
 
 
 @bp_app.app_errorhandler(404)

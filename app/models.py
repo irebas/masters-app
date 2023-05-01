@@ -257,6 +257,16 @@ class Athletes(db.Model):
         return athletes
 
     @staticmethod
+    def get_athlete_name(athlete_id: str):
+        athlete_name = db.session.query(Athletes.athlete_name).filter(Athletes.athlete_id == athlete_id).first()[0]
+        return athlete_name
+
+    @staticmethod
+    def get_athlete_id(athlete_name: str):
+        athlete_id = db.session.query(Athletes.athlete_id).filter(Athletes.athlete_name == athlete_name).first()[0]
+        return athlete_id
+
+    @staticmethod
     def get_athlete_info(athlete_name):
         athlete = db.session.query(Athletes).filter(Athletes.athlete_name == athlete_name).first()
         if type(athlete.swrid) != str:
