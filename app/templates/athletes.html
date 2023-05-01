@@ -6,11 +6,11 @@
 <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/ui-lightness/jquery-ui.css" rel="stylesheet" type="text/css" />
 <br>
 <div class="container-fluid px-4">
-    <form method="POST" autocomplete="off" enctype="multipart/form-data">
+    <form method="GET" autocomplete="off" enctype="multipart/form-data">
         <div class="row mb-2">
             <div class="col-md-4">
                <div class="input-group">
-                <input type="text" id="athletes" class="form-control" placeholder="Type athlete's id" name="athlete_id" value="{{ athlete_id if athlete_id }}"/>
+                <input type="text" id="athletes" class="form-control" placeholder="Type athlete's name" name="athlete_name" value="{{ athlete_name if athlete_name }}"/>
                  <script>
                  $( function() {
                     var availableTags = [
@@ -32,11 +32,11 @@
     <div class="card mb-4">
         <div class="card-body">
             <b>
-            Athlete: {{ athlete.fullname if athlete }}
+            Athlete: {{ athlete.athlete_name if athlete }}
             <br>
-            Current club: {{ athlete.club if athlete }}
+            Current club: {{ athlete.club_name if athlete }}
             <br>
-            Birthday: {{ athlete.birthday if athlete }}
+            Birth year: {{ athlete.birth_year if athlete }}
             <br>
             Last entry: {{ athlete.last_entry if athlete }}
             <br>
@@ -59,19 +59,19 @@
                     <th>FINA Points</th>
                     <th>Date</th>
                     <th>City</th>
-                    <th class="w-25">Meet</th>
+<!--                    <th class="w-25">Meet</th>-->
                 </tr>
             </thead>
             <tbody>
                 {% for item in results %}
                     <tr>
-                        <td>{{ item.stroke }}</td>
+                        <td>{{ item.distance }}</td>
                         <td>{{ item.course }}</td>
                         <td>{{ item.swimtime }}</td>
                         <td>{{ item.fina_points }}</td>
                         <td>{{ item.date }}</td>
                         <td>{{ item.meet_city }}</td>
-                        <td><font size="-2">{{ item.meet_name }}</font></td>
+<!--                        <td><font size="-2">{{ item.meet_name }}</font></td>-->
                     </tr>
                 {% endfor %}
             </tbody>

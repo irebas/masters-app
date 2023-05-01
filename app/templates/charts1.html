@@ -1,0 +1,155 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.js"></script>
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/ui-lightness/jquery-ui.css" rel="stylesheet" type="text/css" />
+<div class="container-fluid px-4">
+
+    <h3 class="mt-4">Charts</h3>
+    <div class="card mb-4">
+        <div class="card-body">
+            <form method="POST" autocomplete="off" enctype="multipart/form-data">
+            <div class="input-group">
+                <span class="input-group-text">Athlete id:</span>
+                <input type="text" id="athletes" class="form-control" placeholder="Type athlete's name" name="athlete_name" value="{{ athlete_name if athlete_name }}"/>
+                 <script>
+                 $( function() {
+                    var availableTags = [
+                        {% for item in athletes %}
+                            "{{ item }}",
+                        {% endfor %}
+                    ];
+                    $( "#athletes" ).autocomplete({
+                      source: availableTags
+                    });
+                 });
+                 </script>
+                <span class="input-group-text" style="border-left: 0; border-right: 0;">Distance:</span>
+                <select name="distance" class="form-control form-select">
+                    <option value='{{ distance if distance }}' selected hidden>{{ distance if distance }}</option>
+                    {% for dist in distances %}
+                        <option value='{{ dist }}'>{{ dist }}</option>
+                    {% endfor %}
+                </select>
+                <input class="btn btn-primary btn-md" type="submit" name="show" value="Show chart">
+            </div>
+            </form>
+        </div>
+    </div>
+    <div class="card mb-4">
+        <div class="card-header">
+            <i class="fas fa-chart-area me-1"></i>
+            Athlete progress in time - Long Course Meters
+        </div>
+        <div class="card-body"><canvas id="myAreaChart" width="100%" height="20"></canvas>
+            <script>
+                const allTimes = [
+                    {% for result in results_lc %}
+                    '{{ result.swimtime }}',
+                    {% endfor %}];
+
+                var ctx = document.getElementById("myAreaChart");
+                var myLineChart = new Chart(ctx, {
+                  type: 'line',
+                  data: {
+                    labels:
+                    [{% for result in results_lc %}
+                        '{{ result.date }}',
+                    {% endfor %}],
+                    datasets: [{
+                      label: "FINA points",
+                      lineTension: 0.3,
+                      backgroundColor: "rgba(2,117,216,0.2)",
+                      borderColor: "rgba(2,117,216,1)",
+                      pointRadius: 5,
+                      fill: true,
+                      pointBackgroundColor: "rgba(2,117,216,1)",
+                      pointBorderColor: "rgba(255,255,255,0.8)",
+                      pointHoverRadius: 5,
+                      pointHoverBackgroundColor: "rgba(2,117,216,1)",
+                      pointHitRadius: 50,
+                      pointBorderWidth: 2,
+                      data: [
+                      {% for result in results_lc %}
+                        {{ result.fina_points }},
+                    {% endfor %}],
+                    }],
+                  },
+                  options: {
+                    plugins: {
+                      legend: {
+                        display: false
+                      },
+                      tooltip: {
+                        callbacks: {
+                          label: context => "swimtime: " + allTimes[context.dataIndex]
+                        }
+                      }
+                    }
+                  }
+                });
+            </script>
+        </div>
+        <div class="card-footer small text-muted">Best result: {{ max_lc if max_lc }}</div>
+    </div>
+    <div class="card mb-4">
+        <div class="card-header">
+            <i class="fas fa-chart-area me-1"></i>
+            Athlete progress in time - Short Course Meters
+        </div>
+        <div class="card-body"><canvas id="myAreaChart2" width="100%" height="20"></canvas>
+            <script>
+                const allTimes2 = [
+                    {% for result in results_sc %}
+                    '{{ result.swimtime }}',
+                    {% endfor %}];
+
+                var ctx = document.getElementById("myAreaChart2");
+                var myLineChart = new Chart(ctx, {
+                  type: 'line',
+                  data: {
+                    labels:
+                    [{% for result in results_sc %}
+                        '{{ result.date }}',
+                    {% endfor %}],
+                    datasets: [{
+                      label: "FINA points",
+                      lineTension: 0.3,
+                      backgroundColor: "rgba(192,0,0,0.2)",
+                      borderColor: "rgba(192,0,0,1)",
+                      pointRadius: 5,
+                      fill: true,
+                      pointBackgroundColor: "rgba(192,0,0,1)",
+                      pointBorderColor: "rgba(255,255,255,0.8)",
+                      pointHoverRadius: 5,
+                      pointHoverBackgroundColor: "rgba(192,0,0,1)",
+                      pointHitRadius: 50,
+                      pointBorderWidth: 2,
+                      data: [
+                      {% for result in results_sc %}
+                        {{ result.fina_points }},
+                    {% endfor %}],
+                    }],
+                  },
+                  options: {
+                    plugins: {
+                      legend: {
+                        display: false
+                      },
+                      tooltip: {
+                        callbacks: {
+                          label: context => "swimtime: " + allTimes2[context.dataIndex]
+                        }
+                      }
+                    }
+                  }
+                });
+            </script>
+        </div>
+        <div class="card-footer small text-muted">Best result: {{ max_sc if max_sc }}</div>
+    </div>
+</div>
+
+{% endblock %}

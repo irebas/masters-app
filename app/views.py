@@ -1,7 +1,7 @@
 import pandas as pd
 from flask import Blueprint, request, url_for, redirect, render_template, flash
 bp_app = Blueprint('app', __name__)
-from app.models import Results, Athletes, Meets
+from app.models import Results, Athletes, Meets, NationalRecords
 
 DISTANCES = ['50 FREE', '100 FREE', '200 FREE', '400 FREE', '800 FREE', '1500 FREE', '50 BACK', '100 BACK', '200 BACK',
              '50 BREAST', '100 BREAST', '200 BREAST', '50 FLY', '100 FLY', '200 FLY', '100 MEDLEY', '200 MEDLEY',
@@ -29,7 +29,7 @@ def rankings():
         course = request.form['course']
         distance = request.form['distance']
         top_results = Results.get_top_results(event_gender=event_gender,
-                                              stroke=distance,
+                                              distance=distance,
                                               course=course,
                                               year=year)
         return render_template('rankings.html', top_results=top_results, distances=DISTANCES, courses=COURSES,
@@ -50,7 +50,8 @@ def records():
     if request.method == 'POST' and request.form.get('show'):
         event_gender = request.form['event_gender']
         distance = request.form['distance']
-        records = Results.get_records(event_gender=event_gender, distance=distance)
+        records = NationalRecords.get_records(gender=event_gender, distance=distance)
+        # records = Results.get_records(event_gender=event_gender, distance=distance)
         return render_template('records.html', records=records, distances=DISTANCES, genders=GENDERS,
                                event_gender=event_gender, distance=distance)
 
@@ -58,35 +59,61 @@ def records():
     return render_template('records.html', distances=DISTANCES, genders=GENDERS, types=TYPES, records=records)
 
 
-@bp_app.route('/charts.html', methods=['GET', 'POST'])
-def charts():
+@bp_app.route('/charts1.html', methods=['GET', 'POST'])
+def charts1():
     athletes = Athletes.get_athletes()
     if request.method == 'POST' and request.form.get('show'):
-        athlete_id = request.form['athlete_id']
+        athlete_name = request.form['athlete_name']
         distance = request.form['distance']
-        results_lc, results_sc, max_lc, max_sc = Results.get_athlete_results(athlete_id=athlete_id, event=distance)
+        results_lc, results_sc, max_lc, max_sc = Results.get_athlete_results(athlete_name=athlete_name, distance=distance)
         print(results_sc)
-        return render_template('charts.html', results_lc=results_lc, results_sc=results_sc, max_lc=max_lc,
-                               max_sc=max_sc, athlete_id=athlete_id, distance=distance, athletes=athletes,
+        return render_template('charts1.html', results_lc=results_lc, results_sc=results_sc, max_lc=max_lc,
+                               max_sc=max_sc, athlete_name=athlete_name, distance=distance, athletes=athletes,
                                distances=DISTANCES_IND)
 
-    return render_template('charts.html', athletes=athletes, distances=DISTANCES_IND)
+    return render_template('charts1.html', athletes=athletes, distances=DISTANCES_IND)
+
+@bp_app.route('/charts2.html', methods=['GET', 'POST'])
+def charts2():
+    athletes = Athletes.get_athletes()
+    if request.method == 'POST' and request.form.get('show'):
+        athlete_name_1 = request.form['athlete_name_1']
+        athlete_name_2 = request.form['athlete_name_2']
+        distance = request.form['distance']
+        results_lc_1, results_sc_1, max_lc_1, max_sc_1 = Results.get_athlete_results(athlete_name=athlete_name_1,
+                                                                                     distance=distance)
+        results_lc_2, results_sc_2, max_lc_2, max_sc_2 = Results.get_athlete_results(athlete_name=athlete_name_2,
+                                                                                     distance=distance)
+        return render_template('charts2.html', results_lc_1=results_lc_1, results_sc_1=results_sc_1, max_lc_1=max_lc_1,
+                               max_sc_1=max_sc_1, results_lc_2=results_lc_2, results_sc_2=results_sc_2,
+                               max_lc_2=max_lc_2, max_sc_2=max_sc_2, athlete_name_1=athlete_name_1,
+                               athlete_name_2=athlete_name_2, distance=distance, athletes=athletes,
+                               distances=DISTANCES_IND)
+
+    return render_template('charts2.html', athletes=athletes, distances=DISTANCES_IND)
+
 
 @bp_app.route('/athletes.html', methods=['GET', 'POST'])
 def athletes():
     results = []
     athletes = Athletes.get_athletes()
     # athlete_info = {'fullname': '', 'club': '', 'birthday': '', ''}
-    if request.method == 'POST':
+    if request.method == 'GET':
         if request.form.get('show'):
-            athlete_id = request.form['athlete_id']
-            df_results = Results.get_best_results(athlete_id)
+            athlete_name = request.form['athlete_name']
+            df_results = Results.get_best_results(athlete_name)
             results = df_results.to_dict('records')
-            athlete_info, swrid = Athletes.get_athlete_info(athlete_id)
+            athlete_info, swrid = Athletes.get_athlete_info(athlete_name)
             return render_template('athletes.html', results=results, athlete=athlete_info,
                                    swrid=swrid, athletes=athletes)
 
     return render_template('athletes.html', athletes=athletes)
+
+
+@bp_app.route('/test.html', methods=['GET', 'POST'])
+def test():
+    pass
+
 
 @bp_app.app_errorhandler(404)
 def page_not_found(e):

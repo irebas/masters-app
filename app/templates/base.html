@@ -64,13 +64,20 @@
                                 Records
                             </a>
                             <div class="sb-sidenav-menu-heading">Addons</div>
-                            <a class="nav-link" href="charts.html">
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
                                 <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                                 Charts
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                             </a>
-                            <a class="nav-link" href="tables.html">
+                            <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                                    <a class="nav-link collapsed" href="charts1.html">Athlete's performance</a>
+                                    <a class="nav-link collapsed" href="#">Athletes comparison</a>
+                                </nav>
+                            </div>
+                            <a class="nav-link" href="test.html">
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                                Links
+                                Test
                             </a>
                         </div>
                     </div>

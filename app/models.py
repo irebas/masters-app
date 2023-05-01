@@ -31,9 +31,58 @@ class Meets(db.Model):
 
         return meets
 
+
+class NationalRecords(db.Model):
+    __tablename__ = 'national_records'
+    athlete_id = db.Column('athlete_id', db.String)
+    athlete_name = db.Column('athlete_name', db.String)
+    club_name = db.Column('club_name', db.String)
+    course = db.Column('course', db.String, primary_key=True)
+    meet_city = db.Column('meet_city', db.String)
+    date = db.Column('date', db.String)
+    distance = db.Column('distance', db.String)
+    swimtime = db.Column('swimtime', db.String)
+    age_group = db.Column('age_group', db.String, primary_key=True)
+    gender = db.Column('gender', db.String, primary_key=True)
+    type_ = db.Column('type', db.String, primary_key=True)
+
+    def __init__(self, athlete_id, athlete_name, club_name, course, meet_city, date,
+                 distance, swimtime, age_group,type_):
+        self.athlete_id = athlete_id
+        self.athlete_name = athlete_name
+        self.club_name = club_name
+        self.course = course
+        self.meet_city = meet_city
+        self.date = date
+        self.distance = distance
+        self.swimtime = swimtime
+        self.age_group = age_group
+        self.type_ = type_
+
+    @staticmethod
+    def get_records(gender: str, distance: str):
+        if distance not in ['4x50 FREE', '4x50 MEDLEY']:
+            type_ = 'INDIVIDUAL'
+        else:
+            type_ = 'RELAY'
+            distance = distance[2:]
+        records_lc = db.session.query(NationalRecords).filter(and_(NationalRecords.gender == gender,
+                                                                NationalRecords == distance,
+                                                                NationalRecords.course == 'LCM',
+                                                                NationalRecords.type == type_).all())
+        records_sc = db.session.query(NationalRecords).filter(and_(NationalRecords.gender == gender,
+                                                                   NationalRecords == distance,
+                                                                   NationalRecords.course == 'SCM',
+                                                                   NationalRecords.type == type_).all())
+
+        records = {'LONG COURSE METERS': records_lc, 'SHORT COURSE METERS': records_sc}
+
+        return records
+
+
 class WR(db.Model):
     __tablename__ = 'world_records'
-    stroke = db.Column('stroke', db.String, primary_key=True)
+    distance = db.Column('distance', db.String, primary_key=True)
     course = db.Column('course', db.String, primary_key=True)
     gender = db.Column('gender', db.String, primary_key=True)
     fullname = db.Column('fullname', db.String)
@@ -42,8 +91,8 @@ class WR(db.Model):
     meet_name = db.Column('meet_name', db.String)
     meet_date = db.Column('meet_date', db.String)
 
-    def __init__(self, stroke, course, gender, fullname, nationality, swimtime, meet_name, meet_date):
-        self.stroke = stroke
+    def __init__(self, distance, course, gender, fullname, nationality, swimtime, meet_name, meet_date):
+        self.distance = distance
         self.course = course
         self.gender = gender
         self.fullname = fullname
@@ -61,12 +110,11 @@ class Results(db.Model):
     meet_city = db.Column('meet_city', db.String)
     course = db.Column('course', db.String)
     date = db.Column('date', db.String)
-    stroke = db.Column('stroke', db.String)
+    distance = db.Column('distance', db.String)
     event_gender = db.Column('event_gender', db.String)
     age_group = db.Column('age_group', db.String)
-    fullname = db.Column('fullname', db.String)
-    firstname = db.Column('firstname', db.String)
-    lastname = db.Column('lastname', db.String)
+    athlete_name = db.Column('athlete_name', db.String)
+    athlete_id = db.Column('athlete_id', db.String)
     birthdate = db.Column('birthdate', db.String)
     birth_year = db.Column('birth_year', db.String)
     gender = db.Column('gender', db.String)
@@ -77,24 +125,22 @@ class Results(db.Model):
     place = db.Column('place', db.String)
     swimtime = db.Column('swimtime', db.String)
     type = db.Column('type', db.String)
-    athlete_id = db.Column('athlete_id', db.String)
     row_id = db.Column('row_id', db.String, primary_key=True)
 
-    def __init__(self, meet_code, meet_name, meet_year, meet_city, course, date, stroke, event_gender, age_group,
-                 fullname, firstname, lastname, birthdate, birth_year, gender, nation, swrid, license, club_name,
-                 place, swimtime, type, athlete_id, row_id):
+    def __init__(self, meet_code, meet_name, meet_year, meet_city, course, date, distance, event_gender, age_group,
+                 athlete_name, athlete_id, birthdate, birth_year, gender, nation, swrid, license, club_name,
+                 place, swimtime, type, row_id):
         self.meet_code = meet_code
         self.meet_name = meet_name
         self.meet_year = meet_year
         self.meet_city = meet_city
         self.course = course
         self.date = date
-        self.stroke = stroke
+        self.distance = distance
         self.event_gender = event_gender
         self.age_group = age_group
-        self.fullname = fullname
-        self.firstname = firstname
-        self.lastname = lastname
+        self.athlete_name = athlete_name
+        self.athlete_id = athlete_id
         self.birthdate = birthdate
         self.birth_year = birth_year
         self.gender = gender
@@ -105,56 +151,25 @@ class Results(db.Model):
         self.place = place
         self.swimtime = swimtime
         self.type = type
-        self.athlete_id = athlete_id
         self.row_id = row_id
 
     @staticmethod
-    def get_records(event_gender: str, distance: str):
-        records = dict()
-        if distance not in ['4x50 FREE', '4x50 MEDLEY']:
-            type_ = 'INDIVIDUAL'
-        else:
-            type_ = 'RELAY'
-            distance = distance[2:]
-        records = db.session.query(Results).filter(and_(Results.event_gender == event_gender,
-                                                        Results.nation == 'POL',
-                                                        Results.stroke == distance,
-                                                        Results.type == type_,
-                                                        Results.place != -1)).statement
-        df = pd.read_sql(sql=records, con=db.session.get_bind())
-        df['rank'] = df.groupby(['course', 'stroke', 'age_group'])['swimtime'].rank(method='first',
-                                                                                            ascending=True)
-        df = df.loc[(df['rank'] == 1)]
-        df.sort_values(by='age_group', inplace=True, ascending=True)
-        df = df[['athlete_id', 'fullname', 'club_name', 'course', 'meet_city', 'date', 'swimtime', 'age_group', 'type']]
-        df_lc = df.loc[(df['course']) == 'LCM']
-        df_sc = df.loc[(df['course']) == 'SCM']
-        df_lc.reset_index(inplace=True, drop=True)
-        df_sc.reset_index(inplace=True, drop=True)
-        print(df_sc)
-        records_lc = df_lc.to_dict('records')
-        records_sc = df_sc.to_dict('records')
-
-        records = {'LONG COURSE METERS': records_lc, 'SHORT COURSE METERS': records_sc}
-
-        return records
-
-    @staticmethod
-    def get_top_results(event_gender: str, course: str, stroke: str, year: str):
+    def get_top_results(event_gender: str, course: str, distance: str, year: str):
         top_results = dict()
-        if stroke not in ['4x50 FREE', '4x50 MEDLEY']:
+        if distance not in ['4x50 FREE', '4x50 MEDLEY']:
             type_ = 'INDIVIDUAL'
             age_groups = AGE_GROUPS_IND
         else:
             type_ = 'RELAY'
-            stroke = stroke[2:]
+            distance = distance[2:]
             age_groups = AGE_GROUPS_REL
         year = '2%' if year == 'ALL' else year
         for age_group in age_groups:
             results_ag = db.session.query(Results).filter(and_(Results.event_gender == event_gender,
                                                                Results.course == course,
-                                                               Results.stroke == stroke,
+                                                               Results.distance == distance,
                                                                Results.type == type_,
+                                                               Results.nation == 'POL',
                                                                Results.age_group == age_group,
                                                                Results.meet_year.like(year),
                                                                Results.place != -1)).order_by(asc(Results.swimtime))
@@ -163,39 +178,42 @@ class Results(db.Model):
         return top_results
 
     @staticmethod
-    def get_best_results(athlete_id: str):
+    def get_best_results(athlete_name: str):
         sql = db.session.query(Results,
-                               WR.swimtime.label('world_record')).join(WR, and_(WR.stroke == Results.stroke,
-                                                                                WR.gender == Results.event_gender,
+                               WR.swimtime.label('world_record')).join(WR, and_(WR.distance == Results.distance,
+                                                                                WR.gender == Results.gender,
                                                                                 WR.course == Results.course),
-                                             isouter=True).filter(and_(Results.athlete_id == athlete_id,
-                                                                       Results.place != -1)).statement
+                                             isouter=True).filter(and_(Results.athlete_name == athlete_name,
+                                                                       Results.place != -1,
+                                                                       Results.type == 'INDIVIDUAL')).statement
         df = pd.read_sql(sql=sql, con=db.session.get_bind())
         # window function - get best time partitioned by course, stroke and athlete_id
-        df['stroke_rank'] = df.groupby(['course', 'stroke', 'athlete_id'])['swimtime'].rank(method='first', ascending=True)
+        df['stroke_rank'] = df.groupby(['course', 'distance', 'athlete_id'])['swimtime'].rank(method='first',
+                                                                                              ascending=True)
         df = df.loc[(df['stroke_rank'] == 1)]
         # assign sort mapping
+        df.to_csv('test123.csv')
         df.reset_index(inplace=True, drop=True)
         custom_dict = {'50 FREE': 0, '100 FREE': 2, '200 FREE': 3, '400 FREE': 4, '800 FREE': 5, '1500 FREE': 6,
                        '50 BACK': 7, '100 BACK': 8, '200 BACK': 9, '50 BREAST': 10, '100 BREAST': 11, '200 BREAST': 12,
                        '50 FLY': 13, '100 FLY': 14, '200 FLY': 15, '100 MEDLEY': 16, '200 MEDLEY': 17}
-        df['sort_rank'] = df['stroke'].map(custom_dict)
+        df['sort_rank'] = df['distance'].map(custom_dict)
         # calculate fina points
         df['fina_points'] = [calc_fina_points(x, y) for x,y in zip(df['swimtime'], df['world_record'])]
         df.sort_values(by=['sort_rank', 'course'], inplace=True, ascending=[True, True])
-        df = df[['athlete_id', 'fullname', 'stroke', 'course', 'meet_name', 'meet_city',
+        df = df[['athlete_id', 'athlete_name', 'distance', 'course', 'meet_name', 'meet_city',
                  'date', 'swimtime', 'fina_points']]
         return df
 
     @staticmethod
-    def get_athlete_results(athlete_id: str, event: str):
-        sql = db.session.query(Results.swimtime, Results.athlete_id, Results.date, Results.meet_city, Results.course,
-                               Results.stroke,
-                               WR.swimtime.label('world_record')).join(WR, and_(WR.stroke == Results.stroke,
+    def get_athlete_results(athlete_name: str, distance: str):
+        sql = db.session.query(Results.swimtime, Results.athlete_id, Results.athlete_name, Results.date,
+                               Results.meet_city, Results.course, Results.distance,
+                               WR.swimtime.label('world_record')).join(WR, and_(WR.distance == Results.distance,
                                                                                 WR.gender == Results.event_gender,
                                                                                 WR.course == Results.course),
-                                             isouter=True).filter(and_(Results.athlete_id == athlete_id,
-                                                                       Results.stroke == event,
+                                             isouter=True).filter(and_(Results.athlete_name == athlete_name,
+                                                                       Results.distance == distance,
                                                                        Results.place != -1)).statement
 
         df = pd.read_sql(sql=sql, con=db.session.get_bind())
@@ -218,30 +236,29 @@ class Results(db.Model):
 class Athletes(db.Model):
     __tablename__ = 'athletes'
     athlete_id = db.Column('athlete_id', db.String, primary_key=True)
-    fullname = db.Column('fullname', db.String)
-    birthday = db.Column('birthday', db.String)
-    club = db.Column('club', db.String)
+    athlete_name = db.Column('athlete_name', db.String)
+    birth_year = db.Column('birth_year', db.String)
+    club_name = db.Column('club_name', db.String)
     last_entry = db.Column('last_entry', db.String)
     swrid = db.Column('swrid', db.String)
 
-    def __init__(self, athlete_id, fullname, birthday, club, last_entry, swrid):
+    def __init__(self, athlete_id, athlete_name, birth_year, club_name, last_entry, swrid):
         self.athlete_id = athlete_id
-        self.fullname = fullname
-        self.birthday = birthday
-        self.club = club
+        self.athlete_name = athlete_name
+        self.birth_year = birth_year
+        self.club_name = club_name
         self.last_entry = last_entry
         self.swrid = swrid
 
     @staticmethod
     def get_athletes():
-        athletes = [r.athlete_id for r in db.session.query(Athletes)]
+        athletes = [r.athlete_name for r in db.session.query(Athletes)]
         athletes.sort()
         return athletes
 
     @staticmethod
-    def get_athlete_info(athlete_id):
-        athlete = db.session.query(Athletes).filter(Athletes.athlete_id == athlete_id).first()
-        print(type(athlete.swrid))
+    def get_athlete_info(athlete_name):
+        athlete = db.session.query(Athletes).filter(Athletes.athlete_name == athlete_name).first()
         if type(athlete.swrid) != str:
             swrid = 'NA'
         else:
