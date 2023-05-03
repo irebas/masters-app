@@ -178,12 +178,12 @@ class Results(db.Model):
         return top_results
 
     @staticmethod
-    def get_best_results(athlete_name: str):
+    def get_best_results(athlete_id: str):
         sql = db.session.query(Results,
                                WR.swimtime.label('world_record')).join(WR, and_(WR.distance == Results.distance,
                                                                                 WR.gender == Results.gender,
                                                                                 WR.course == Results.course),
-                                             isouter=True).filter(and_(Results.athlete_name == athlete_name,
+                                             isouter=True).filter(and_(Results.athlete_id == athlete_id,
                                                                        Results.place != -1,
                                                                        Results.type == 'INDIVIDUAL')).statement
         df = pd.read_sql(sql=sql, con=db.session.get_bind())
@@ -267,8 +267,8 @@ class Athletes(db.Model):
         return athlete_id
 
     @staticmethod
-    def get_athlete_info(athlete_name):
-        athlete = db.session.query(Athletes).filter(Athletes.athlete_name == athlete_name).first()
+    def get_athlete_info(athlete_id):
+        athlete = db.session.query(Athletes).filter(Athletes.athlete_id == athlete_id).first()
         if type(athlete.swrid) != str:
             swrid = 'NA'
         else:

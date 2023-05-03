@@ -15,6 +15,16 @@ GENDERS = ['M', 'F', 'X']
 AGE_GROUPS = ['20-24', '25-29', '30-34', '35-39', '40-44', '45-49', '50-54', '55-59', '60-64', '65-69', '70-74',
               '75-79', '80-84', '85-89', '90-94', '95-99']
 
+
+def get_athlete_id(athlete_name: str):
+    x = athlete_name.rfind(' ')
+    last_letter = athlete_name[x - 1:x]
+    gender = 'F' if last_letter == 'a' else 'M'
+    athlete_id = f"{athlete_name[:3]}{athlete_name[(athlete_name.find(',') + 2):(athlete_name.find(',') + 2) + 3].upper()}{athlete_name[-5:-1]}{gender}"
+
+    return athlete_id
+
+
 @bp_app.route('/')
 @bp_app.route('/index.html')
 def home():
@@ -84,42 +94,36 @@ def charts2():
                                                                                      distance=distance)
         results_lc_2, results_sc_2, max_lc_2, max_sc_2 = Results.get_athlete_results(athlete_name=athlete_name_2,
                                                                                      distance=distance)
+        labels_list = ['A', 'B', 'C', 'D', 'E', 'F']
+        results_1 = {'A': 4, 'C': 5, 'F': 6}
+        results_2 = {'A': 5, 'B': 3, 'C': 7, 'D': 5, 'E': 9}
         return render_template('charts2.html', results_lc_1=results_lc_1, results_sc_1=results_sc_1, max_lc_1=max_lc_1,
                                max_sc_1=max_sc_1, results_lc_2=results_lc_2, results_sc_2=results_sc_2,
                                max_lc_2=max_lc_2, max_sc_2=max_sc_2, athlete_name_1=athlete_name_1,
                                athlete_name_2=athlete_name_2, distance=distance, athletes=athletes,
-                               distances=DISTANCES_IND)
+                               distances=DISTANCES_IND, labels_list=labels_list, results_1=results_1, results_2=results_2)
 
     return render_template('charts2.html', athletes=athletes, distances=DISTANCES_IND)
 
-
 @bp_app.route('/athletes.html', methods=['GET', 'POST'])
 def athletes():
-    results = []
     athletes = Athletes.get_athletes()
-    # athlete_info = {'fullname': '', 'club': '', 'birthday': '', ''}
-    if request.method == 'POST' and request.form.get('show'):
-        # athlete_id = Athletes.get_athlete_id(request.form['athlete_name'])
-        # return redirect(url_for('app.athletes_endpoint', athlete_id=athlete_id))
-        athlete_name = request.form['athlete_name']
-        df_results = Results.get_best_results(athlete_name)
+    athlete_name = request.args.get('athlete_name')
+    if athlete_name:
+        try:
+            athlete_id = Athletes.get_athlete_id(athlete_name)
+        except TypeError:
+            athlete_id = get_athlete_id(athlete_name)
+        df_results = Results.get_best_results(athlete_id)
         results = df_results.to_dict('records')
-        athlete_info, swrid = Athletes.get_athlete_info(athlete_name)
+        athlete_info, swrid = Athletes.get_athlete_info(athlete_id)
         return render_template('athletes.html', results=results, athlete=athlete_info,
                                swrid=swrid, athletes=athletes)
 
     return render_template('athletes.html', athletes=athletes)
 
 
-@bp_app.route('/athletes/<athlete_id>', methods=['GET', 'POST'])
-def athletes_endpoint(athlete_id):
-    athletes = Athletes.get_athletes()
-    athlete_name = Athletes.get_athlete_name(athlete_id)
-    df_results = Results.get_best_results(athlete_name)
-    results = df_results.to_dict('records')
-    athlete_info, swrid = Athletes.get_athlete_info(athlete_name)
-    return render_template('athletes.html', results=results, athlete=athlete_info,
-                           swrid=swrid, athletes=athletes)
+
 
 
 @bp_app.app_errorhandler(404)

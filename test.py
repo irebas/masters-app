@@ -22,7 +22,5 @@ d2 = {'USA': {'capital': 'Washington', 'curr': 'USD'},
 # print(list(d2.keys()))
 # a = list(d2.values())
 
-times_list = ["00:00:41.38", "00:01:29.11", "00:02:20.91", "00:03:09.54"]
+athlete_name = 'PERL, Michal (1995)'
 
-
-print(get_split_times(times_list))

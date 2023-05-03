@@ -57,78 +57,42 @@
             <i class="fas fa-chart-area me-1"></i>
             Athlete progress in time - Long Course Meters
         </div>
-        <div class="card-body"><canvas id="myAreaChart" width="100%" height="20"></canvas>
+        <div class="card-body"><canvas id="chart1" width="100%" height="20"></canvas>
             <script>
-                const allTimes = [
-                    {% for result in results_lc_1 %}
-                    '{{ result.swimtime }}',
-                    {% endfor %}];
+                let DataSet_1 = results_1
+                let DataSet_2 = {'2017': 5, '2019': 4, '2020': 9, '2022': 11}
+                let labels =  [...new Set([ ...Object.keys(DataSet_1), ...Object.keys(DataSet_2) ])].sort()
 
-                var ctx = document.getElementById("myAreaChart");
-                var myLineChart = new Chart(ctx, {
-                  type: 'line',
-                  data: {
-                    labels:
-                    [{% for result in results_lc_1 %}
-                        '{{ result.date }}',
-                    {% endfor %},
-                    {% for result in results_lc_2 %}
-                        '{{ result.date }}',
-                    {% endfor %}
-                    ],
-                    datasets: [{
-                      label: "FINA points",
-                      lineTension: 0.3,
-                      backgroundColor: "rgba(192,0,0,0.2)",
-                      borderColor: "rgba(192,0,0,1)",
-                      pointRadius: 5,
-                      fill: true,
-                      pointBackgroundColor: "rgba(192,0,0,1)",
-                      pointBorderColor: "rgba(255,255,255,0.8)",
-                      pointHoverRadius: 5,
-                      pointHoverBackgroundColor: "rgba(192,0,0,1)",
-                      pointHitRadius: 50,
-                      pointBorderWidth: 2,
-                      data: [
-                      {% for result in results_lc_1 %}
-                        {{ result.fina_points }},
-                    {% endfor %}],
+                let converted_1 = labels.map( key => ({ x: key, y: DataSet_1[key]}));
+                let converted_2 = labels.map( key => ({ x: key, y: DataSet_2[key]}));
+
+                var options = {
+                    type: 'line',
+                    data: {
+                        datasets: [{
+                            type: 'line',
+                            label: 'DataSet_1',
+                            data: converted_1
+                        }, {
+                            type: 'line',
+                            label: 'DataSet_2',
+                            data: converted_2,
+                        }],
+                        labels: labels
                     },
-                    {
-                      label: "FINA points",
-                      lineTension: 0.3,
-                      backgroundColor: "rgba(2,117,216,0.2)",
-                      borderColor: "rgba(2,117,216,1)",
-                      pointRadius: 5,
-                      fill: true,
-                      pointBackgroundColor: "rgba(2,117,216,1)",
-                      pointBorderColor: "rgba(255,255,255,0.8)",
-                      pointHoverRadius: 5,
-                      pointHoverBackgroundColor: "rgba(2,117,216,1)",
-                      pointHitRadius: 50,
-                      pointBorderWidth: 2,
-                      data: [
-                      {% for result in results_lc_2 %}
-                        {{ result.fina_points }},
-                    {% endfor %}]
-                    }],
-                  },
-                  options: {
-                    plugins: {
-                      legend: {
-                        display: false
-                      },
-                      tooltip: {
-                        callbacks: {
-                          label: context => "swimtime: " + allTimes[context.dataIndex]
-                        }
-                      }
+                    maintainAspectRatio: false,
+                    legend: { display: false },
+                    options: {
+                        spanGaps: true,
                     }
-                  }
-                });
+                }
+
+                const chart = document.getElementById('chart1')
+                new Chart(chart, options);
+
             </script>
         </div>
-        <div class="card-footer small text-muted">Best result: {{ max_lc_1 if max_lc_1 }}</div>
+
     </div>
 
 </div>
