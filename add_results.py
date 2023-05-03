@@ -5,6 +5,8 @@ import pandas as pd
 import numpy as np
 import xml.etree.ElementTree as ET
 from datetime import datetime
+from config import POSTGRES_URL
+from sqlalchemy import create_engine
 
 AGE_GROUPS_IND = ['20-24', '25-29', '30-34', '35-39', '40-44', '45-49', '50-54', '55-59', '60-64', '65-69', '70-74',
                   '75-79', '80-84', '85-89', '90-94', '95-99']
@@ -242,14 +244,16 @@ class Results:
                 df_final.loc[r, 'distance'] = df_final.loc[r, 'distance'].replace('MEDLEY',
                                                                                   df_final.loc[r, 'relay_stroke'])
 
-        df_final['row_id'] = df_final['meet_code'] + '_' + df_final['resultid'] + '_' + df_final['type']
+        # temp column to create row_id
+        df_final['tmp'] = [x if x == 'RELAY' else y for x,y in zip(df_final['type'], df_final['athlete_id'])]
+        df_final['row_id'] = df_final['meet_code'] + '_' + df_final['resultid'] + '_' + \
+                             df_final['tmp'] + '_' + df_final['type']
         df_final['meet_year'] = [x[-4:] for x in df_final['meet_code']]
         # get only selected columns
         df_final = df_final[['meet_code', 'meet_name', 'meet_city', 'meet_year', 'course', 'date', 'distance',
                              'event_gender', 'age_group', 'athlete_name', 'athlete_id', 'birthdate', 'birth_year',
                              'gender', 'nation', 'swrid', 'license', 'club_name', 'place', 'swimtime',
                              'type', 'row_id']]
-        df_final.to_csv('test.csv')
         df_final.reset_index(inplace=True, drop=True)
         return df_final
 
@@ -264,7 +268,7 @@ def get_all_results(file_name):
     return df_all_results
 
 
-def main():
+def sqlite():
     files_list = get_files_list(r'splash_files\Valid\MP')
     with sqlite3.connect('masters.db') as conn:
         # df_cor = pd.read_excel(r'splash_files\cor.xlsx', dtype=str)
@@ -274,6 +278,13 @@ def main():
             df_all_results.to_sql('results', conn, if_exists='append', index=False)
             print(f'{file} appended successfully!')
 
+def postgresql():
+    files_list = get_files_list(r'splash_files\Valid\MP')
+    engine = create_engine(POSTGRES_URL)
+    for file in files_list:
+        df_all_results = get_all_results(file)
+        df_all_results.to_sql('results', engine, if_exists='append', index=False)
+        print(f'{file} appended successfully!')
 
 def get_files_list(root: str) -> list:
     files_list = list()
@@ -286,4 +297,4 @@ def get_files_list(root: str) -> list:
 
 
 if __name__ == '__main__':
-    main()
+    postgresql()

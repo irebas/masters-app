@@ -50,12 +50,12 @@
                         <tr>
                             <td>{{ item.age_group }}</td>
                             <td>
-                                {% if item.type == 'INDIVIDUAL' %}
-                                    {{ item.athlete_id }}
+                                {% if item.type_ == 'INDIVIDUAL' %}
+                                    {{ item.athlete_name }}
                                 {% else %}
                                     <b>{{ item.club_name }}</b>
                                     <br>
-                                    <span style="font-size: 12px">{{ item.fullname }}</span>
+                                    <span style="font-size: 12px">{{ item.athlete_name }}</span>
                                 {% endif %}
                             </td>
                             <td>{{ item.swimtime }}</td>

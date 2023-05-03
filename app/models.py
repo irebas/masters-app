@@ -15,7 +15,7 @@ class Meets(db.Model):
     meet_code = db.Column('meet_code', db.String, primary_key=True)
     meet_name = db.Column('meet_name', db.String, primary_key=True)
     meet_city = db.Column('meet_city', db.String, primary_key=True)
-    meet_date = db.Column('meet_date', db.String, primary_key=True)
+    meet_date = db.Column('meet_date', db.Date, primary_key=True)
     meet_year = db.Column('meet_year', db.String, primary_key=True)
 
     def __init__(self, meet_code, meet_name, meet_city, meet_date, meet_year):
@@ -39,7 +39,7 @@ class NationalRecords(db.Model):
     club_name = db.Column('club_name', db.String)
     course = db.Column('course', db.String, primary_key=True)
     meet_city = db.Column('meet_city', db.String)
-    date = db.Column('date', db.String)
+    date = db.Column('date', db.Date)
     distance = db.Column('distance', db.String)
     swimtime = db.Column('swimtime', db.String)
     age_group = db.Column('age_group', db.String, primary_key=True)
@@ -66,14 +66,16 @@ class NationalRecords(db.Model):
         else:
             type_ = 'RELAY'
             distance = distance[2:]
+        print(type_)
         records_lc = db.session.query(NationalRecords).filter(and_(NationalRecords.gender == gender,
-                                                                NationalRecords == distance,
-                                                                NationalRecords.course == 'LCM',
-                                                                NationalRecords.type == type_).all())
+                                                                   NationalRecords.distance == distance,
+                                                                   NationalRecords.course == 'LCM',
+                                                                   NationalRecords.type_ == type_)).all()
         records_sc = db.session.query(NationalRecords).filter(and_(NationalRecords.gender == gender,
-                                                                   NationalRecords == distance,
+                                                                   NationalRecords.distance == distance,
                                                                    NationalRecords.course == 'SCM',
-                                                                   NationalRecords.type == type_).all())
+                                                                   NationalRecords.type_ == type_)).all()
+
 
         records = {'LONG COURSE METERS': records_lc, 'SHORT COURSE METERS': records_sc}
 
@@ -82,14 +84,15 @@ class NationalRecords(db.Model):
 
 class WR(db.Model):
     __tablename__ = 'world_records'
-    distance = db.Column('distance', db.String, primary_key=True)
-    course = db.Column('course', db.String, primary_key=True)
-    gender = db.Column('gender', db.String, primary_key=True)
+    id = db.Column('id', db.Integer, primary_key=True)
+    distance = db.Column('distance', db.String)
+    course = db.Column('course', db.String)
+    gender = db.Column('gender', db.String)
     fullname = db.Column('fullname', db.String)
     nationality = db.Column('nationality', db.String)
     swimtime = db.Column('swimtime', db.String)
     meet_name = db.Column('meet_name', db.String)
-    meet_date = db.Column('meet_date', db.String)
+    meet_date = db.Column('meet_date', db.Date)
 
     def __init__(self, distance, course, gender, fullname, nationality, swimtime, meet_name, meet_date):
         self.distance = distance
@@ -109,7 +112,7 @@ class Results(db.Model):
     meet_year = db.Column('meet_year', db.String)
     meet_city = db.Column('meet_city', db.String)
     course = db.Column('course', db.String)
-    date = db.Column('date', db.String)
+    date = db.Column('date', db.Date)
     distance = db.Column('distance', db.String)
     event_gender = db.Column('event_gender', db.String)
     age_group = db.Column('age_group', db.String)
@@ -122,7 +125,7 @@ class Results(db.Model):
     swrid = db.Column('swrid', db.String)
     license = db.Column('license', db.String)
     club_name = db.Column('club_name', db.String)
-    place = db.Column('place', db.String)
+    place = db.Column('place', db.Integer)
     swimtime = db.Column('swimtime', db.String)
     type = db.Column('type', db.String)
     row_id = db.Column('row_id', db.String, primary_key=True)
@@ -172,7 +175,7 @@ class Results(db.Model):
                                                                Results.nation == 'POL',
                                                                Results.age_group == age_group,
                                                                Results.meet_year.like(year),
-                                                               Results.place != '-1')).order_by(asc(Results.swimtime))
+                                                               Results.place != -1)).order_by(asc(Results.swimtime))
             top_results[age_group] = results_ag
 
         return top_results
@@ -184,7 +187,7 @@ class Results(db.Model):
                                                                                 WR.gender == Results.gender,
                                                                                 WR.course == Results.course),
                                              isouter=True).filter(and_(Results.athlete_id == athlete_id,
-                                                                       Results.place != '-1',
+                                                                       Results.place != -1,
                                                                        Results.type == 'INDIVIDUAL')).statement
         df = pd.read_sql(sql=sql, con=db.session.get_bind())
         # window function - get best time partitioned by course, stroke and athlete_id
@@ -213,7 +216,7 @@ class Results(db.Model):
                                                                                 WR.course == Results.course),
                                              isouter=True).filter(and_(Results.athlete_name == athlete_name,
                                                                        Results.distance == distance,
-                                                                       Results.place != '-1')).statement
+                                                                       Results.place != -1)).statement
 
         df = pd.read_sql(sql=sql, con=db.session.get_bind())
         df['fina_points'] = [calc_fina_points(x, y) for x, y in zip(df['swimtime'], df['world_record'])]
@@ -238,7 +241,7 @@ class Athletes(db.Model):
     athlete_name = db.Column('athlete_name', db.String)
     birth_year = db.Column('birth_year', db.String)
     club_name = db.Column('club_name', db.String)
-    last_entry = db.Column('last_entry', db.String)
+    last_entry = db.Column('last_entry', db.Date)
     swrid = db.Column('swrid', db.String)
 
     def __init__(self, athlete_id, athlete_name, birth_year, club_name, last_entry, swrid):
