@@ -172,7 +172,7 @@ class Results(db.Model):
                                                                Results.nation == 'POL',
                                                                Results.age_group == age_group,
                                                                Results.meet_year.like(year),
-                                                               Results.place != -1)).order_by(asc(Results.swimtime))
+                                                               Results.place != '-1')).order_by(asc(Results.swimtime))
             top_results[age_group] = results_ag
 
         return top_results
@@ -184,7 +184,7 @@ class Results(db.Model):
                                                                                 WR.gender == Results.gender,
                                                                                 WR.course == Results.course),
                                              isouter=True).filter(and_(Results.athlete_id == athlete_id,
-                                                                       Results.place != -1,
+                                                                       Results.place != '-1',
                                                                        Results.type == 'INDIVIDUAL')).statement
         df = pd.read_sql(sql=sql, con=db.session.get_bind())
         # window function - get best time partitioned by course, stroke and athlete_id
@@ -213,7 +213,7 @@ class Results(db.Model):
                                                                                 WR.course == Results.course),
                                              isouter=True).filter(and_(Results.athlete_name == athlete_name,
                                                                        Results.distance == distance,
-                                                                       Results.place != -1)).statement
+                                                                       Results.place != '-1')).statement
 
         df = pd.read_sql(sql=sql, con=db.session.get_bind())
         df['fina_points'] = [calc_fina_points(x, y) for x, y in zip(df['swimtime'], df['world_record'])]
