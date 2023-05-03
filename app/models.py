@@ -192,7 +192,6 @@ class Results(db.Model):
                                                                                               ascending=True)
         df = df.loc[(df['stroke_rank'] == 1)]
         # assign sort mapping
-        df.to_csv('test123.csv')
         df.reset_index(inplace=True, drop=True)
         custom_dict = {'50 FREE': 0, '100 FREE': 2, '200 FREE': 3, '400 FREE': 4, '800 FREE': 5, '1500 FREE': 6,
                        '50 BACK': 7, '100 BACK': 8, '200 BACK': 9, '50 BREAST': 10, '100 BREAST': 11, '200 BREAST': 12,
