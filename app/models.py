@@ -172,7 +172,7 @@ class Results(db.Model):
                                                                Results.course == course,
                                                                Results.distance == distance,
                                                                Results.type == type_,
-                                                               Results.nation == 'POL',
+                                                               # Results.nation == 'POL',
                                                                Results.age_group == age_group,
                                                                Results.meet_year.like(year),
                                                                Results.place != -1)).order_by(asc(Results.swimtime))
@@ -188,17 +188,20 @@ class Results(db.Model):
                                                                                 WR.course == Results.course),
                                              isouter=True).filter(and_(Results.athlete_id == athlete_id,
                                                                        Results.place != -1,
-                                                                       Results.type == 'INDIVIDUAL')).statement
+                                                                       Results.type.in_(['INDIVIDUAL', 'RELAY_SPLIT']))
+                                                                  ).statement
         df = pd.read_sql(sql=sql, con=db.session.get_bind())
         # window function - get best time partitioned by course, stroke and athlete_id
-        df['stroke_rank'] = df.groupby(['course', 'distance', 'athlete_id'])['swimtime'].rank(method='first',
+        df['stroke_rank'] = df.groupby(['course', 'distance', 'athlete_id', 'type'])['swimtime'].rank(method='first',
                                                                                               ascending=True)
         df = df.loc[(df['stroke_rank'] == 1)]
         # assign sort mapping
         df.reset_index(inplace=True, drop=True)
+        df['distance'] = [x if y == 'INDIVIDUAL' else f'{x} SPLIT' for x,y in zip(df['distance'], df['type'])]
         custom_dict = {'50 FREE': 0, '100 FREE': 2, '200 FREE': 3, '400 FREE': 4, '800 FREE': 5, '1500 FREE': 6,
                        '50 BACK': 7, '100 BACK': 8, '200 BACK': 9, '50 BREAST': 10, '100 BREAST': 11, '200 BREAST': 12,
-                       '50 FLY': 13, '100 FLY': 14, '200 FLY': 15, '100 MEDLEY': 16, '200 MEDLEY': 17}
+                       '50 FLY': 13, '100 FLY': 14, '200 FLY': 15, '100 MEDLEY': 16, '200 MEDLEY': 17, '400 MEDLEY': 18,
+                       '50 FREE SPLIT': 19, '100 FREE SPLIT': 20, '50 BREAST SPLIT': 21, '50 FLY SPLIT': 22}
         df['sort_rank'] = df['distance'].map(custom_dict)
         # calculate fina points
         df['fina_points'] = [calc_fina_points(x, y) for x,y in zip(df['swimtime'], df['world_record'])]
@@ -216,6 +219,7 @@ class Results(db.Model):
                                                                                 WR.course == Results.course),
                                              isouter=True).filter(and_(Results.athlete_name == athlete_name,
                                                                        Results.distance == distance,
+                                                                       Results.type == 'INDIVIDUAL',
                                                                        Results.place != -1)).statement
 
         df = pd.read_sql(sql=sql, con=db.session.get_bind())

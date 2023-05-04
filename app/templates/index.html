@@ -3,15 +3,54 @@
 {% block content %}
 <div class="container-fluid px-4">
     <h1 class="mt-4">Baza danych masters</h1>
-    <ol class="breadcrumb mb-4">
-        <li class="breadcrumb-item"><a href="index.html">Tu będzie jakiś link</a></li>
-        <li class="breadcrumb-item active">A tu nie</li>
-    </ol>
+    <br>
     <div class="card mb-4">
+        <div class="card-header">
+        <b>    PROJECT INFO:</b>
+        </div>
         <div class="card-body">
-            To jest strona startowa
-            Bla bla
-            bla bla bla
+            <p><i><b>masters-app</b></i> to baza danych pływania Masters, będąca uzupełnieniem
+                <a href="http://swimrankings.net"><i>rankingu światowego</i></a>,
+            który nie zawiera wszystkich zawodów rangi Masters.</p>
+            <p>Aplikacja została przygotowana przy użyciu framework'a <i>Flask</i> w języku <i>Python</i>.
+                Baza danych została postawiona na <i>PostgreSQL</i>, a sam serwis zdeployowany na <i><a href="http://render.com">render.com</a></i>
+            Ze względu na użycie darmowego planu (512 MB RAM oraz 0.1 CPU), strona może się wolno ładować :(
+            </p>
+        </div>
+    </div>
+    <div class="card mb-4">
+        <div class="card-header">
+            <b>PAGE CONTENT:</b>
+        </div>
+        <div class="card-body">
+            <p>
+            <ul>
+            <p><li>Wszystkie dane - rekordy, rankingi itp. generowane sa na podstawie zawodow wgranych do bazy.
+                    Brakuje wszystkich zawodów PP, LMP 2022 oraz zawodów międzynarodowych.</li></p>
+            <p><li>W zakładce Athletes pokazane są najlepsze wyniki na każdym dystansie (razem z czasami sztafetowymi) oraz najbardziej aktualne info o wyszukiwanym zawodniku,
+            wraz z linkiem do jego strony na swimrankings</li></p>
+            <p><li>W zakładce Meets wylistowane są wszystkie zawody znajdujące się w bazie</li></p>
+            <p><li>W zakładce Rankings pokazane są rankingi (per kategoria, rok, płeć, overall)</li></p>
+            <p><li>W zakładce Records znajdują się rekordy Polski (wygenerowane na podstawie zawodów w bazie)</li></p>
+            <p><li>W zakładce Charts - athlete's performance można zobaczyć performance zawodnika w czasie (zrobione na podstawie punktów FINA)</li></p>
+            <p><li>W zakładce Charts - athletes comparison można wybrać dwóch zawodników i porównać ich wyniki w czasie</li></p>
+            </ul>
+            </p>
+        </div>
+    </div>
+    <div class="card mb-4">
+        <div class="card-header">
+            <b>TO BE DONE:</b>
+        </div>
+        <div class="card-body">
+                <ul>
+            <p><li>Dodanie wszystkich zawodów do bazy</li></p>
+            <p><li>Strona z logowaniem, umożliwiającym ręczną modyfikację zawodników oraz ewentualnie wgrywanie zawodów z poziomu strony</li></p>
+            <p><li>Responsywność strony - nie działa hamburger menu na telefonach</li></p>
+            <p><li>Deployment aplikacji na GCP</li></p>
+
+        </ul>
+            </p>
         </div>
     </div>
 </div>

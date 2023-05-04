@@ -12,8 +12,8 @@
         <div class="card-body">
             <form method="POST" autocomplete="off" enctype="multipart/form-data">
             <div class="input-group">
-                <span class="input-group-text">Athlete id:</span>
-                <input type="text" id="athletes" class="form-control" placeholder="Type athlete's name" name="athlete_name" value="{{ athlete_name if athlete_name }}"/>
+                <span class="input-group-text">Athlete name:</span>
+                <input type="text" id="athletes" class="form-control" placeholder="Type athlete's surname" name="athlete_name" value="{{ athlete_name if athlete_name }}"/>
                  <script>
                  $( function() {
                     var availableTags = [
@@ -33,7 +33,7 @@
                         <option value='{{ dist }}'>{{ dist }}</option>
                     {% endfor %}
                 </select>
-                <input class="btn btn-primary btn-md" type="submit" name="show" value="Show chart">
+                <input class="btn btn-primary btn-md" type="submit" name="show" value="Generate charts">
             </div>
             </form>
         </div>

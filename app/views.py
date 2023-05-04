@@ -1,3 +1,4 @@
+import json
 import pandas as pd
 from flask import Blueprint, request, url_for, redirect, render_template, flash
 bp_app = Blueprint('app', __name__)
@@ -76,7 +77,6 @@ def charts1():
         athlete_name = request.form['athlete_name']
         distance = request.form['distance']
         results_lc, results_sc, max_lc, max_sc = Results.get_athlete_results(athlete_name=athlete_name, distance=distance)
-        print(results_sc)
         return render_template('charts1.html', results_lc=results_lc, results_sc=results_sc, max_lc=max_lc,
                                max_sc=max_sc, athlete_name=athlete_name, distance=distance, athletes=athletes,
                                distances=DISTANCES_IND)
@@ -94,16 +94,14 @@ def charts2():
                                                                                      distance=distance)
         results_lc_2, results_sc_2, max_lc_2, max_sc_2 = Results.get_athlete_results(athlete_name=athlete_name_2,
                                                                                      distance=distance)
-        labels_list = ['A', 'B', 'C', 'D', 'E', 'F']
-        results_1 = {'A': 4, 'C': 5, 'F': 6}
-        results_2 = {'A': 5, 'B': 3, 'C': 7, 'D': 5, 'E': 9}
+
         return render_template('charts2.html', results_lc_1=results_lc_1, results_sc_1=results_sc_1, max_lc_1=max_lc_1,
                                max_sc_1=max_sc_1, results_lc_2=results_lc_2, results_sc_2=results_sc_2,
                                max_lc_2=max_lc_2, max_sc_2=max_sc_2, athlete_name_1=athlete_name_1,
                                athlete_name_2=athlete_name_2, distance=distance, athletes=athletes,
-                               distances=DISTANCES_IND, labels_list=labels_list, results_1=results_1, results_2=results_2)
+                               distances=DISTANCES_IND)
 
-    return render_template('charts2.html', athletes=athletes, distances=DISTANCES_IND)
+    return render_template('charts2.html', athletes=athletes, distances=DISTANCES_IND, results_1={}, results_2={})
 
 @bp_app.route('/athletes.html', methods=['GET', 'POST'])
 def athletes():
