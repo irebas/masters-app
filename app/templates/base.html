@@ -14,7 +14,7 @@
     <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <!-- Navbar Brand-->
-            <a class="navbar-brand ps-3" href="index.html">Masters DataBase</a>
+            <a class="navbar-brand ps-3" href="{{ url_for('app.home') }}">Masters DataBase</a>
             <!-- Sidebar Toggle-->
 <!--            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>-->
             <!-- Navbar Search-->
@@ -40,24 +40,24 @@
                     <div class="sb-sidenav-menu">
                         <div class="nav">
                             <div class="sb-sidenav-menu-heading">Core</div>
-                            <a class="nav-link" href="index.html">
+                            <a class="nav-link" href="{{ url_for('app.home') }}">
                                 <div class="sb-nav-link-icon"><i class="fas fa-info-circle"></i></div>
                                 Home
                             </a>
                             <div class="sb-sidenav-menu-heading">DataBase</div>
-                            <a class="nav-link" href="athletes.html">
+                            <a class="nav-link" href="{{ url_for('app.athletes') }}">
                                 <div class="sb-nav-link-icon"><i class="fas fa-swimmer"></i></div>
                                 Athletes
                             </a>
-                            <a class="nav-link" href="meets.html">
+                            <a class="nav-link" href="{{ url_for('app.meets', meet_code='all') }}">
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Meets
                             </a>
-                            <a class="nav-link" href="rankings.html">
+                            <a class="nav-link" href="{{ url_for('app.rankings') }}">
                                 <div class="sb-nav-link-icon"><i class="fas fa-clipboard-list"></i></div>
                                 Rankings
                             </a>
-                            <a class="nav-link" href="records.html">
+                            <a class="nav-link" href="{{ url_for('app.records') }}">
                                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                                 Records
                             </a>
@@ -69,8 +69,8 @@
                             </a>
                             <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
-                                    <a class="nav-link collapsed" href="charts1.html">Athlete's performance</a>
-                                    <a class="nav-link collapsed" href="charts2.html">Athletes comparison</a>
+                                    <a class="nav-link collapsed" href="{{ url_for('app.charts1') }}">Athlete's performance</a>
+                                    <a class="nav-link collapsed" href="{{ url_for('app.charts2') }}">Athletes comparison</a>
                                 </nav>
                             </div>
 

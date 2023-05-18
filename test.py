@@ -23,4 +23,3 @@ d2 = {'USA': {'capital': 'Washington', 'curr': 'USD'},
 # a = list(d2.values())
 
 athlete_name = 'PERL, Michal (1995)'
-

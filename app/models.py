@@ -4,6 +4,7 @@ import pandas as pd
 from app.database import db
 from sqlalchemy import and_, desc, asc
 from app.utils import calc_fina_points
+from sqlalchemy.orm import class_mapper
 
 AGE_GROUPS_IND = ['20-24', '25-29', '30-34', '35-39', '40-44', '45-49', '50-54', '55-59', '60-64', '65-69', '70-74',
                   '75-79', '80-84', '85-89', '90-94', '95-99']
@@ -157,7 +158,31 @@ class Results(db.Model):
         self.row_id = row_id
 
     @staticmethod
-    def get_top_results(event_gender: str, course: str, distance: str, year: str):
+    def get_results(meet_code: str, distance: str, event_gender: str):
+        results = dict()
+        if distance not in ['4x50 FREE', '4x50 MEDLEY']:
+            type_ = 'INDIVIDUAL'
+            age_groups = AGE_GROUPS_IND
+        else:
+            type_ = 'RELAY'
+            distance = distance[2:]
+            age_groups = AGE_GROUPS_REL
+        for age_group in age_groups:
+            results_ag = db.session.query(Results.place, Results.athlete_id, Results.athlete_name, Results.club_name,
+                                          Results.swimtime, Results.type).filter(and_(Results.event_gender == event_gender,
+                                                                        Results.distance == distance,
+                                                                        Results.age_group == age_group,
+                                                                        Results.meet_code == meet_code,
+                                                                        Results.type == type_,
+                                                                        Results.place != -1)).order_by(asc(Results.place))
+
+            results[age_group] = results_ag
+
+        return results
+
+
+    @staticmethod
+    def get_top_results(event_gender: str, course: str, distance: str, year: str, records_nb: int):
         top_results = dict()
         if distance not in ['4x50 FREE', '4x50 MEDLEY']:
             type_ = 'INDIVIDUAL'
@@ -175,8 +200,17 @@ class Results(db.Model):
                                                                # Results.nation == 'POL',
                                                                Results.age_group == age_group,
                                                                Results.meet_year.like(year),
-                                                               Results.place != -1)).order_by(asc(Results.swimtime))
-            top_results[age_group] = results_ag
+                                                               Results.place != -1)).order_by(asc(Results.swimtime)).all()
+
+            # for result in results_ag:
+            #     columns = [c.key for c in class_mapper(result.__class__).columns]
+            #     result_dict = dict((c, getattr(result, c)) for c in columns)
+            #     print(result_dict)
+
+            top_results[age_group] = results_ag[:records_nb]
+
+
+
 
         return top_results
 
@@ -206,7 +240,7 @@ class Results(db.Model):
         # calculate fina points
         df['fina_points'] = [calc_fina_points(x, y) for x,y in zip(df['swimtime'], df['world_record'])]
         df.sort_values(by=['sort_rank', 'course'], inplace=True, ascending=[True, True])
-        df = df[['athlete_id', 'athlete_name', 'distance', 'course', 'meet_name', 'meet_city',
+        df = df[['athlete_id', 'athlete_name', 'distance', 'course', 'meet_code', 'meet_name', 'meet_city',
                  'date', 'swimtime', 'fina_points']]
         return df
 
@@ -215,7 +249,7 @@ class Results(db.Model):
         sql = db.session.query(Results.swimtime, Results.athlete_id, Results.athlete_name, Results.date,
                                Results.meet_city, Results.course, Results.distance,
                                WR.swimtime.label('world_record')).join(WR, and_(WR.distance == Results.distance,
-                                                                                WR.gender == Results.event_gender,
+                                                                                WR.gender == Results.gender,
                                                                                 WR.course == Results.course),
                                              isouter=True).filter(and_(Results.athlete_name == athlete_name,
                                                                        Results.distance == distance,
@@ -236,7 +270,7 @@ class Results(db.Model):
         return results_lc, results_sc, max_lc, max_sc
 
     def __repr__(self):
-        return self.fullname
+        return self.athlete_id
 
 
 class Athletes(db.Model):

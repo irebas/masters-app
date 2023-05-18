@@ -6,24 +6,6 @@
 <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/ui-lightness/jquery-ui.css" rel="stylesheet" type="text/css" />
 <br>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div class="container-fluid px-4">
     <form method="GET" autocomplete="off" enctype="multipart/form-data">
         <div class="row mb-2">
@@ -90,7 +72,7 @@
                         <td>{{ item.swimtime }}</td>
                         <td>{{ item.fina_points }}</td>
                         <td>{{ item.date }}</td>
-                        <td>{{ item.meet_city }}</td>
+                        <td><a href="{{ url_for('app.meets', meet_code=item.meet_code) }}">{{ item.meet_city }}</a></td>
 <!--                        <td><font size="-2">{{ item.meet_name }}</font></td>-->
                     </tr>
                 {% endfor %}

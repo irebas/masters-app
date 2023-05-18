@@ -1,6 +1,6 @@
 import json
 import pandas as pd
-from flask import Blueprint, request, url_for, redirect, render_template, flash
+from flask import Blueprint, request, url_for, redirect, render_template, flash, jsonify
 bp_app = Blueprint('app', __name__)
 from app.models import Results, Athletes, Meets, NationalRecords
 
@@ -31,7 +31,6 @@ def get_athlete_id(athlete_name: str):
 def home():
     return render_template('index.html')
 
-
 @bp_app.route('/rankings.html', methods=['GET', 'POST'])
 def rankings():
     if request.method == 'POST' and request.form.get('show'):
@@ -39,30 +38,55 @@ def rankings():
         event_gender = request.form['event_gender']
         course = request.form['course']
         distance = request.form['distance']
+        records_nb = int(request.form['records_nb']) if request.form['records_nb'] != '' else 5
         top_results = Results.get_top_results(event_gender=event_gender,
                                               distance=distance,
                                               course=course,
-                                              year=year)
+                                              year=year,
+                                              records_nb=records_nb)
         return render_template('rankings.html', top_results=top_results, distances=DISTANCES, courses=COURSES,
                                years=YEARS, genders=GENDERS, types=TYPES, year=year, event_gender=event_gender,
-                               course=course, distance=distance)
+                               course=course, distance=distance, records_nb=records_nb)
     top_results = dict()
     return render_template('rankings.html', distances=DISTANCES, courses=COURSES,
                            years=YEARS, genders=GENDERS, types=TYPES, top_results=top_results)
 
 
-@bp_app.route('/meets.html', methods=['GET', 'POST'])
-def meets():
-    meets = Meets.get_meets()
-    return render_template('meets.html', meets=meets)
+@bp_app.route('/meets/<meet_code>', methods=['GET', 'POST'])
+def meets(meet_code):
+    if request.method == 'POST' and request.form.get('show'):
+        event_gender = request.form['event_gender']
+        distance = request.form['distance']
+        results = Results.get_results(meet_code=meet_code, distance=distance, event_gender=event_gender)
+        print(results)
+        return render_template('meets.html', distances=DISTANCES, genders=GENDERS, results=results, distance=distance, event_gender=event_gender)
+    elif meet_code.lower() == 'all':
+        meets = Meets.get_meets()
+        return render_template('meets_list.html', meets=meets)
+    else:
+        return render_template('meets.html', distances=DISTANCES, genders=GENDERS, results=dict())
+
+
+@bp_app.route('/api/records/<event_gender>/<distance>')
+def api_records(event_gender: str, distance: str):
+    distance = distance.replace('_', ' ')
+    print(event_gender)
+    print(distance)
+    records = NationalRecords.get_records(gender=event_gender, distance=distance)
+    # records = Results.get_records(event_gender=event_gender, distance=distance)
+    print(records)
+    return jsonify(records)
 
 @bp_app.route('/records.html', methods=['GET', 'POST'])
 def records():
     if request.method == 'POST' and request.form.get('show'):
         event_gender = request.form['event_gender']
         distance = request.form['distance']
+        print(event_gender)
+        print(distance)
         records = NationalRecords.get_records(gender=event_gender, distance=distance)
         # records = Results.get_records(event_gender=event_gender, distance=distance)
+        print(records)
         return render_template('records.html', records=records, distances=DISTANCES, genders=GENDERS,
                                event_gender=event_gender, distance=distance)
 
@@ -77,11 +101,13 @@ def charts1():
         athlete_name = request.form['athlete_name']
         distance = request.form['distance']
         results_lc, results_sc, max_lc, max_sc = Results.get_athlete_results(athlete_name=athlete_name, distance=distance)
+        print(results_lc)
         return render_template('charts1.html', results_lc=results_lc, results_sc=results_sc, max_lc=max_lc,
                                max_sc=max_sc, athlete_name=athlete_name, distance=distance, athletes=athletes,
                                distances=DISTANCES_IND)
 
     return render_template('charts1.html', athletes=athletes, distances=DISTANCES_IND)
+
 
 @bp_app.route('/charts2.html', methods=['GET', 'POST'])
 def charts2():
@@ -102,6 +128,7 @@ def charts2():
                                distances=DISTANCES_IND)
 
     return render_template('charts2.html', athletes=athletes, distances=DISTANCES_IND, results_1={}, results_2={})
+
 
 @bp_app.route('/athletes.html', methods=['GET', 'POST'])
 def athletes():

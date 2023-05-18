@@ -1,0 +1,2861 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LENEX version="3.0">
+  <CONSTRUCTOR name="SPLASH Meet Manager 11" registration="Polish Swimming Federation" version="11.72268">
+    <CONTACT name="Splash Software GmbH" street="Ahornweg 41" city="Spiegel b. Bern" zip="3095" country="CH" email="sales@swimrankings.net" internet="https://www.swimrankings.net" />
+  </CONSTRUCTOR>
+  <MEETS>
+    <MEET city="Kędzierzyn Koźle" name="Grand Prix Pucharu Polski - II Edycja Koziołków Pływackich MASTERS" course="SCM" reservecount="2" startmethod="1" timing="AUTOMATIC" nation="POL">
+      <AGEDATE value="2022-04-24" type="YEAR" />
+      <POOL lanemin="1" lanemax="6" />
+      <FACILITY city="Kędzierzyn Koźle" nation="POL" />
+      <POINTTABLE pointtableid="997" name="Masters Polska" version="2022" />
+      <QUALIFY from="2021-01-01" until="2022-04-19" />
+      <SESSIONS>
+        <SESSION date="2022-04-24" daytime="09:00" number="1" warmupfrom="08:00" warmupuntil="08:50">
+          <EVENTS>
+            <EVENT eventid="1059" gender="F" number="1" order="1" round="TIM" preveventid="-1">
+              <SWIMSTYLE distance="50" relaycount="1" stroke="FREE" />
+              <AGEGROUPS>
+                <AGEGROUP agegroupid="1060" agemax="24" agemin="20" name="&quot;0&quot; 20-24" />
+                <AGEGROUP agegroupid="1061" agemax="29" agemin="25" name="&quot;A&quot; 25-29">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2338" />
+                    <RANKING order="2" place="2" resultid="2054" />
+                    <RANKING order="3" place="3" resultid="2523" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="1062" agemax="34" agemin="30" name="&quot;B&quot; 30-34">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2255" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="1063" agemax="39" agemin="35" name="&quot;C&quot; 35-39">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2447" />
+                    <RANKING order="2" place="2" resultid="2058" />
+                    <RANKING order="3" place="3" resultid="2364" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="1064" agemax="44" agemin="40" name="&quot;D&quot; 40-44">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2851" />
+                    <RANKING order="2" place="2" resultid="2360" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="1065" agemax="49" agemin="45" name="&quot;E&quot; 45-49">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2284" />
+                    <RANKING order="2" place="2" resultid="2149" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="1066" agemax="54" agemin="50" name="&quot;F&quot; 50-54">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2260" />
+                    <RANKING order="2" place="2" resultid="2050" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="1067" agemax="59" agemin="55" name="&quot;G&quot; 55-59">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2352" />
+                    <RANKING order="2" place="2" resultid="2015" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="1068" agemax="64" agemin="60" name="&quot;H&quot; 60-64">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2406" />
+                    <RANKING order="2" place="2" resultid="2356" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="1069" agemax="69" agemin="65" name="&quot;I&quot; 65-69">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2378" />
+                    <RANKING order="2" place="2" resultid="2011" />
+                    <RANKING order="3" place="3" resultid="2019" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="1070" agemax="74" agemin="70" name="&quot;J&quot; 70-74" />
+                <AGEGROUP agegroupid="1071" agemax="79" agemin="75" name="&quot;K&quot; 75-79">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2035" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="1072" agemax="84" agemin="80" name="&quot;L&quot; 80-84">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="1996" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="1073" agemax="89" agemin="85" name="&quot;M&quot; 85-89" />
+                <AGEGROUP agegroupid="1074" agemax="94" agemin="90" name="&quot;N&quot; 90-94" />
+                <AGEGROUP agegroupid="1075" agemax="-1" agemin="95" name="&quot;O&quot; 95 i starsi" />
+                <AGEGROUP agegroupid="2922" agemax="-1" agemin="-1">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2338" />
+                    <RANKING order="2" place="2" resultid="2054" />
+                    <RANKING order="3" place="3" resultid="2523" />
+                    <RANKING order="4" place="4" resultid="2447" />
+                    <RANKING order="5" place="5" resultid="2851" />
+                    <RANKING order="6" place="6" resultid="2352" />
+                    <RANKING order="7" place="7" resultid="2360" />
+                    <RANKING order="8" place="8" resultid="2284" />
+                    <RANKING order="9" place="9" resultid="2149" />
+                    <RANKING order="10" place="10" resultid="2260" />
+                    <RANKING order="11" place="11" resultid="2406" />
+                    <RANKING order="12" place="12" resultid="2255" />
+                    <RANKING order="13" place="13" resultid="2356" />
+                    <RANKING order="14" place="14" resultid="2058" />
+                    <RANKING order="15" place="15" resultid="2050" />
+                    <RANKING order="16" place="16" resultid="2378" />
+                    <RANKING order="17" place="17" resultid="2364" />
+                    <RANKING order="18" place="18" resultid="1409" />
+                    <RANKING order="19" place="19" resultid="2015" />
+                    <RANKING order="20" place="20" resultid="2011" />
+                    <RANKING order="21" place="21" resultid="1996" />
+                    <RANKING order="22" place="22" resultid="2019" />
+                    <RANKING order="23" place="23" resultid="2035" />
+                  </RANKINGS>
+                </AGEGROUP>
+              </AGEGROUPS>
+              <HEATS>
+                <HEAT heatid="2853" number="1" order="1" status="OFFICIAL" />
+                <HEAT heatid="2854" number="2" order="2" status="OFFICIAL" />
+                <HEAT heatid="2855" number="3" order="3" status="OFFICIAL" />
+                <HEAT heatid="2856" number="4" order="4" status="OFFICIAL" />
+              </HEATS>
+            </EVENT>
+            <EVENT eventid="1076" gender="M" number="2" order="2" round="TIM" preveventid="-1">
+              <SWIMSTYLE distance="50" relaycount="1" stroke="FREE" />
+              <AGEGROUPS>
+                <AGEGROUP agegroupid="2538" agemax="24" agemin="20" name="&quot;0&quot; 20-24" />
+                <AGEGROUP agegroupid="2539" agemax="29" agemin="25" name="&quot;A&quot; 25-29">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2136" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2540" agemax="34" agemin="30" name="&quot;B&quot; 30-34">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2382" />
+                    <RANKING order="2" place="2" resultid="2308" />
+                    <RANKING order="3" place="3" resultid="2096" />
+                    <RANKING order="4" place="4" resultid="2140" />
+                    <RANKING order="5" place="5" resultid="2402" />
+                    <RANKING order="6" place="-1" resultid="2152" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2541" agemax="39" agemin="35" name="&quot;C&quot; 35-39">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2062" />
+                    <RANKING order="2" place="2" resultid="2410" />
+                    <RANKING order="3" place="-1" resultid="1418" />
+                    <RANKING order="4" place="-1" resultid="2066" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2542" agemax="44" agemin="40" name="&quot;D&quot; 40-44">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2386" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2543" agemax="49" agemin="45" name="&quot;E&quot; 45-49">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2458" />
+                    <RANKING order="2" place="2" resultid="2462" />
+                    <RANKING order="3" place="3" resultid="2072" />
+                    <RANKING order="4" place="4" resultid="2437" />
+                    <RANKING order="5" place="-1" resultid="2156" />
+                    <RANKING order="6" place="-1" resultid="2311" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2544" agemax="54" agemin="50" name="&quot;F&quot; 50-54">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2368" />
+                    <RANKING order="2" place="2" resultid="2535" />
+                    <RANKING order="3" place="-1" resultid="2414" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2545" agemax="59" agemin="55" name="&quot;G&quot; 55-59">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2480" />
+                    <RANKING order="2" place="2" resultid="2200" />
+                    <RANKING order="3" place="3" resultid="1987" />
+                    <RANKING order="4" place="4" resultid="2204" />
+                    <RANKING order="5" place="-1" resultid="2398" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2546" agemax="64" agemin="60" name="&quot;H&quot; 60-64">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2476" />
+                    <RANKING order="2" place="2" resultid="2373" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2547" agemax="69" agemin="65" name="&quot;I&quot; 65-69">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2290" />
+                    <RANKING order="2" place="2" resultid="2422" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2548" agemax="74" agemin="70" name="&quot;J&quot; 70-74">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="1423" />
+                    <RANKING order="2" place="2" resultid="2297" />
+                    <RANKING order="3" place="-1" resultid="2302" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2549" agemax="79" agemin="75" name="&quot;K&quot; 75-79">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2101" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2550" agemax="84" agemin="80" name="&quot;L&quot; 80-84" />
+                <AGEGROUP agegroupid="2551" agemax="89" agemin="85" name="&quot;M&quot; 85-89">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2432" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2552" agemax="94" agemin="90" name="&quot;N&quot; 90-94" />
+                <AGEGROUP agegroupid="2553" agemax="-1" agemin="95" name="&quot;O&quot; 95 i starsi" />
+                <AGEGROUP agegroupid="2923" agemax="-1" agemin="-1">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2458" />
+                    <RANKING order="2" place="2" resultid="2382" />
+                    <RANKING order="3" place="3" resultid="2136" />
+                    <RANKING order="4" place="4" resultid="2308" />
+                    <RANKING order="5" place="5" resultid="2096" />
+                    <RANKING order="6" place="6" resultid="2140" />
+                    <RANKING order="7" place="7" resultid="2368" />
+                    <RANKING order="8" place="8" resultid="2386" />
+                    <RANKING order="9" place="9" resultid="2476" />
+                    <RANKING order="10" place="10" resultid="2480" />
+                    <RANKING order="11" place="11" resultid="2402" />
+                    <RANKING order="12" place="12" resultid="2200" />
+                    <RANKING order="13" place="13" resultid="2462" />
+                    <RANKING order="14" place="14" resultid="2535" />
+                    <RANKING order="15" place="15" resultid="2290" />
+                    <RANKING order="16" place="16" resultid="2072" />
+                    <RANKING order="17" place="17" resultid="2062" />
+                    <RANKING order="18" place="18" resultid="2422" />
+                    <RANKING order="19" place="19" resultid="1987" />
+                    <RANKING order="20" place="20" resultid="1405" />
+                    <RANKING order="21" place="21" resultid="2373" />
+                    <RANKING order="22" place="22" resultid="2410" />
+                    <RANKING order="23" place="23" resultid="2204" />
+                    <RANKING order="24" place="24" resultid="1423" />
+                    <RANKING order="25" place="25" resultid="2437" />
+                    <RANKING order="26" place="26" resultid="2297" />
+                    <RANKING order="27" place="27" resultid="1413" />
+                    <RANKING order="28" place="28" resultid="2432" />
+                    <RANKING order="29" place="29" resultid="2101" />
+                    <RANKING order="30" place="-1" resultid="1418" />
+                    <RANKING order="31" place="-1" resultid="2066" />
+                    <RANKING order="32" place="-1" resultid="2152" />
+                    <RANKING order="33" place="-1" resultid="2156" />
+                    <RANKING order="34" place="-1" resultid="2302" />
+                    <RANKING order="35" place="-1" resultid="2311" />
+                    <RANKING order="36" place="-1" resultid="2398" />
+                    <RANKING order="37" place="-1" resultid="2414" />
+                  </RANKINGS>
+                </AGEGROUP>
+              </AGEGROUPS>
+              <HEATS>
+                <HEAT heatid="2857" number="1" order="1" status="OFFICIAL" />
+                <HEAT heatid="2858" number="2" order="2" status="OFFICIAL" />
+                <HEAT heatid="2859" number="3" order="3" status="OFFICIAL" />
+                <HEAT heatid="2860" number="4" order="4" status="OFFICIAL" />
+                <HEAT heatid="2861" number="5" order="5" status="OFFICIAL" />
+                <HEAT heatid="2862" number="6" order="6" status="OFFICIAL" />
+                <HEAT heatid="2863" number="7" order="7" status="OFFICIAL" />
+              </HEATS>
+            </EVENT>
+            <EVENT eventid="1093" gender="F" number="3" order="3" round="TIM" preveventid="-1">
+              <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+              <AGEGROUPS>
+                <AGEGROUP agegroupid="2826" agemax="24" agemin="20" name="&quot;0&quot; 20-24" />
+                <AGEGROUP agegroupid="2827" agemax="29" agemin="25" name="&quot;A&quot; 25-29">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2466" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2828" agemax="34" agemin="30" name="&quot;B&quot; 30-34" />
+                <AGEGROUP agegroupid="2829" agemax="39" agemin="35" name="&quot;C&quot; 35-39">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2448" />
+                    <RANKING order="2" place="2" resultid="2365" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2830" agemax="44" agemin="40" name="&quot;D&quot; 40-44">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2496" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2831" agemax="49" agemin="45" name="&quot;E&quot; 45-49">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2106" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2832" agemax="54" agemin="50" name="&quot;F&quot; 50-54">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2261" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2833" agemax="59" agemin="55" name="&quot;G&quot; 55-59" />
+                <AGEGROUP agegroupid="2834" agemax="64" agemin="60" name="&quot;H&quot; 60-64" />
+                <AGEGROUP agegroupid="2835" agemax="69" agemin="65" name="&quot;I&quot; 65-69">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2379" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2836" agemax="74" agemin="70" name="&quot;J&quot; 70-74">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2264" />
+                    <RANKING order="2" place="2" resultid="1999" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2837" agemax="79" agemin="75" name="&quot;K&quot; 75-79" />
+                <AGEGROUP agegroupid="2838" agemax="84" agemin="80" name="&quot;L&quot; 80-84" />
+                <AGEGROUP agegroupid="2839" agemax="89" agemin="85" name="&quot;M&quot; 85-89" />
+                <AGEGROUP agegroupid="2840" agemax="94" agemin="90" name="&quot;N&quot; 90-94" />
+                <AGEGROUP agegroupid="2841" agemax="-1" agemin="95" name="&quot;O&quot; 95 i starsi" />
+              </AGEGROUPS>
+              <HEATS>
+                <HEAT heatid="2864" number="1" order="1" status="OFFICIAL" />
+                <HEAT heatid="2865" number="2" order="2" status="OFFICIAL" />
+              </HEATS>
+            </EVENT>
+            <EVENT eventid="1110" gender="M" number="4" order="4" round="TIM" preveventid="-1">
+              <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+              <AGEGROUPS>
+                <AGEGROUP agegroupid="2810" agemax="24" agemin="20" name="&quot;0&quot; 20-24" />
+                <AGEGROUP agegroupid="2811" agemax="29" agemin="25" name="&quot;A&quot; 25-29" />
+                <AGEGROUP agegroupid="2812" agemax="34" agemin="30" name="&quot;B&quot; 30-34">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2318" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2813" agemax="39" agemin="35" name="&quot;C&quot; 35-39">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2171" />
+                    <RANKING order="2" place="2" resultid="2322" />
+                    <RANKING order="3" place="3" resultid="2182" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2814" agemax="44" agemin="40" name="&quot;D&quot; 40-44">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2390" />
+                    <RANKING order="2" place="2" resultid="2485" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2815" agemax="49" agemin="45" name="&quot;E&quot; 45-49">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2454" />
+                    <RANKING order="2" place="2" resultid="2273" />
+                    <RANKING order="3" place="3" resultid="2269" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2816" agemax="54" agemin="50" name="&quot;F&quot; 50-54">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2213" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2817" agemax="59" agemin="55" name="&quot;G&quot; 55-59" />
+                <AGEGROUP agegroupid="2818" agemax="64" agemin="60" name="&quot;H&quot; 60-64">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2394" />
+                    <RANKING order="2" place="2" resultid="2192" />
+                    <RANKING order="3" place="3" resultid="2374" />
+                    <RANKING order="4" place="4" resultid="2196" />
+                    <RANKING order="5" place="-1" resultid="2144" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2819" agemax="69" agemin="65" name="&quot;I&quot; 65-69">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2132" />
+                    <RANKING order="2" place="2" resultid="2440" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2820" agemax="74" agemin="70" name="&quot;J&quot; 70-74">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2027" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2821" agemax="79" agemin="75" name="&quot;K&quot; 75-79">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2042" />
+                    <RANKING order="2" place="2" resultid="2102" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2822" agemax="84" agemin="80" name="&quot;L&quot; 80-84">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2515" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2823" agemax="89" agemin="85" name="&quot;M&quot; 85-89" />
+                <AGEGROUP agegroupid="2824" agemax="94" agemin="90" name="&quot;N&quot; 90-94" />
+                <AGEGROUP agegroupid="2825" agemax="-1" agemin="95" name="&quot;O&quot; 95 i starsi" />
+              </AGEGROUPS>
+              <HEATS>
+                <HEAT heatid="2866" number="1" order="1" status="OFFICIAL" />
+                <HEAT heatid="2867" number="2" order="2" status="OFFICIAL" />
+                <HEAT heatid="2868" number="3" order="3" status="OFFICIAL" />
+                <HEAT heatid="2869" number="4" order="4" status="OFFICIAL" />
+              </HEATS>
+            </EVENT>
+            <EVENT eventid="1127" gender="F" number="5" order="5" round="TIM" preveventid="-1">
+              <SWIMSTYLE distance="100" relaycount="1" stroke="BACK" />
+              <AGEGROUPS>
+                <AGEGROUP agegroupid="2586" agemax="24" agemin="20" name="&quot;0&quot; 20-24" />
+                <AGEGROUP agegroupid="2587" agemax="29" agemin="25" name="&quot;A&quot; 25-29" />
+                <AGEGROUP agegroupid="2588" agemax="34" agemin="30" name="&quot;B&quot; 30-34" />
+                <AGEGROUP agegroupid="2589" agemax="39" agemin="35" name="&quot;C&quot; 35-39">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2427" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2590" agemax="44" agemin="40" name="&quot;D&quot; 40-44">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2361" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2591" agemax="49" agemin="45" name="&quot;E&quot; 45-49" />
+                <AGEGROUP agegroupid="2592" agemax="54" agemin="50" name="&quot;F&quot; 50-54" />
+                <AGEGROUP agegroupid="2593" agemax="59" agemin="55" name="&quot;G&quot; 55-59">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2016" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2594" agemax="64" agemin="60" name="&quot;H&quot; 60-64" />
+                <AGEGROUP agegroupid="2595" agemax="69" agemin="65" name="&quot;I&quot; 65-69" />
+                <AGEGROUP agegroupid="2596" agemax="74" agemin="70" name="&quot;J&quot; 70-74">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2007" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2597" agemax="79" agemin="75" name="&quot;K&quot; 75-79">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2038" />
+                    <RANKING order="2" place="2" resultid="2519" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2598" agemax="84" agemin="80" name="&quot;L&quot; 80-84" />
+                <AGEGROUP agegroupid="2599" agemax="89" agemin="85" name="&quot;M&quot; 85-89" />
+                <AGEGROUP agegroupid="2600" agemax="94" agemin="90" name="&quot;N&quot; 90-94" />
+                <AGEGROUP agegroupid="2601" agemax="-1" agemin="95" name="&quot;O&quot; 95 i starsi" />
+              </AGEGROUPS>
+              <HEATS>
+                <HEAT heatid="2870" number="1" order="1" status="OFFICIAL" />
+              </HEATS>
+            </EVENT>
+            <EVENT eventid="1144" gender="M" number="6" order="6" round="TIM" preveventid="-1">
+              <SWIMSTYLE distance="100" relaycount="1" stroke="BACK" />
+              <AGEGROUPS>
+                <AGEGROUP agegroupid="2794" agemax="24" agemin="20" name="&quot;0&quot; 20-24" />
+                <AGEGROUP agegroupid="2795" agemax="29" agemin="25" name="&quot;A&quot; 25-29">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2528" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2796" agemax="34" agemin="30" name="&quot;B&quot; 30-34">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2141" />
+                    <RANKING order="2" place="2" resultid="2326" />
+                    <RANKING order="3" place="3" resultid="2179" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2797" agemax="39" agemin="35" name="&quot;C&quot; 35-39" />
+                <AGEGROUP agegroupid="2798" agemax="44" agemin="40" name="&quot;D&quot; 40-44" />
+                <AGEGROUP agegroupid="2799" agemax="49" agemin="45" name="&quot;E&quot; 45-49">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2174" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2800" agemax="54" agemin="50" name="&quot;F&quot; 50-54">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2023" />
+                    <RANKING order="2" place="2" resultid="2846" />
+                    <RANKING order="3" place="3" resultid="1978" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2801" agemax="59" agemin="55" name="&quot;G&quot; 55-59">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2092" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2802" agemax="64" agemin="60" name="&quot;H&quot; 60-64">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2443" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2803" agemax="69" agemin="65" name="&quot;I&quot; 65-69">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2507" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2804" agemax="74" agemin="70" name="&quot;J&quot; 70-74">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2299" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2805" agemax="79" agemin="75" name="&quot;K&quot; 75-79">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2031" />
+                    <RANKING order="2" place="2" resultid="2043" />
+                    <RANKING order="3" place="3" resultid="2103" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2806" agemax="84" agemin="80" name="&quot;L&quot; 80-84">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2511" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2807" agemax="89" agemin="85" name="&quot;M&quot; 85-89" />
+                <AGEGROUP agegroupid="2808" agemax="94" agemin="90" name="&quot;N&quot; 90-94" />
+                <AGEGROUP agegroupid="2809" agemax="-1" agemin="95" name="&quot;O&quot; 95 i starsi" />
+              </AGEGROUPS>
+              <HEATS>
+                <HEAT heatid="2871" number="1" order="1" status="OFFICIAL" />
+                <HEAT heatid="2872" number="2" order="2" status="OFFICIAL" />
+                <HEAT heatid="2873" number="3" order="3" status="OFFICIAL" />
+              </HEATS>
+            </EVENT>
+            <EVENT eventid="1161" gender="F" number="7" order="7" round="TIM" preveventid="-1">
+              <SWIMSTYLE distance="50" relaycount="1" stroke="FLY" />
+              <AGEGROUPS>
+                <AGEGROUP agegroupid="2778" agemax="24" agemin="20" name="&quot;0&quot; 20-24" />
+                <AGEGROUP agegroupid="2779" agemax="29" agemin="25" name="&quot;A&quot; 25-29">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2339" />
+                    <RANKING order="2" place="2" resultid="2055" />
+                    <RANKING order="3" place="3" resultid="2467" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2780" agemax="34" agemin="30" name="&quot;B&quot; 30-34" />
+                <AGEGROUP agegroupid="2781" agemax="39" agemin="35" name="&quot;C&quot; 35-39">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2470" />
+                    <RANKING order="2" place="2" resultid="2280" />
+                    <RANKING order="3" place="3" resultid="2059" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2782" agemax="44" agemin="40" name="&quot;D&quot; 40-44">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2497" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2783" agemax="49" agemin="45" name="&quot;E&quot; 45-49">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2285" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2784" agemax="54" agemin="50" name="&quot;F&quot; 50-54">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2276" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2785" agemax="59" agemin="55" name="&quot;G&quot; 55-59" />
+                <AGEGROUP agegroupid="2786" agemax="64" agemin="60" name="&quot;H&quot; 60-64" />
+                <AGEGROUP agegroupid="2787" agemax="69" agemin="65" name="&quot;I&quot; 65-69" />
+                <AGEGROUP agegroupid="2788" agemax="74" agemin="70" name="&quot;J&quot; 70-74" />
+                <AGEGROUP agegroupid="2789" agemax="79" agemin="75" name="&quot;K&quot; 75-79" />
+                <AGEGROUP agegroupid="2790" agemax="84" agemin="80" name="&quot;L&quot; 80-84" />
+                <AGEGROUP agegroupid="2791" agemax="89" agemin="85" name="&quot;M&quot; 85-89" />
+                <AGEGROUP agegroupid="2792" agemax="94" agemin="90" name="&quot;N&quot; 90-94" />
+                <AGEGROUP agegroupid="2793" agemax="-1" agemin="95" name="&quot;O&quot; 95 i starsi" />
+              </AGEGROUPS>
+              <HEATS>
+                <HEAT heatid="2874" number="1" order="1" status="OFFICIAL" />
+                <HEAT heatid="2875" number="2" order="2" status="OFFICIAL" />
+              </HEATS>
+            </EVENT>
+            <EVENT eventid="1178" gender="M" number="8" order="8" round="TIM" preveventid="-1">
+              <SWIMSTYLE distance="50" relaycount="1" stroke="FLY" />
+              <AGEGROUPS>
+                <AGEGROUP agegroupid="2762" agemax="24" agemin="20" name="&quot;0&quot; 20-24" />
+                <AGEGROUP agegroupid="2763" agemax="29" agemin="25" name="&quot;A&quot; 25-29" />
+                <AGEGROUP agegroupid="2764" agemax="34" agemin="30" name="&quot;B&quot; 30-34">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2383" />
+                    <RANKING order="2" place="2" resultid="2097" />
+                    <RANKING order="3" place="3" resultid="2180" />
+                    <RANKING order="4" place="-1" resultid="2153" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2765" agemax="39" agemin="35" name="&quot;C&quot; 35-39">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2329" />
+                    <RANKING order="2" place="2" resultid="2115" />
+                    <RANKING order="3" place="3" resultid="2063" />
+                    <RANKING order="4" place="4" resultid="2411" />
+                    <RANKING order="5" place="-1" resultid="1419" />
+                    <RANKING order="6" place="-1" resultid="2067" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2766" agemax="44" agemin="40" name="&quot;D&quot; 40-44" />
+                <AGEGROUP agegroupid="2767" agemax="49" agemin="45" name="&quot;E&quot; 45-49">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2459" />
+                    <RANKING order="2" place="2" resultid="2463" />
+                    <RANKING order="3" place="-1" resultid="2157" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2768" agemax="54" agemin="50" name="&quot;F&quot; 50-54">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2369" />
+                    <RANKING order="2" place="2" resultid="2493" />
+                    <RANKING order="3" place="-1" resultid="2415" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2769" agemax="59" agemin="55" name="&quot;G&quot; 55-59">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2201" />
+                    <RANKING order="2" place="2" resultid="1988" />
+                    <RANKING order="3" place="-1" resultid="2399" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2770" agemax="64" agemin="60" name="&quot;H&quot; 60-64">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2193" />
+                    <RANKING order="2" place="2" resultid="2343" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2771" agemax="69" agemin="65" name="&quot;I&quot; 65-69">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2418" />
+                    <RANKING order="2" place="2" resultid="2291" />
+                    <RANKING order="3" place="3" resultid="2508" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2772" agemax="74" agemin="70" name="&quot;J&quot; 70-74">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="1424" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2773" agemax="79" agemin="75" name="&quot;K&quot; 75-79" />
+                <AGEGROUP agegroupid="2774" agemax="84" agemin="80" name="&quot;L&quot; 80-84" />
+                <AGEGROUP agegroupid="2775" agemax="89" agemin="85" name="&quot;M&quot; 85-89" />
+                <AGEGROUP agegroupid="2776" agemax="94" agemin="90" name="&quot;N&quot; 90-94" />
+                <AGEGROUP agegroupid="2777" agemax="-1" agemin="95" name="&quot;O&quot; 95 i starsi" />
+              </AGEGROUPS>
+              <HEATS>
+                <HEAT heatid="2876" number="1" order="1" status="OFFICIAL" />
+                <HEAT heatid="2877" number="2" order="2" status="OFFICIAL" />
+                <HEAT heatid="2878" number="3" order="3" status="OFFICIAL" />
+                <HEAT heatid="2879" number="4" order="4" status="OFFICIAL" />
+                <HEAT heatid="2880" number="5" order="5" status="OFFICIAL" />
+              </HEATS>
+            </EVENT>
+            <EVENT eventid="1195" gender="F" number="9" order="9" round="TIM" preveventid="-1">
+              <SWIMSTYLE distance="100" relaycount="1" stroke="MEDLEY" />
+              <AGEGROUPS>
+                <AGEGROUP agegroupid="2746" agemax="24" agemin="20" name="&quot;0&quot; 20-24" />
+                <AGEGROUP agegroupid="2747" agemax="29" agemin="25" name="&quot;A&quot; 25-29">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2340" />
+                    <RANKING order="2" place="2" resultid="2524" />
+                    <RANKING order="3" place="3" resultid="2111" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2748" agemax="34" agemin="30" name="&quot;B&quot; 30-34">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2257" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2749" agemax="39" agemin="35" name="&quot;C&quot; 35-39">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2471" />
+                    <RANKING order="2" place="2" resultid="2347" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2750" agemax="44" agemin="40" name="&quot;D&quot; 40-44" />
+                <AGEGROUP agegroupid="2751" agemax="49" agemin="45" name="&quot;E&quot; 45-49">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2333" />
+                    <RANKING order="2" place="2" resultid="2107" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2752" agemax="54" agemin="50" name="&quot;F&quot; 50-54">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2277" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2753" agemax="59" agemin="55" name="&quot;G&quot; 55-59" />
+                <AGEGROUP agegroupid="2754" agemax="64" agemin="60" name="&quot;H&quot; 60-64">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2407" />
+                    <RANKING order="2" place="2" resultid="2357" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2755" agemax="69" agemin="65" name="&quot;I&quot; 65-69">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2012" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2756" agemax="74" agemin="70" name="&quot;J&quot; 70-74">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2265" />
+                    <RANKING order="2" place="2" resultid="2008" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2757" agemax="79" agemin="75" name="&quot;K&quot; 75-79" />
+                <AGEGROUP agegroupid="2758" agemax="84" agemin="80" name="&quot;L&quot; 80-84" />
+                <AGEGROUP agegroupid="2759" agemax="89" agemin="85" name="&quot;M&quot; 85-89" />
+                <AGEGROUP agegroupid="2760" agemax="94" agemin="90" name="&quot;N&quot; 90-94" />
+                <AGEGROUP agegroupid="2761" agemax="-1" agemin="95" name="&quot;O&quot; 95 i starsi" />
+              </AGEGROUPS>
+              <HEATS>
+                <HEAT heatid="2881" number="1" order="1" status="OFFICIAL" />
+                <HEAT heatid="2882" number="2" order="2" status="OFFICIAL" />
+                <HEAT heatid="2883" number="3" order="3" status="OFFICIAL" />
+              </HEATS>
+            </EVENT>
+            <EVENT eventid="1212" gender="M" number="10" order="10" round="TIM" preveventid="-1">
+              <SWIMSTYLE distance="100" relaycount="1" stroke="MEDLEY" />
+              <AGEGROUPS>
+                <AGEGROUP agegroupid="2730" agemax="24" agemin="20" name="&quot;0&quot; 20-24" />
+                <AGEGROUP agegroupid="2731" agemax="29" agemin="25" name="&quot;A&quot; 25-29">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2530" />
+                    <RANKING order="2" place="2" resultid="2137" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2732" agemax="34" agemin="30" name="&quot;B&quot; 30-34">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2098" />
+                    <RANKING order="2" place="2" resultid="2309" />
+                    <RANKING order="3" place="3" resultid="2403" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2733" agemax="39" agemin="35" name="&quot;C&quot; 35-39">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2330" />
+                    <RANKING order="2" place="2" resultid="2116" />
+                    <RANKING order="3" place="3" resultid="2183" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2734" agemax="44" agemin="40" name="&quot;D&quot; 40-44">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2387" />
+                    <RANKING order="2" place="2" resultid="2391" />
+                    <RANKING order="3" place="3" resultid="2486" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2735" agemax="49" agemin="45" name="&quot;E&quot; 45-49">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2175" />
+                    <RANKING order="2" place="2" resultid="2270" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2736" agemax="54" agemin="50" name="&quot;F&quot; 50-54">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2024" />
+                    <RANKING order="2" place="-1" resultid="2416" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2737" agemax="59" agemin="55" name="&quot;G&quot; 55-59">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2481" />
+                    <RANKING order="2" place="-1" resultid="2205" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2738" agemax="64" agemin="60" name="&quot;H&quot; 60-64">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2194" />
+                    <RANKING order="2" place="2" resultid="2197" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2739" agemax="69" agemin="65" name="&quot;I&quot; 65-69" />
+                <AGEGROUP agegroupid="2740" agemax="74" agemin="70" name="&quot;J&quot; 70-74">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2028" />
+                    <RANKING order="2" place="-1" resultid="2303" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2741" agemax="79" agemin="75" name="&quot;K&quot; 75-79">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2032" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2742" agemax="84" agemin="80" name="&quot;L&quot; 80-84" />
+                <AGEGROUP agegroupid="2743" agemax="89" agemin="85" name="&quot;M&quot; 85-89" />
+                <AGEGROUP agegroupid="2744" agemax="94" agemin="90" name="&quot;N&quot; 90-94" />
+                <AGEGROUP agegroupid="2745" agemax="-1" agemin="95" name="&quot;O&quot; 95 i starsi" />
+              </AGEGROUPS>
+              <HEATS>
+                <HEAT heatid="2884" number="1" order="1" status="OFFICIAL" />
+                <HEAT heatid="2885" number="2" order="2" status="OFFICIAL" />
+                <HEAT heatid="2886" number="3" order="3" status="OFFICIAL" />
+                <HEAT heatid="2887" number="4" order="4" status="OFFICIAL" />
+              </HEATS>
+            </EVENT>
+            <EVENT eventid="1229" gender="F" number="11" order="11" round="TIM" preveventid="-1">
+              <SWIMSTYLE distance="100" relaycount="1" stroke="FREE" />
+              <AGEGROUPS>
+                <AGEGROUP agegroupid="2714" agemax="24" agemin="20" name="&quot;0&quot; 20-24" />
+                <AGEGROUP agegroupid="2715" agemax="29" agemin="25" name="&quot;A&quot; 25-29">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2056" />
+                    <RANKING order="2" place="2" resultid="2525" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2716" agemax="34" agemin="30" name="&quot;B&quot; 30-34" />
+                <AGEGROUP agegroupid="2717" agemax="39" agemin="35" name="&quot;C&quot; 35-39">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2348" />
+                    <RANKING order="2" place="2" resultid="2060" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2718" agemax="44" agemin="40" name="&quot;D&quot; 40-44">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2852" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2719" agemax="49" agemin="45" name="&quot;E&quot; 45-49" />
+                <AGEGROUP agegroupid="2720" agemax="54" agemin="50" name="&quot;F&quot; 50-54">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2262" />
+                    <RANKING order="2" place="2" resultid="2278" />
+                    <RANKING order="3" place="3" resultid="2051" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2721" agemax="59" agemin="55" name="&quot;G&quot; 55-59" />
+                <AGEGROUP agegroupid="2722" agemax="64" agemin="60" name="&quot;H&quot; 60-64" />
+                <AGEGROUP agegroupid="2723" agemax="69" agemin="65" name="&quot;I&quot; 65-69">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2020" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2724" agemax="74" agemin="70" name="&quot;J&quot; 70-74" />
+                <AGEGROUP agegroupid="2725" agemax="79" agemin="75" name="&quot;K&quot; 75-79">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2039" />
+                    <RANKING order="2" place="2" resultid="2520" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2726" agemax="84" agemin="80" name="&quot;L&quot; 80-84" />
+                <AGEGROUP agegroupid="2727" agemax="89" agemin="85" name="&quot;M&quot; 85-89" />
+                <AGEGROUP agegroupid="2728" agemax="94" agemin="90" name="&quot;N&quot; 90-94" />
+                <AGEGROUP agegroupid="2729" agemax="-1" agemin="95" name="&quot;O&quot; 95 i starsi" />
+              </AGEGROUPS>
+              <HEATS>
+                <HEAT heatid="2888" number="1" order="1" status="OFFICIAL" />
+                <HEAT heatid="2889" number="2" order="2" status="OFFICIAL" />
+              </HEATS>
+            </EVENT>
+            <EVENT eventid="1246" gender="M" number="12" order="12" round="TIM" preveventid="-1">
+              <SWIMSTYLE distance="100" relaycount="1" stroke="FREE" />
+              <AGEGROUPS>
+                <AGEGROUP agegroupid="2698" agemax="24" agemin="20" name="&quot;0&quot; 20-24" />
+                <AGEGROUP agegroupid="2699" agemax="29" agemin="25" name="&quot;A&quot; 25-29" />
+                <AGEGROUP agegroupid="2700" agemax="34" agemin="30" name="&quot;B&quot; 30-34">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2384" />
+                    <RANKING order="2" place="-1" resultid="2154" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2701" agemax="39" agemin="35" name="&quot;C&quot; 35-39">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2117" />
+                    <RANKING order="2" place="2" resultid="2064" />
+                    <RANKING order="3" place="3" resultid="2412" />
+                    <RANKING order="4" place="-1" resultid="1420" />
+                    <RANKING order="5" place="-1" resultid="2068" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2702" agemax="44" agemin="40" name="&quot;D&quot; 40-44">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2487" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2703" agemax="49" agemin="45" name="&quot;E&quot; 45-49">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2176" />
+                    <RANKING order="2" place="2" resultid="2438" />
+                    <RANKING order="3" place="-1" resultid="2158" />
+                    <RANKING order="4" place="-1" resultid="2312" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2704" agemax="54" agemin="50" name="&quot;F&quot; 50-54">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2370" />
+                    <RANKING order="2" place="2" resultid="2536" />
+                    <RANKING order="3" place="3" resultid="2847" />
+                    <RANKING order="4" place="-1" resultid="2214" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2705" agemax="59" agemin="55" name="&quot;G&quot; 55-59">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2093" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2706" agemax="64" agemin="60" name="&quot;H&quot; 60-64">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2477" />
+                    <RANKING order="2" place="2" resultid="2344" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2707" agemax="69" agemin="65" name="&quot;I&quot; 65-69">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2292" />
+                    <RANKING order="2" place="2" resultid="2423" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2708" agemax="74" agemin="70" name="&quot;J&quot; 70-74">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2029" />
+                    <RANKING order="2" place="2" resultid="1425" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2709" agemax="79" agemin="75" name="&quot;K&quot; 75-79" />
+                <AGEGROUP agegroupid="2710" agemax="84" agemin="80" name="&quot;L&quot; 80-84">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2512" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2711" agemax="89" agemin="85" name="&quot;M&quot; 85-89" />
+                <AGEGROUP agegroupid="2712" agemax="94" agemin="90" name="&quot;N&quot; 90-94" />
+                <AGEGROUP agegroupid="2713" agemax="-1" agemin="95" name="&quot;O&quot; 95 i starsi" />
+              </AGEGROUPS>
+              <HEATS>
+                <HEAT heatid="2890" number="1" order="1" status="OFFICIAL" />
+                <HEAT heatid="2891" number="2" order="2" status="OFFICIAL" />
+                <HEAT heatid="2892" number="3" order="3" status="OFFICIAL" />
+                <HEAT heatid="2893" number="4" order="4" status="OFFICIAL" />
+                <HEAT heatid="2894" number="5" order="5" status="OFFICIAL" />
+              </HEATS>
+            </EVENT>
+            <EVENT eventid="1263" gender="F" number="13" order="13" round="TIM" preveventid="-1">
+              <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST" />
+              <AGEGROUPS>
+                <AGEGROUP agegroupid="2682" agemax="24" agemin="20" name="&quot;0&quot; 20-24" />
+                <AGEGROUP agegroupid="2683" agemax="29" agemin="25" name="&quot;A&quot; 25-29">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2468" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2684" agemax="34" agemin="30" name="&quot;B&quot; 30-34" />
+                <AGEGROUP agegroupid="2685" agemax="39" agemin="35" name="&quot;C&quot; 35-39">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2450" />
+                    <RANKING order="2" place="2" resultid="2366" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2686" agemax="44" agemin="40" name="&quot;D&quot; 40-44" />
+                <AGEGROUP agegroupid="2687" agemax="49" agemin="45" name="&quot;E&quot; 45-49">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2150" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2688" agemax="54" agemin="50" name="&quot;F&quot; 50-54">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2052" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2689" agemax="59" agemin="55" name="&quot;G&quot; 55-59">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2353" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2690" agemax="64" agemin="60" name="&quot;H&quot; 60-64">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2408" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2691" agemax="69" agemin="65" name="&quot;I&quot; 65-69">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2380" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2692" agemax="74" agemin="70" name="&quot;J&quot; 70-74">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2266" />
+                    <RANKING order="2" place="2" resultid="2000" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2693" agemax="79" agemin="75" name="&quot;K&quot; 75-79">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2040" />
+                    <RANKING order="2" place="2" resultid="2036" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2694" agemax="84" agemin="80" name="&quot;L&quot; 80-84">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="1997" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2695" agemax="89" agemin="85" name="&quot;M&quot; 85-89" />
+                <AGEGROUP agegroupid="2696" agemax="94" agemin="90" name="&quot;N&quot; 90-94" />
+                <AGEGROUP agegroupid="2697" agemax="-1" agemin="95" name="&quot;O&quot; 95 i starsi" />
+              </AGEGROUPS>
+              <HEATS>
+                <HEAT heatid="2895" number="1" order="1" status="OFFICIAL" />
+                <HEAT heatid="2896" number="2" order="2" status="OFFICIAL" />
+                <HEAT heatid="2897" number="3" order="3" status="OFFICIAL" />
+              </HEATS>
+            </EVENT>
+            <EVENT eventid="1280" gender="M" number="14" order="14" round="TIM" preveventid="-1">
+              <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST" />
+              <AGEGROUPS>
+                <AGEGROUP agegroupid="2666" agemax="24" agemin="20" name="&quot;0&quot; 20-24" />
+                <AGEGROUP agegroupid="2667" agemax="29" agemin="25" name="&quot;A&quot; 25-29">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2138" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2668" agemax="34" agemin="30" name="&quot;B&quot; 30-34">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2319" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2669" agemax="39" agemin="35" name="&quot;C&quot; 35-39">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2172" />
+                    <RANKING order="2" place="2" resultid="2323" />
+                    <RANKING order="3" place="3" resultid="2184" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2670" agemax="44" agemin="40" name="&quot;D&quot; 40-44">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2392" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2671" agemax="49" agemin="45" name="&quot;E&quot; 45-49">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2274" />
+                    <RANKING order="2" place="2" resultid="2464" />
+                    <RANKING order="3" place="3" resultid="2073" />
+                    <RANKING order="4" place="4" resultid="2271" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2672" agemax="54" agemin="50" name="&quot;F&quot; 50-54">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2025" />
+                    <RANKING order="2" place="2" resultid="2215" />
+                    <RANKING order="3" place="3" resultid="1979" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2673" agemax="59" agemin="55" name="&quot;G&quot; 55-59">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2206" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2674" agemax="64" agemin="60" name="&quot;H&quot; 60-64">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2395" />
+                    <RANKING order="2" place="2" resultid="2375" />
+                    <RANKING order="3" place="3" resultid="2198" />
+                    <RANKING order="4" place="-1" resultid="2145" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2675" agemax="69" agemin="65" name="&quot;I&quot; 65-69">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2133" />
+                    <RANKING order="2" place="2" resultid="2441" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2676" agemax="74" agemin="70" name="&quot;J&quot; 70-74" />
+                <AGEGROUP agegroupid="2677" agemax="79" agemin="75" name="&quot;K&quot; 75-79">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2044" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2678" agemax="84" agemin="80" name="&quot;L&quot; 80-84">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2516" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2679" agemax="89" agemin="85" name="&quot;M&quot; 85-89" />
+                <AGEGROUP agegroupid="2680" agemax="94" agemin="90" name="&quot;N&quot; 90-94" />
+                <AGEGROUP agegroupid="2681" agemax="-1" agemin="95" name="&quot;O&quot; 95 i starsi" />
+              </AGEGROUPS>
+              <HEATS>
+                <HEAT heatid="2898" number="1" order="1" status="OFFICIAL" />
+                <HEAT heatid="2899" number="2" order="2" status="OFFICIAL" />
+                <HEAT heatid="2900" number="3" order="3" status="OFFICIAL" />
+                <HEAT heatid="2901" number="4" order="4" status="OFFICIAL" />
+              </HEATS>
+            </EVENT>
+            <EVENT eventid="1297" gender="F" number="15" order="15" round="TIM" preveventid="-1">
+              <SWIMSTYLE distance="100" relaycount="1" stroke="FLY" />
+              <AGEGROUPS>
+                <AGEGROUP agegroupid="2650" agemax="24" agemin="20" name="&quot;0&quot; 20-24" />
+                <AGEGROUP agegroupid="2651" agemax="29" agemin="25" name="&quot;A&quot; 25-29">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2112" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2652" agemax="34" agemin="30" name="&quot;B&quot; 30-34" />
+                <AGEGROUP agegroupid="2653" agemax="39" agemin="35" name="&quot;C&quot; 35-39">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2281" />
+                    <RANKING order="2" place="2" resultid="2428" />
+                    <RANKING order="3" place="3" resultid="2349" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2654" agemax="44" agemin="40" name="&quot;D&quot; 40-44">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2498" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2655" agemax="49" agemin="45" name="&quot;E&quot; 45-49">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2334" />
+                    <RANKING order="2" place="2" resultid="2108" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2656" agemax="54" agemin="50" name="&quot;F&quot; 50-54" />
+                <AGEGROUP agegroupid="2657" agemax="59" agemin="55" name="&quot;G&quot; 55-59" />
+                <AGEGROUP agegroupid="2658" agemax="64" agemin="60" name="&quot;H&quot; 60-64">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2358" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2659" agemax="69" agemin="65" name="&quot;I&quot; 65-69" />
+                <AGEGROUP agegroupid="2660" agemax="74" agemin="70" name="&quot;J&quot; 70-74" />
+                <AGEGROUP agegroupid="2661" agemax="79" agemin="75" name="&quot;K&quot; 75-79" />
+                <AGEGROUP agegroupid="2662" agemax="84" agemin="80" name="&quot;L&quot; 80-84" />
+                <AGEGROUP agegroupid="2663" agemax="89" agemin="85" name="&quot;M&quot; 85-89" />
+                <AGEGROUP agegroupid="2664" agemax="94" agemin="90" name="&quot;N&quot; 90-94" />
+                <AGEGROUP agegroupid="2665" agemax="-1" agemin="95" name="&quot;O&quot; 95 i starsi" />
+              </AGEGROUPS>
+              <HEATS>
+                <HEAT heatid="2902" number="1" order="1" status="OFFICIAL" />
+                <HEAT heatid="2903" number="2" order="2" status="OFFICIAL" />
+              </HEATS>
+            </EVENT>
+            <EVENT eventid="1314" gender="M" number="16" order="16" round="TIM" preveventid="-1">
+              <SWIMSTYLE distance="100" relaycount="1" stroke="FLY" />
+              <AGEGROUPS>
+                <AGEGROUP agegroupid="2634" agemax="24" agemin="20" name="&quot;0&quot; 20-24" />
+                <AGEGROUP agegroupid="2635" agemax="29" agemin="25" name="&quot;A&quot; 25-29" />
+                <AGEGROUP agegroupid="2636" agemax="34" agemin="30" name="&quot;B&quot; 30-34">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2178" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2637" agemax="39" agemin="35" name="&quot;C&quot; 35-39">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2331" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2638" agemax="44" agemin="40" name="&quot;D&quot; 40-44" />
+                <AGEGROUP agegroupid="2639" agemax="49" agemin="45" name="&quot;E&quot; 45-49">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2455" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2640" agemax="54" agemin="50" name="&quot;F&quot; 50-54">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2494" />
+                    <RANKING order="2" place="2" resultid="2848" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2641" agemax="59" agemin="55" name="&quot;G&quot; 55-59">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2482" />
+                    <RANKING order="2" place="2" resultid="1989" />
+                    <RANKING order="3" place="3" resultid="2094" />
+                    <RANKING order="4" place="-1" resultid="2400" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2642" agemax="64" agemin="60" name="&quot;H&quot; 60-64">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2345" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2643" agemax="69" agemin="65" name="&quot;I&quot; 65-69">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2419" />
+                    <RANKING order="2" place="2" resultid="2134" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2644" agemax="74" agemin="70" name="&quot;J&quot; 70-74" />
+                <AGEGROUP agegroupid="2645" agemax="79" agemin="75" name="&quot;K&quot; 75-79" />
+                <AGEGROUP agegroupid="2646" agemax="84" agemin="80" name="&quot;L&quot; 80-84" />
+                <AGEGROUP agegroupid="2647" agemax="89" agemin="85" name="&quot;M&quot; 85-89" />
+                <AGEGROUP agegroupid="2648" agemax="94" agemin="90" name="&quot;N&quot; 90-94" />
+                <AGEGROUP agegroupid="2649" agemax="-1" agemin="95" name="&quot;O&quot; 95 i starsi" />
+              </AGEGROUPS>
+              <HEATS>
+                <HEAT heatid="2904" number="1" order="1" status="OFFICIAL" />
+                <HEAT heatid="2905" number="2" order="2" status="OFFICIAL" />
+                <HEAT heatid="2906" number="3" order="3" status="OFFICIAL" />
+              </HEATS>
+            </EVENT>
+            <EVENT eventid="1331" gender="F" number="17" order="17" round="TIM" preveventid="-1">
+              <SWIMSTYLE distance="50" relaycount="1" stroke="BACK" />
+              <AGEGROUPS>
+                <AGEGROUP agegroupid="2618" agemax="24" agemin="20" name="&quot;0&quot; 20-24" />
+                <AGEGROUP agegroupid="2619" agemax="29" agemin="25" name="&quot;A&quot; 25-29">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2113" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2620" agemax="34" agemin="30" name="&quot;B&quot; 30-34">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2256" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2621" agemax="39" agemin="35" name="&quot;C&quot; 35-39">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2472" />
+                    <RANKING order="2" place="2" resultid="2429" />
+                    <RANKING order="3" place="3" resultid="2282" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2622" agemax="44" agemin="40" name="&quot;D&quot; 40-44">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2362" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2623" agemax="49" agemin="45" name="&quot;E&quot; 45-49">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2335" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2624" agemax="54" agemin="50" name="&quot;F&quot; 50-54" />
+                <AGEGROUP agegroupid="2625" agemax="59" agemin="55" name="&quot;G&quot; 55-59">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2354" />
+                    <RANKING order="2" place="2" resultid="2017" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2626" agemax="64" agemin="60" name="&quot;H&quot; 60-64" />
+                <AGEGROUP agegroupid="2627" agemax="69" agemin="65" name="&quot;I&quot; 65-69">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2013" />
+                    <RANKING order="2" place="2" resultid="2021" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2628" agemax="74" agemin="70" name="&quot;J&quot; 70-74">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2001" />
+                    <RANKING order="2" place="2" resultid="2009" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2629" agemax="79" agemin="75" name="&quot;K&quot; 75-79">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2521" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2630" agemax="84" agemin="80" name="&quot;L&quot; 80-84" />
+                <AGEGROUP agegroupid="2631" agemax="89" agemin="85" name="&quot;M&quot; 85-89" />
+                <AGEGROUP agegroupid="2632" agemax="94" agemin="90" name="&quot;N&quot; 90-94" />
+                <AGEGROUP agegroupid="2633" agemax="-1" agemin="95" name="&quot;O&quot; 95 i starsi" />
+              </AGEGROUPS>
+              <HEATS>
+                <HEAT heatid="2907" number="1" order="1" status="OFFICIAL" />
+                <HEAT heatid="2908" number="2" order="2" status="OFFICIAL" />
+                <HEAT heatid="2909" number="3" order="3" status="OFFICIAL" />
+              </HEATS>
+            </EVENT>
+            <EVENT eventid="1348" gender="M" number="18" order="18" round="TIM" preveventid="-1">
+              <SWIMSTYLE distance="50" relaycount="1" stroke="BACK" />
+              <AGEGROUPS>
+                <AGEGROUP agegroupid="2602" agemax="24" agemin="20" name="&quot;0&quot; 20-24" />
+                <AGEGROUP agegroupid="2603" agemax="29" agemin="25" name="&quot;A&quot; 25-29">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2532" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2604" agemax="34" agemin="30" name="&quot;B&quot; 30-34">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2142" />
+                    <RANKING order="2" place="2" resultid="2404" />
+                    <RANKING order="3" place="3" resultid="2327" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2605" agemax="39" agemin="35" name="&quot;C&quot; 35-39">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2324" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2606" agemax="44" agemin="40" name="&quot;D&quot; 40-44">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2388" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2607" agemax="49" agemin="45" name="&quot;E&quot; 45-49">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2460" />
+                    <RANKING order="2" place="2" resultid="2074" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2608" agemax="54" agemin="50" name="&quot;F&quot; 50-54">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2537" />
+                    <RANKING order="2" place="2" resultid="1980" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2609" agemax="59" agemin="55" name="&quot;G&quot; 55-59">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2202" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2610" agemax="64" agemin="60" name="&quot;H&quot; 60-64">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2444" />
+                    <RANKING order="2" place="2" resultid="2478" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2611" agemax="69" agemin="65" name="&quot;I&quot; 65-69">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2509" />
+                    <RANKING order="2" place="2" resultid="2424" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2612" agemax="74" agemin="70" name="&quot;J&quot; 70-74">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2300" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2613" agemax="79" agemin="75" name="&quot;K&quot; 75-79">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2033" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2614" agemax="84" agemin="80" name="&quot;L&quot; 80-84">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2517" />
+                    <RANKING order="2" place="2" resultid="2513" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2615" agemax="89" agemin="85" name="&quot;M&quot; 85-89">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2433" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="2616" agemax="94" agemin="90" name="&quot;N&quot; 90-94" />
+                <AGEGROUP agegroupid="2617" agemax="-1" agemin="95" name="&quot;O&quot; 95 i starsi" />
+              </AGEGROUPS>
+              <HEATS>
+                <HEAT heatid="2910" number="1" order="1" status="OFFICIAL" />
+                <HEAT heatid="2911" number="2" order="2" status="OFFICIAL" />
+                <HEAT heatid="2912" number="3" order="3" status="OFFICIAL" />
+                <HEAT heatid="2913" number="4" order="4" status="OFFICIAL" />
+              </HEATS>
+            </EVENT>
+            <EVENT eventid="1382" gender="X" number="19" order="19" round="TIM" preveventid="-1">
+              <SWIMSTYLE distance="50" relaycount="4" stroke="FREE" />
+              <AGEGROUPS>
+                <AGEGROUP agegroupid="1383" agemax="96" agemin="-1" name="Grupa Młodzieżowa &quot;0&quot;  80- 96" calculate="TOTAL" />
+                <AGEGROUP agegroupid="1384" agemax="119" agemin="100" name="Kategoria Masters &quot;A&quot; 100-119 " calculate="TOTAL" />
+                <AGEGROUP agegroupid="1385" agemax="159" agemin="120" name="Kategoria Masters &quot;B&quot; 120-159 " calculate="TOTAL">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2473" />
+                    <RANKING order="2" place="2" resultid="2069" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="1386" agemax="199" agemin="160" name="Kategoria Masters &quot;C&quot; 160-199" calculate="TOTAL">
+                  <RANKINGS>
+                    <RANKING order="1" place="1" resultid="2286" />
+                  </RANKINGS>
+                </AGEGROUP>
+                <AGEGROUP agegroupid="1387" agemax="239" agemin="200" name="Kategoria Masters &quot;D&quot; 200-239 " calculate="TOTAL" />
+                <AGEGROUP agegroupid="1388" agemax="279" agemin="240" name="Kategoria Masters &quot;E&quot; 240-279 " calculate="TOTAL" />
+                <AGEGROUP agegroupid="1389" agemax="-1" agemin="280" name="Kategoria Masters &quot;F&quot; 280+" calculate="TOTAL" />
+              </AGEGROUPS>
+              <HEATS>
+                <HEAT heatid="2914" number="1" order="1" status="OFFICIAL" />
+              </HEATS>
+            </EVENT>
+          </EVENTS>
+        </SESSION>
+      </SESSIONS>
+      <CLUBS>
+        <CLUB type="CLUB" code="ZILINA" nation="SVK" clubid="2190" name="PSK Žilina">
+          <ATHLETES>
+            <ATHLETE firstname="Roman" lastname="Hrmel" birthdate="1964-08-05" gender="M" nation="SVK" swrid="4384045" athleteid="2199">
+              <RESULTS>
+                <RESULT eventid="1076" points="567" swimtime="00:00:29.44" resultid="2200" heatid="2862" lane="1" entrytime="00:00:28.50" />
+                <RESULT eventid="1178" points="473" swimtime="00:00:33.93" resultid="2201" heatid="2879" lane="2" entrytime="00:00:33.00" />
+                <RESULT eventid="1348" points="441" reactiontime="+87" swimtime="00:00:36.59" resultid="2202" heatid="2913" lane="1" entrytime="00:00:35.00" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Juraj" lastname="Jaroš" birthdate="1962-06-22" gender="M" nation="SVK" swrid="4743186" athleteid="2191">
+              <RESULTS>
+                <RESULT eventid="1110" points="407" swimtime="00:01:33.86" resultid="2192" heatid="2868" lane="5" entrytime="00:01:34.26" entrycourse="SCM">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:43.43" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1178" points="378" swimtime="00:00:37.04" resultid="2193" heatid="2878" lane="2" entrytime="00:00:36.35" entrycourse="SCM" />
+                <RESULT eventid="1212" points="388" swimtime="00:01:28.07" resultid="2194" heatid="2886" lane="1" entrytime="00:01:25.91" entrycourse="SCM">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:42.12" />
+                  </SPLITS>
+                </RESULT>
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Michal" lastname="Buňák" birthdate="1964-10-28" gender="M" nation="SVK" swrid="5340541" athleteid="2203">
+              <RESULTS>
+                <RESULT eventid="1076" points="247" swimtime="00:00:38.85" resultid="2204" heatid="2859" lane="2" entrytime="00:00:40.00" />
+                <RESULT eventid="1212" status="DNS" swimtime="00:00:00.00" resultid="2205" heatid="2884" lane="4" entrytime="00:02:00.00" />
+                <RESULT eventid="1280" points="213" swimtime="00:00:48.93" resultid="2206" heatid="2899" lane="6" entrytime="00:00:50.00" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Martin" lastname="Strnad" birthdate="1961-04-02" gender="M" nation="SVK" swrid="4743185" athleteid="2195">
+              <RESULTS>
+                <RESULT eventid="1110" points="317" swimtime="00:01:41.93" resultid="2196" heatid="2867" lane="4" entrytime="00:01:50.00">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:49.16" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1212" points="260" swimtime="00:01:40.59" resultid="2197" heatid="2885" lane="6" entrytime="00:01:50.00">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:50.18" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1280" points="387" swimtime="00:00:43.23" resultid="2198" heatid="2898" lane="3" entrytime="00:00:50.00" />
+              </RESULTS>
+            </ATHLETE>
+          </ATHLETES>
+        </CLUB>
+        <CLUB type="CLUB" code="WROCŁAW" nation="POL" clubid="2090" name="Masters Wrocław">
+          <ATHLETES>
+            <ATHLETE firstname="Piotr" lastname="Krzekotowski" birthdate="1966-06-29" gender="M" nation="POL" swrid="5416779" athleteid="2091">
+              <RESULTS>
+                <RESULT eventid="1144" points="129" reactiontime="+71" swimtime="00:02:00.29" resultid="2092" heatid="2872" lane="2" entrytime="00:01:55.00">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:57.50" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1246" points="210" swimtime="00:01:31.36" resultid="2093" heatid="2892" lane="1" entrytime="00:01:29.00">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:43.70" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1314" points="139" swimtime="00:01:55.38" resultid="2094" heatid="2904" lane="3" entrytime="00:01:57.00" />
+              </RESULTS>
+            </ATHLETE>
+          </ATHLETES>
+        </CLUB>
+        <CLUB type="CLUB" code="NIEZRZ" nation="POL" clubid="2146" name="Niezrzeszony" shortname="niezrzeszony ">
+          <ATHLETES>
+            <ATHLETE firstname="Jarosław" lastname="Guziński" birthdate="1966-01-01" gender="M" nation="POL" swrid="5484405" athleteid="1986">
+              <RESULTS>
+                <RESULT eventid="1076" points="324" swimtime="00:00:35.47" resultid="1987" heatid="2861" lane="6" entrytime="00:00:34.62" entrycourse="SCM" />
+                <RESULT eventid="1178" points="263" swimtime="00:00:41.25" resultid="1988" heatid="2877" lane="1" entrytime="00:00:43.17" entrycourse="SCM" />
+                <RESULT eventid="1314" points="187" swimtime="00:01:44.63" resultid="1989" heatid="2905" lane="5" entrytime="00:01:45.83" entrycourse="SCM">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:49.86" />
+                  </SPLITS>
+                </RESULT>
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Aleksandra" lastname="Bańbor" birthdate="1997-10-17" gender="F" nation="POL" athleteid="2522">
+              <RESULTS>
+                <RESULT eventid="1059" points="640" swimtime="00:00:29.01" resultid="2523" heatid="2856" lane="5" entrytime="00:00:30.00" />
+                <RESULT eventid="1195" points="541" swimtime="00:01:15.82" resultid="2524" heatid="2883" lane="3" entrytime="00:01:15.00">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:33.94" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1229" points="572" swimtime="00:01:05.60" resultid="2525" heatid="2889" lane="2" entrytime="00:01:06.00">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:32.14" />
+                  </SPLITS>
+                </RESULT>
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Mateusz" lastname="Kędzior" birthdate="1973-12-08" gender="M" nation="POL" athleteid="2173">
+              <RESULTS>
+                <RESULT eventid="1144" points="225" reactiontime="+80" swimtime="00:01:33.77" resultid="2174" heatid="2873" lane="1" entrytime="00:01:30.00">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:45.49" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1212" points="256" swimtime="00:01:30.83" resultid="2175" heatid="2885" lane="3" entrytime="00:01:30.00" />
+                <RESULT eventid="1246" points="329" swimtime="00:01:12.40" resultid="2176" heatid="2893" lane="1" entrytime="00:01:15.00">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:34.17" />
+                  </SPLITS>
+                </RESULT>
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Krzysztof" lastname="Kubiak" birthdate="1989-07-05" gender="M" nation="POL" athleteid="2177">
+              <RESULTS>
+                <RESULT eventid="1314" points="191" reactiontime="+98" swimtime="00:01:31.01" resultid="2178" heatid="2906" lane="6" entrytime="00:01:35.00">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:41.68" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1144" points="123" reactiontime="+103" swimtime="00:01:45.76" resultid="2179" heatid="2872" lane="4" entrytime="00:01:45.00">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:52.36" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1178" points="225" swimtime="00:00:37.59" resultid="2180" heatid="2877" lane="5" entrytime="00:00:42.00" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Łukasz" lastname="Rybak" birthdate="1996-02-17" gender="M" nation="POL" swrid="4297546" athleteid="2135">
+              <RESULTS>
+                <RESULT eventid="1076" points="570" swimtime="00:00:25.67" resultid="2136" heatid="2863" lane="2" entrytime="00:00:24.40" />
+                <RESULT eventid="1212" points="474" swimtime="00:01:07.67" resultid="2137" heatid="2887" lane="2" entrytime="00:01:06.00">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:31.89" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1280" points="585" swimtime="00:00:32.27" resultid="2138" heatid="2901" lane="5" entrytime="00:00:34.30" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Bronisław" lastname="Kisielewski" birthdate="1959-09-26" gender="M" nation="POL" swrid="4945724" athleteid="2143">
+              <RESULTS>
+                <RESULT eventid="1110" status="DNS" swimtime="00:00:00.00" resultid="2144" heatid="2869" lane="1" entrytime="00:01:28.50" />
+                <RESULT eventid="1280" status="DNS" swimtime="00:00:00.00" resultid="2145" heatid="2900" lane="1" entrytime="00:00:43.80" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Łukasz" lastname="Ptak" birthdate="1983-06-07" gender="M" nation="POL" swrid="4060463" athleteid="2170">
+              <RESULTS>
+                <RESULT eventid="1110" points="640" swimtime="00:01:09.88" resultid="2171" heatid="2869" lane="4" entrytime="00:01:10.00">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:33.58" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1280" points="614" swimtime="00:00:31.37" resultid="2172" heatid="2901" lane="2" entrytime="00:00:32.00" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Jacek" lastname="Sokulski" birthdate="1991-02-10" gender="M" nation="POL" swrid="4062177" athleteid="2151">
+              <RESULTS>
+                <RESULT eventid="1076" status="DNS" swimtime="00:00:00.00" resultid="2152" heatid="2863" lane="3" entrytime="00:00:23.34" entrycourse="SCM" />
+                <RESULT eventid="1178" status="DNS" swimtime="00:00:00.00" resultid="2153" heatid="2880" lane="3" entrytime="00:00:24.35" entrycourse="SCM" />
+                <RESULT eventid="1246" status="DNS" swimtime="00:00:00.00" resultid="2154" heatid="2894" lane="3" entrytime="00:00:51.42" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Grzegorz" lastname="Paszkiewicz" birthdate="1975-01-07" gender="M" nation="POL" athleteid="2155">
+              <RESULTS>
+                <RESULT eventid="1076" status="DNS" swimtime="00:00:00.00" resultid="2156" heatid="2861" lane="5" entrytime="00:00:33.00" />
+                <RESULT eventid="1178" status="DNS" swimtime="00:00:00.00" resultid="2157" heatid="2878" lane="5" entrytime="00:00:38.00" />
+                <RESULT eventid="1246" status="DNS" swimtime="00:00:00.00" resultid="2158" heatid="2893" lane="6" entrytime="00:01:18.00" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Dominik" lastname="Rudzki" birthdate="1992-06-21" gender="M" nation="POL" swrid="4250678" athleteid="2095">
+              <RESULTS>
+                <RESULT eventid="1076" points="547" swimtime="00:00:26.32" resultid="2096" heatid="2862" lane="3" entrytime="00:00:27.00" />
+                <RESULT eventid="1178" points="539" swimtime="00:00:28.10" resultid="2097" heatid="2880" lane="5" entrytime="00:00:28.00" />
+                <RESULT eventid="1212" points="539" swimtime="00:01:05.46" resultid="2098" heatid="2887" lane="5" entrytime="00:01:10.00">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:30.30" />
+                  </SPLITS>
+                </RESULT>
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Krzysztof" lastname="Drózd" birthdate="1992-12-02" gender="M" nation="POL" swrid="5484403" athleteid="2139">
+              <RESULTS>
+                <RESULT eventid="1076" points="541" swimtime="00:00:26.43" resultid="2140" heatid="2862" lane="4" entrytime="00:00:27.04" entrycourse="SCM" />
+                <RESULT eventid="1144" points="407" reactiontime="+74" swimtime="00:01:10.96" resultid="2141" heatid="2873" lane="2" entrytime="00:01:12.25" entrycourse="SCM">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:34.66" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1348" points="428" reactiontime="+58" swimtime="00:00:31.67" resultid="2142" heatid="2913" lane="5" entrytime="00:00:32.83" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Aneta" lastname="Dolińska" birthdate="1990-07-06" gender="F" nation="POL" swrid="4251116" athleteid="2254">
+              <RESULTS>
+                <RESULT eventid="1059" points="402" swimtime="00:00:34.10" resultid="2255" heatid="2855" lane="3" entrytime="00:00:32.30" />
+                <RESULT eventid="1331" points="267" reactiontime="+92" swimtime="00:00:42.60" resultid="2256" heatid="2909" lane="6" entrytime="00:00:42.00" />
+                <RESULT eventid="1195" points="300" swimtime="00:01:33.42" resultid="2257" heatid="2881" lane="2">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:44.28" />
+                  </SPLITS>
+                </RESULT>
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Sławomir" lastname="Wilkowski" birthdate="1995-07-09" gender="M" nation="POL" athleteid="2526">
+              <RESULTS>
+                <RESULT eventid="1144" points="743" reactiontime="+63" swimtime="00:00:58.46" resultid="2528" heatid="2873" lane="3" entrytime="00:00:55.42">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:28.20" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1212" points="626" swimtime="00:01:01.69" resultid="2530" heatid="2887" lane="3" entrytime="00:00:58.89">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:29.73" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1348" points="665" swimtime="00:00:27.15" resultid="2532" heatid="2913" lane="3" entrytime="00:00:26.52" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Artur" lastname="Malina" birthdate="1970-02-10" gender="M" nation="POL" athleteid="2212">
+              <RESULTS>
+                <RESULT eventid="1110" points="245" swimtime="00:01:42.77" resultid="2213" heatid="2867" lane="5" entrytime="00:01:50.20">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:48.11" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1246" status="DNS" swimtime="00:00:00.00" resultid="2214" heatid="2891" lane="4" entrytime="00:01:35.15" />
+                <RESULT eventid="1280" points="299" swimtime="00:00:44.43" resultid="2215" heatid="2899" lane="1" entrytime="00:00:47.50" />
+              </RESULTS>
+            </ATHLETE>
+          </ATHLETES>
+        </CLUB>
+        <CLUB type="CLUB" code="00201" nation="POL" region="01" clubid="2336" name="KS AZS AWF Wrocław">
+          <ATHLETES>
+            <ATHLETE firstname="Dominika" lastname="Sasin" birthdate="1994-05-29" gender="F" nation="POL" license="100201600097" swrid="4236079" athleteid="2337">
+              <RESULTS>
+                <RESULT eventid="1059" points="752" swimtime="00:00:27.49" resultid="2338" heatid="2856" lane="4" entrytime="00:00:28.03" entrycourse="LCM" />
+                <RESULT eventid="1161" points="674" swimtime="00:00:29.81" resultid="2339" heatid="2875" lane="3" entrytime="00:00:29.72" entrycourse="SCM" />
+                <RESULT eventid="1195" points="685" swimtime="00:01:10.09" resultid="2340" heatid="2882" lane="1">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:32.40" />
+                  </SPLITS>
+                </RESULT>
+              </RESULTS>
+            </ATHLETE>
+          </ATHLETES>
+        </CLUB>
+        <CLUB type="CLUB" code="02207" nation="POL" region="07" clubid="2320" name="&quot;Masters Zdzieszowice&quot;">
+          <ATHLETES>
+            <ATHLETE firstname="Dawid" lastname="Jajuga" birthdate="1986-02-15" gender="M" nation="POL" license="502207700001" swrid="5295092" athleteid="2328">
+              <RESULTS>
+                <RESULT eventid="1178" points="542" swimtime="00:00:28.35" resultid="2329" heatid="2876" lane="2" />
+                <RESULT eventid="1212" points="590" swimtime="00:01:05.47" resultid="2330" heatid="2884" lane="1">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:30.97" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1314" points="478" swimtime="00:01:07.52" resultid="2331" heatid="2904" lane="2" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Radosław" lastname="Raca" birthdate="1987-04-19" gender="M" nation="POL" license="502207700002" athleteid="2321">
+              <RESULTS>
+                <RESULT eventid="1110" points="321" swimtime="00:01:27.93" resultid="2322" heatid="2866" lane="2">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:40.05" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1280" points="298" swimtime="00:00:39.91" resultid="2323" heatid="2898" lane="6" />
+                <RESULT eventid="1348" points="234" reactiontime="+87" swimtime="00:00:39.73" resultid="2324" heatid="2910" lane="4" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Szymon" lastname="Paciej" birthdate="1988-07-05" gender="M" nation="POL" license="502207700003" swrid="5295124" athleteid="2325">
+              <RESULTS>
+                <RESULT eventid="1144" points="324" reactiontime="+79" swimtime="00:01:16.53" resultid="2326" heatid="2871" lane="1">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:36.56" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1348" points="345" reactiontime="+85" swimtime="00:00:34.01" resultid="2327" heatid="2911" lane="5" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Dorota" lastname="Woźniak" birthdate="1973-09-18" gender="F" nation="POL" license="502207600005" swrid="4992846" athleteid="2332">
+              <RESULTS>
+                <RESULT eventid="1195" points="484" swimtime="00:01:23.55" resultid="2333" heatid="2881" lane="4">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:38.59" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1297" points="437" swimtime="00:01:23.61" resultid="2334" heatid="2902" lane="3" />
+                <RESULT eventid="1331" points="451" reactiontime="+65" swimtime="00:00:38.50" resultid="2335" heatid="2908" lane="1" />
+              </RESULTS>
+            </ATHLETE>
+          </ATHLETES>
+        </CLUB>
+        <CLUB type="CLUB" code="GŁOGÓW" nation="POL" clubid="1416" name="niezrzeszony Głogów">
+          <ATHLETES>
+            <ATHLETE firstname="Rafał" lastname="Szklarzewski" birthdate="1985-05-06" gender="M" nation="POL" athleteid="1417">
+              <RESULTS>
+                <RESULT eventid="1076" status="DNS" swimtime="00:00:00.00" resultid="1418" heatid="2863" lane="5" entrytime="00:00:26.00" />
+                <RESULT eventid="1178" status="DNS" swimtime="00:00:00.00" resultid="1419" heatid="2880" lane="1" entrytime="00:00:29.00" />
+                <RESULT eventid="1246" status="DNS" swimtime="00:00:00.00" resultid="1420" heatid="2894" lane="2" entrytime="00:00:58.00" />
+              </RESULTS>
+            </ATHLETE>
+          </ATHLETES>
+        </CLUB>
+        <CLUB type="CLUB" code="NIEZ" nation="POL" clubid="2211" name="niezrzeszony Środa Wlkp.">
+          <ATHLETES>
+            <ATHLETE firstname="Tomasz" lastname="Grzelczak" birthdate="1985-01-11" gender="M" nation="POL" athleteid="2181">
+              <RESULTS>
+                <RESULT eventid="1110" points="245" swimtime="00:01:36.17" resultid="2182" heatid="2868" lane="1" entrytime="00:01:36.00">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:44.49" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1212" points="169" swimtime="00:01:39.21" resultid="2183" heatid="2885" lane="5" entrytime="00:01:40.00">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:48.46" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1280" points="256" swimtime="00:00:42.01" resultid="2184" heatid="2900" lane="4" entrytime="00:00:41.00" />
+              </RESULTS>
+            </ATHLETE>
+          </ATHLETES>
+        </CLUB>
+        <CLUB type="CLUB" code="12914" nation="POL" region="14" clubid="2456" name="Water Squad">
+          <ATHLETES>
+            <ATHLETE firstname="Karolina" lastname="Szyszkowska" birthdate="1996-11-05" gender="F" nation="POL" license="512914600054" swrid="4282341" athleteid="2465">
+              <RESULTS>
+                <RESULT eventid="1093" points="637" swimtime="00:01:17.68" resultid="2466" heatid="2864" lane="4">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:36.98" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1161" points="559" swimtime="00:00:31.74" resultid="2467" heatid="2874" lane="2" />
+                <RESULT eventid="1263" points="585" swimtime="00:00:36.46" resultid="2468" heatid="2896" lane="5" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Adrian" lastname="Kulisz" birthdate="1977-06-16" gender="M" nation="POL" license="512914700002" swrid="5416809" athleteid="2461">
+              <RESULTS>
+                <RESULT eventid="1076" points="360" swimtime="00:00:32.12" resultid="2462" heatid="2861" lane="3" entrytime="00:00:30.66" entrycourse="SCM" />
+                <RESULT eventid="1178" points="379" swimtime="00:00:33.68" resultid="2463" heatid="2879" lane="1" entrytime="00:00:33.78" entrycourse="SCM" />
+                <RESULT eventid="1280" points="348" swimtime="00:00:40.74" resultid="2464" heatid="2898" lane="4" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Marcin" lastname="Kaczmarek" birthdate="1977-06-25" gender="M" nation="POL" license="512914700003" swrid="4043251" athleteid="2457">
+              <RESULTS>
+                <RESULT comment="Rekord Polski Masters" eventid="1076" points="771" swimtime="00:00:24.92" resultid="2458" heatid="2857" lane="4" />
+                <RESULT eventid="1178" points="840" swimtime="00:00:25.84" resultid="2459" heatid="2880" lane="4" entrytime="00:00:25.79" entrycourse="SCM" />
+                <RESULT comment="Rekord Polski Masters" eventid="1348" points="947" reactiontime="+62" swimtime="00:00:26.71" resultid="2460" heatid="2913" lane="4" entrytime="00:00:26.88" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Agnieszka" lastname="Kaczmarek" birthdate="1985-05-07" gender="F" nation="POL" license="512914600004" swrid="5240932" athleteid="2469">
+              <RESULTS>
+                <RESULT eventid="1161" points="608" swimtime="00:00:32.41" resultid="2470" heatid="2874" lane="4" />
+                <RESULT eventid="1195" points="633" swimtime="00:01:13.58" resultid="2471" heatid="2883" lane="4" entrytime="00:01:15.59">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:33.99" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1331" points="571" swimtime="00:00:33.30" resultid="2472" heatid="2909" lane="3" entrytime="00:00:36.22" entrycourse="LCM" />
+              </RESULTS>
+            </ATHLETE>
+          </ATHLETES>
+          <RELAYS>
+            <RELAY agemax="-1" agemin="-1" agetotalmax="159" agetotalmin="120" gender="X" number="1">
+              <RESULTS>
+                <RESULT eventid="1382" points="600" swimtime="00:01:55.62" resultid="2473" heatid="2914" lane="2">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:30.80" />
+                    <SPLIT distance="100" swimtime="00:00:59.32" />
+                    <SPLIT distance="150" swimtime="00:01:29.89" />
+                  </SPLITS>
+                  <RELAYPOSITIONS>
+                    <RELAYPOSITION athleteid="2461" number="1" />
+                    <RELAYPOSITION athleteid="2465" number="2" reactiontime="0" />
+                    <RELAYPOSITION athleteid="2469" number="3" reactiontime="0" />
+                    <RELAYPOSITION athleteid="2457" number="4" reactiontime="0" />
+                  </RELAYPOSITIONS>
+                </RESULT>
+              </RESULTS>
+            </RELAY>
+          </RELAYS>
+        </CLUB>
+        <CLUB type="CLUB" code="TARNOB" nation="POL" clubid="2491" name="UKS Delfin Tarnobrzeg">
+          <ATHLETES>
+            <ATHLETE firstname="Maciej" lastname="Kunicki" birthdate="1972-03-14" gender="M" nation="POL" athleteid="2492">
+              <RESULTS>
+                <RESULT eventid="1178" points="445" swimtime="00:00:33.39" resultid="2493" heatid="2878" lane="4" entrytime="00:00:35.00" />
+                <RESULT eventid="1314" points="314" swimtime="00:01:23.55" resultid="2494" heatid="2906" lane="2" entrytime="00:01:15.00">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:38.85" />
+                  </SPLITS>
+                </RESULT>
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Małgorzata" lastname="Tobiasz" birthdate="1979-02-01" gender="F" nation="POL" athleteid="2495">
+              <RESULTS>
+                <RESULT eventid="1093" points="233" swimtime="00:01:53.68" resultid="2496" heatid="2865" lane="5" entrytime="00:02:00.00">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:53.60" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1161" points="204" swimtime="00:00:47.87" resultid="2497" heatid="2874" lane="3" entrytime="00:00:50.00" />
+                <RESULT eventid="1297" points="170" swimtime="00:01:51.27" resultid="2498" heatid="2903" lane="1" entrytime="00:01:50.00" />
+              </RESULTS>
+            </ATHLETE>
+          </ATHLETES>
+        </CLUB>
+        <CLUB type="CLUB" code="LUBLIN" nation="POL" clubid="2109" name="MASTERS Lublin">
+          <ATHLETES>
+            <ATHLETE firstname="Paulina" lastname="Kawecka" birthdate="1993-09-06" gender="F" nation="POL" swrid="5118335" athleteid="2110">
+              <RESULTS>
+                <RESULT eventid="1195" points="246" swimtime="00:01:38.56" resultid="2111" heatid="2883" lane="5" entrytime="00:01:35.00">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:39.60" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1297" points="189" swimtime="00:01:41.27" resultid="2112" heatid="2903" lane="2" entrytime="00:01:40.00" />
+                <RESULT eventid="1331" points="309" reactiontime="+106" swimtime="00:00:41.23" resultid="2113" heatid="2909" lane="1" entrytime="00:00:39.95" entrycourse="LCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Adam" lastname="Pietrzak" birthdate="1988-10-21" gender="M" nation="POL" license="103503700011" athleteid="2401">
+              <RESULTS>
+                <RESULT eventid="1076" points="408" swimtime="00:00:29.04" resultid="2402" heatid="2857" lane="2" />
+                <RESULT eventid="1212" points="369" swimtime="00:01:14.31" resultid="2403" heatid="2884" lane="5">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:34.31" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1348" points="359" reactiontime="+72" swimtime="00:00:33.57" resultid="2404" heatid="2911" lane="6" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Łukasz" lastname="Dawidek" birthdate="1986-03-13" gender="M" nation="POL" athleteid="2114">
+              <RESULTS>
+                <RESULT eventid="1178" points="438" swimtime="00:00:30.45" resultid="2115" heatid="2879" lane="3" entrytime="00:00:30.00" />
+                <RESULT eventid="1212" points="375" swimtime="00:01:16.14" resultid="2116" heatid="2886" lane="4" entrytime="00:01:15.00">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:34.62" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1246" points="409" swimtime="00:01:04.25" resultid="2117" heatid="2894" lane="6" entrytime="00:01:02.00">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:30.42" />
+                  </SPLITS>
+                </RESULT>
+              </RESULTS>
+            </ATHLETE>
+          </ATHLETES>
+        </CLUB>
+        <CLUB type="CLUB" code="KS PIETRAS" nation="POL" clubid="2130" name="Klub Sportowy Pietraszyn">
+          <ATHLETES>
+            <ATHLETE firstname="Adolf" lastname="Piechula" birthdate="1957-04-11" gender="M" nation="POL" swrid="4992724" athleteid="2131">
+              <RESULTS>
+                <RESULT eventid="1110" points="460" swimtime="00:01:33.05" resultid="2132" heatid="2868" lane="2" entrytime="00:01:33.74" entrycourse="SCM">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:43.35" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1280" points="462" swimtime="00:00:42.04" resultid="2133" heatid="2900" lane="5" entrytime="00:00:41.64" entrycourse="SCM" />
+                <RESULT eventid="1314" points="341" swimtime="00:01:33.58" resultid="2134" heatid="2906" lane="1" entrytime="00:01:33.64" entrycourse="SCM">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:43.15" />
+                  </SPLITS>
+                </RESULT>
+              </RESULTS>
+            </ATHLETE>
+          </ATHLETES>
+        </CLUB>
+        <CLUB type="CLUB" code="MAPOL" nation="POL" clubid="1994" name="KS Masters Polkowice">
+          <ATHLETES>
+            <ATHLETE firstname="Gizela" lastname="Wójcik" birthdate="1949-11-16" gender="F" nation="POL" athleteid="1998">
+              <RESULTS>
+                <RESULT eventid="1093" points="208" reactiontime="+186" swimtime="00:02:38.49" resultid="1999" heatid="2864" lane="3">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:01:16.90" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1263" points="205" reactiontime="+164" swimtime="00:01:12.64" resultid="2000" heatid="2895" lane="4" />
+                <RESULT eventid="1331" points="138" swimtime="00:01:08.10" resultid="2001" heatid="2907" lane="3" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Pavlo" lastname="Vechirko" birthdate="1968-01-02" gender="M" nation="POL" athleteid="2022">
+              <RESULTS>
+                <RESULT eventid="1144" points="395" reactiontime="+75" swimtime="00:01:19.01" resultid="2023" heatid="2873" lane="5" entrytime="00:01:15.00" entrycourse="SCM">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:37.90" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1212" points="381" swimtime="00:01:19.59" resultid="2024" heatid="2886" lane="2" entrytime="00:01:16.00" entrycourse="SCM">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:38.94" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1280" points="473" swimtime="00:00:38.13" resultid="2025" heatid="2901" lane="1" entrytime="00:00:37.00" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Anna" lastname="Leśniak" birthdate="1957-03-27" gender="F" nation="POL" athleteid="2018">
+              <RESULTS>
+                <RESULT eventid="1059" points="31" reactiontime="+127" swimtime="00:01:33.27" resultid="2019" heatid="2853" lane="5" />
+                <RESULT eventid="1229" points="32" reactiontime="+163" swimtime="00:03:23.00" resultid="2020" heatid="2888" lane="4">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:01:31.91" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1331" points="37" reactiontime="+118" swimtime="00:01:40.59" resultid="2021" heatid="2908" lane="4" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Janina" lastname="Zając" birthdate="1946-08-16" gender="F" nation="POL" athleteid="2037">
+              <RESULTS>
+                <RESULT eventid="1127" points="137" reactiontime="+112" swimtime="00:02:48.24" resultid="2038" heatid="2870" lane="2">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:01:23.39" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1229" points="121" swimtime="00:02:33.40" resultid="2039" heatid="2888" lane="2">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:01:13.18" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1263" points="120" swimtime="00:01:28.89" resultid="2040" heatid="2895" lane="2" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Hanna" lastname="Świder" birthdate="1943-11-28" gender="F" nation="POL" athleteid="2034">
+              <RESULTS>
+                <RESULT eventid="1059" points="43" swimtime="00:01:38.99" resultid="2035" heatid="2853" lane="1" />
+                <RESULT eventid="1263" points="89" reactiontime="+157" swimtime="00:01:37.99" resultid="2036" heatid="2896" lane="1" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Zygmunt" lastname="Pawlaczek" birthdate="1949-05-26" gender="M" nation="POL" athleteid="2026">
+              <RESULTS>
+                <RESULT eventid="1110" points="264" swimtime="00:01:53.92" resultid="2027" heatid="2867" lane="2" entrytime="00:01:50.00" entrycourse="SCM">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:54.29" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1212" points="219" swimtime="00:01:51.20" resultid="2028" heatid="2884" lane="3" entrytime="00:01:50.00" entrycourse="SCM">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:55.61" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1246" points="327" swimtime="00:01:29.56" resultid="2029" heatid="2891" lane="2" entrytime="00:01:40.00" entrycourse="SCM">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:42.69" />
+                  </SPLITS>
+                </RESULT>
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Regina" lastname="Mładszew" birthdate="1952-07-15" gender="F" nation="POL" athleteid="2006">
+              <RESULTS>
+                <RESULT eventid="1127" points="81" reactiontime="+277" swimtime="00:02:57.14" resultid="2007" heatid="2870" lane="6">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:01:32.10" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1195" points="94" swimtime="00:02:57.23" resultid="2008" heatid="2882" lane="3">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:01:26.01" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1331" points="75" reactiontime="+186" swimtime="00:01:23.43" resultid="2009" heatid="2908" lane="6" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Wiesław" lastname="Zając" birthdate="1946-01-02" gender="M" nation="POL" athleteid="2041">
+              <RESULTS>
+                <RESULT eventid="1110" points="181" swimtime="00:02:30.85" resultid="2042" heatid="2866" lane="1">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:01:11.65" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1144" points="68" reactiontime="+104" swimtime="00:03:01.32" resultid="2043" heatid="2871" lane="5">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:01:27.86" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1280" points="191" swimtime="00:01:06.57" resultid="2044" heatid="2898" lane="5" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Józefa" lastname="Wołoszczuk" birthdate="1953-01-23" gender="F" nation="POL" athleteid="2010">
+              <RESULTS>
+                <RESULT eventid="1059" points="86" swimtime="00:01:06.37" resultid="2011" heatid="2853" lane="2" />
+                <RESULT eventid="1195" points="77" swimtime="00:02:57.79" resultid="2012" heatid="2882" lane="4">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:01:17.44" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1331" points="97" reactiontime="+79" swimtime="00:01:12.72" resultid="2013" heatid="2907" lane="4" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Emilia" lastname="Kawula" birthdate="1941-10-02" gender="F" nation="POL" athleteid="1995">
+              <RESULTS>
+                <RESULT eventid="1059" points="64" reactiontime="+195" swimtime="00:01:29.97" resultid="1996" heatid="2853" lane="3" />
+                <RESULT eventid="1263" points="44" swimtime="00:02:12.08" resultid="1997" heatid="2895" lane="3" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Dorota" lastname="Wojciech-Pierzchała" birthdate="1963-06-23" gender="F" nation="POL" athleteid="2014">
+              <RESULTS>
+                <RESULT eventid="1059" points="107" swimtime="00:00:58.61" resultid="2015" heatid="2854" lane="6" />
+                <RESULT eventid="1127" points="94" reactiontime="+89" swimtime="00:02:27.51" resultid="2016" heatid="2870" lane="5">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:01:10.45" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1331" points="105" reactiontime="+71" swimtime="00:01:03.86" resultid="2017" heatid="2908" lane="2" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Bogdan" lastname="Jawor" birthdate="1947-04-23" gender="M" nation="POL" swrid="4754745" athleteid="2030">
+              <RESULTS>
+                <RESULT eventid="1144" points="170" reactiontime="+79" swimtime="00:02:13.51" resultid="2031" heatid="2871" lane="3">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:01:05.54" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1212" points="198" swimtime="00:02:13.15" resultid="2032" heatid="2884" lane="2">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:01:04.43" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1348" points="173" swimtime="00:01:00.74" resultid="2033" heatid="2910" lane="3" />
+              </RESULTS>
+            </ATHLETE>
+          </ATHLETES>
+        </CLUB>
+        <CLUB type="CLUB" nation="POL" clubid="2048" name="JK Team Kraków">
+          <ATHLETES>
+            <ATHLETE firstname="Piotr" lastname="Wolak" birthdate="1987-01-01" gender="M" nation="POL" swrid="5468088" athleteid="2065">
+              <RESULTS>
+                <RESULT eventid="1076" status="DNS" swimtime="00:00:00.00" resultid="2066" heatid="2862" lane="2" entrytime="00:00:27.86" entrycourse="SCM" />
+                <RESULT eventid="1178" status="DNS" swimtime="00:00:00.00" resultid="2067" heatid="2879" lane="4" entrytime="00:00:31.40" entrycourse="SCM" />
+                <RESULT eventid="1246" status="DNS" swimtime="00:00:00.00" resultid="2068" heatid="2893" lane="3" entrytime="00:01:03.65" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Karolina" lastname="Szkudlarek" birthdate="1996-04-04" gender="F" nation="POL" swrid="4265739" athleteid="2053">
+              <RESULTS>
+                <RESULT eventid="1059" points="641" swimtime="00:00:28.99" resultid="2054" heatid="2856" lane="3" entrytime="00:00:28.00" />
+                <RESULT eventid="1161" points="569" swimtime="00:00:31.55" resultid="2055" heatid="2875" lane="4" entrytime="00:00:32.00" />
+                <RESULT eventid="1229" points="666" swimtime="00:01:02.33" resultid="2056" heatid="2889" lane="3" entrytime="00:01:01.80" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Ryszard" lastname="Zając" birthdate="1984-01-01" gender="M" nation="POL" swrid="5468089" athleteid="2061">
+              <RESULTS>
+                <RESULT eventid="1076" points="240" swimtime="00:00:34.65" resultid="2062" heatid="2860" lane="3" entrytime="00:00:35.00" />
+                <RESULT eventid="1178" points="173" swimtime="00:00:41.51" resultid="2063" heatid="2878" lane="1" entrytime="00:00:40.00" />
+                <RESULT eventid="1246" points="219" swimtime="00:01:19.12" resultid="2064" heatid="2892" lane="4" entrytime="00:01:23.00">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:37.73" />
+                  </SPLITS>
+                </RESULT>
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Agata" lastname="Jasik" birthdate="1984-01-01" gender="F" nation="POL" swrid="5484408" athleteid="2057">
+              <RESULTS>
+                <RESULT eventid="1059" points="327" swimtime="00:00:36.45" resultid="2058" heatid="2854" lane="4" entrytime="00:00:36.13" entrycourse="SCM" />
+                <RESULT eventid="1161" points="236" swimtime="00:00:44.39" resultid="2059" heatid="2875" lane="6" entrytime="00:00:44.00" />
+                <RESULT eventid="1229" points="319" swimtime="00:01:20.40" resultid="2060" heatid="2889" lane="6" entrytime="00:01:21.00">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:38.37" />
+                  </SPLITS>
+                </RESULT>
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Agnieszka" lastname="Danek-Wisniak" birthdate="1971-01-01" gender="F" nation="POL" swrid="5484402" athleteid="2049">
+              <RESULTS>
+                <RESULT eventid="1059" points="188" swimtime="00:00:45.85" resultid="2050" heatid="2854" lane="2" entrytime="00:00:43.08" entrycourse="SCM" />
+                <RESULT eventid="1229" points="194" swimtime="00:01:41.22" resultid="2051" heatid="2888" lane="3" entrytime="00:01:35.00" />
+                <RESULT eventid="1263" points="268" swimtime="00:00:52.65" resultid="2052" heatid="2897" lane="6" entrytime="00:00:52.00" />
+              </RESULTS>
+            </ATHLETE>
+          </ATHLETES>
+          <RELAYS>
+            <RELAY agemax="-1" agemin="-1" agetotalmax="159" agetotalmin="120" gender="X" name="JK Team" number="1">
+              <RESULTS>
+                <RESULT eventid="1382" points="301" swimtime="00:02:25.49" resultid="2069" heatid="2914" lane="3" entrytime="00:02:04.00">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:35.81" />
+                    <SPLIT distance="100" swimtime="00:01:11.47" />
+                    <SPLIT distance="150" swimtime="00:01:56.47" />
+                  </SPLITS>
+                  <RELAYPOSITIONS>
+                    <RELAYPOSITION athleteid="2061" number="1" />
+                    <RELAYPOSITION athleteid="2057" number="2" reactiontime="0" />
+                    <RELAYPOSITION athleteid="2049" number="3" reactiontime="0" />
+                    <RELAYPOSITION athleteid="2053" number="4" reactiontime="0" />
+                  </RELAYPOSITIONS>
+                </RESULT>
+              </RESULTS>
+            </RELAY>
+          </RELAYS>
+        </CLUB>
+        <CLUB type="CLUB" code="MUKS ZG" nation="POL" clubid="2316" name="Muks Zgierz">
+          <ATHLETES>
+            <ATHLETE firstname="Przemysław" lastname="Lis - Piwowarski" birthdate="1984-05-29" gender="M" nation="POL" license="502805700146" swrid="5506632" athleteid="2409">
+              <RESULTS>
+                <RESULT eventid="1076" points="183" swimtime="00:00:37.91" resultid="2410" heatid="2860" lane="6" entrytime="00:00:38.32" entrycourse="SCM" />
+                <RESULT eventid="1178" points="110" swimtime="00:00:48.20" resultid="2411" heatid="2876" lane="4" entrytime="00:00:52.93" entrycourse="SCM" />
+                <RESULT eventid="1246" points="138" swimtime="00:01:32.22" resultid="2412" heatid="2890" lane="4">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:44.19" />
+                  </SPLITS>
+                </RESULT>
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Włodzimierz" lastname="Przytulski" birthdate="1957-01-09" gender="M" nation="POL" license="502805700049" swrid="4754657" athleteid="2417">
+              <RESULTS>
+                <RESULT eventid="1178" points="597" swimtime="00:00:34.02" resultid="2418" heatid="2879" lane="5" entrytime="00:00:33.46" entrycourse="SCM" />
+                <RESULT comment="Rekord Polski Masters" eventid="1314" points="519" swimtime="00:01:21.35" resultid="2419" heatid="2904" lane="4" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Robert" lastname="Szalbierz" birthdate="1968-08-06" gender="M" nation="POL" license="502805700034" swrid="5373990" athleteid="2413">
+              <RESULTS>
+                <RESULT eventid="1076" status="DNS" swimtime="00:00:00.00" resultid="2414" heatid="2861" lane="4" entrytime="00:00:30.81" entrycourse="SCM" />
+                <RESULT eventid="1178" status="DNS" swimtime="00:00:00.00" resultid="2415" heatid="2879" lane="6" entrytime="00:00:34.23" entrycourse="SCM" />
+                <RESULT eventid="1212" status="DNS" swimtime="00:00:00.00" resultid="2416" heatid="2886" lane="5" entrytime="00:01:22.60" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Mateusz" lastname="Matczak" birthdate="1989-08-12" gender="M" nation="POL" swrid="4071609" athleteid="2317">
+              <RESULTS>
+                <RESULT eventid="1110" points="685" swimtime="00:01:07.05" resultid="2318" heatid="2869" lane="2" entrytime="00:01:10.00">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:31.80" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1280" points="672" swimtime="00:00:30.50" resultid="2319" heatid="2901" lane="3" entrytime="00:00:30.00" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Urszula" lastname="Mróz" birthdate="1962-03-03" gender="F" nation="POL" license="502805600024" swrid="4754660" athleteid="2405">
+              <RESULTS>
+                <RESULT eventid="1059" points="588" swimtime="00:00:34.01" resultid="2406" heatid="2855" lane="2" entrytime="00:00:33.72" entrycourse="SCM" />
+                <RESULT eventid="1195" points="575" swimtime="00:01:26.81" resultid="2407" heatid="2882" lane="2">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:39.49" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1263" points="527" swimtime="00:00:45.92" resultid="2408" heatid="2897" lane="5" entrytime="00:00:45.38" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+          </ATHLETES>
+        </CLUB>
+        <CLUB type="CLUB" code="00607" nation="POL" region="07" clubid="2430" name="Towarzystwo Pływackie ,,Masters&apos;&apos; Opole">
+          <ATHLETES>
+            <ATHLETE firstname="Zbigniew" lastname="Januszkiewicz" birthdate="1962-08-18" gender="M" nation="POL" license="100607700003" swrid="4843497" athleteid="2442">
+              <RESULTS>
+                <RESULT comment="Rekord Polski Masters" eventid="1144" points="841" reactiontime="+61" swimtime="00:01:06.89" resultid="2443" heatid="2873" lane="4" entrytime="00:01:07.80" entrycourse="SCM">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:32.75" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT comment="Rekord Polski Masters" eventid="1348" points="872" reactiontime="+62" swimtime="00:00:30.81" resultid="2444" heatid="2913" lane="2" entrytime="00:00:31.17" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Radosław" lastname="Sidor" birthdate="1976-01-01" gender="M" nation="POL" athleteid="2310">
+              <RESULTS>
+                <RESULT eventid="1076" status="DNS" swimtime="00:00:00.00" resultid="2311" heatid="2859" lane="3" entrytime="00:00:40.00" />
+                <RESULT eventid="1246" status="DNS" swimtime="00:00:00.00" resultid="2312" heatid="2891" lane="3" entrytime="00:01:35.00" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Krzysztof" lastname="Wiecheć" birthdate="1950-01-01" gender="M" nation="POL" swrid="4374014" athleteid="2296">
+              <RESULTS>
+                <RESULT eventid="1076" points="176" swimtime="00:00:47.97" resultid="2297" heatid="2859" lane="4" entrytime="00:00:40.00" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Zbigniew" lastname="Krasnodębski" birthdate="1956-06-23" gender="M" nation="POL" license="100607700020" swrid="4183579" athleteid="2439">
+              <RESULTS>
+                <RESULT eventid="1110" points="366" swimtime="00:01:40.41" resultid="2440" heatid="2868" lane="6" entrytime="00:01:40.00">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:48.53" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1280" points="410" swimtime="00:00:43.76" resultid="2441" heatid="2900" lane="6" entrytime="00:00:45.00" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Radosław" lastname="Sydor" birthdate="1976-06-07" gender="M" nation="POL" license="100607700015" athleteid="2436">
+              <RESULTS>
+                <RESULT eventid="1076" points="179" swimtime="00:00:40.58" resultid="2437" heatid="2857" lane="3" />
+                <RESULT eventid="1246" points="161" swimtime="00:01:31.87" resultid="2438" heatid="2891" lane="5">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:45.05" />
+                  </SPLITS>
+                </RESULT>
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Janusz" lastname="Szpala" birthdate="1948-01-01" gender="M" nation="POL" swrid="4992900" athleteid="2301">
+              <RESULTS>
+                <RESULT eventid="1076" status="DNS" swimtime="00:00:00.00" resultid="2302" heatid="2859" lane="5" entrytime="00:00:45.00" />
+                <RESULT eventid="1212" status="DNS" swimtime="00:00:00.00" resultid="2303" heatid="2885" lane="2" entrytime="00:01:40.00" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Janusz" lastname="Garbarczuk" birthdate="1951-01-01" gender="M" nation="POL" swrid="4992897" athleteid="2298">
+              <RESULTS>
+                <RESULT eventid="1144" points="187" reactiontime="+80" swimtime="00:02:05.12" resultid="2299" heatid="2872" lane="1" entrytime="00:02:00.00">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:01:02.16" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1348" points="243" reactiontime="+97" swimtime="00:00:53.01" resultid="2300" heatid="2912" lane="6" entrytime="00:01:00.00" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Tomasz" lastname="Samsel" birthdate="1988-01-01" gender="M" nation="POL" license="100607700001" swrid="4072672" athleteid="2307">
+              <RESULTS>
+                <RESULT eventid="1076" points="573" swimtime="00:00:25.92" resultid="2308" heatid="2863" lane="6" entrytime="00:00:26.60" />
+                <RESULT eventid="1212" points="437" swimtime="00:01:10.19" resultid="2309" heatid="2887" lane="6" entrytime="00:01:14.00">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:31.56" />
+                  </SPLITS>
+                </RESULT>
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Jerzy" lastname="Minkiewicz" birthdate="1956-01-01" gender="M" nation="POL" swrid="4183581" athleteid="2289">
+              <RESULTS>
+                <RESULT eventid="1076" points="433" swimtime="00:00:33.59" resultid="2290" heatid="2861" lane="1" entrytime="00:00:33.00" />
+                <RESULT eventid="1178" points="370" swimtime="00:00:39.91" resultid="2291" heatid="2878" lane="3" entrytime="00:00:35.00" />
+                <RESULT eventid="1246" points="381" swimtime="00:01:19.72" resultid="2292" heatid="2893" lane="2" entrytime="00:01:13.00">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:37.01" />
+                  </SPLITS>
+                </RESULT>
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Tadeusz" lastname="Witkowski" birthdate="1937-03-22" gender="M" nation="POL" license="100607700026" swrid="4187082" athleteid="2431">
+              <RESULTS>
+                <RESULT eventid="1076" points="182" swimtime="00:00:56.92" resultid="2432" heatid="2859" lane="6" entrytime="00:00:48.00" />
+                <RESULT eventid="1348" points="164" reactiontime="+92" swimtime="00:01:14.23" resultid="2433" heatid="2912" lane="1" entrytime="00:00:58.00" />
+              </RESULTS>
+            </ATHLETE>
+          </ATHLETES>
+        </CLUB>
+        <CLUB type="CLUB" code="02706" nation="POL" region="06" clubid="2445" name="UKS ,,Jasień&apos;&apos; Sucha Beskidzka">
+          <ATHLETES>
+            <ATHLETE firstname="Sabina" lastname="Sikora" birthdate="1984-10-03" gender="F" nation="POL" license="102706600159" swrid="5468086" athleteid="2446">
+              <RESULTS>
+                <RESULT eventid="1059" points="597" swimtime="00:00:29.81" resultid="2447" heatid="2856" lane="2" entrytime="00:00:29.84" entrycourse="SCM" />
+                <RESULT eventid="1093" points="527" swimtime="00:01:25.50" resultid="2448" heatid="2865" lane="4" entrytime="00:01:34.35" entrycourse="LCM">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:41.99" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1263" points="617" swimtime="00:00:37.18" resultid="2450" heatid="2897" lane="3" entrytime="00:00:37.77" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+          </ATHLETES>
+        </CLUB>
+        <CLUB type="CLUB" code="GSPŁ" nation="POL" clubid="1399" name="niez. niepełnosprawni – Gliwicka sekc. pł." shortname="niez. niepełnosprawni – GLIWIC">
+          <ATHLETES>
+            <ATHLETE firstname="Elżbieta" lastname="Sieber" birthdate="2004-01-16" gender="F" nation="POL" athleteid="1408">
+              <RESULTS>
+                <RESULT eventid="1059" swimtime="00:00:54.57" resultid="1409" heatid="2854" lane="1" entrytime="00:00:55.27" />
+                <RESULT eventid="1263" swimtime="00:01:03.68" resultid="1410" heatid="2896" lane="3" entrytime="00:01:03.62" />
+                <RESULT eventid="1331" swimtime="00:00:55.63" resultid="1411" heatid="2908" lane="3" entrytime="00:00:51.47" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Szymon" lastname="Gromada" birthdate="2003-10-24" gender="M" nation="POL" athleteid="1404">
+              <RESULTS>
+                <RESULT eventid="1076" swimtime="00:00:35.69" resultid="1405" heatid="2860" lane="1" entrytime="00:00:37.67" />
+                <RESULT eventid="1178" swimtime="00:00:41.23" resultid="1406" heatid="2877" lane="2" entrytime="00:00:41.96" />
+                <RESULT eventid="1246" swimtime="00:01:22.09" resultid="1407" heatid="2892" lane="5" entrytime="00:01:27.00">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:38.08" />
+                  </SPLITS>
+                </RESULT>
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Jakub" lastname="Muszyński" birthdate="2003-12-24" gender="M" nation="POL" athleteid="1400">
+              <RESULTS>
+                <RESULT eventid="1110" swimtime="00:01:53.40" resultid="1401" heatid="2867" lane="1" entrytime="00:01:51.91">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:50.84" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1212" swimtime="00:01:40.80" resultid="1402" heatid="2885" lane="1" entrytime="00:01:48.11">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:46.53" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1280" swimtime="00:00:49.36" resultid="1403" heatid="2899" lane="5" entrytime="00:00:47.18" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Grzegorz" lastname="Krzemień" birthdate="2005-03-16" gender="M" nation="POL" athleteid="1412">
+              <RESULTS>
+                <RESULT eventid="1076" swimtime="00:00:50.56" resultid="1413" heatid="2859" lane="1" entrytime="00:00:46.05" />
+                <RESULT eventid="1144" reactiontime="+126" swimtime="00:02:33.88" resultid="1414" heatid="2872" lane="6" entrytime="00:02:18.40" />
+                <RESULT eventid="1348" swimtime="00:01:06.35" resultid="1415" heatid="2911" lane="3" entrytime="00:01:05.30" />
+              </RESULTS>
+            </ATHLETE>
+          </ATHLETES>
+        </CLUB>
+        <CLUB type="CLUB" code="BYDGO" nation="POL" clubid="1976" name="Mks Astoria Bydgoszcz">
+          <ATHLETES>
+            <ATHLETE firstname="Dariusz" lastname="Kostkowski" birthdate="1970-01-13" gender="M" nation="POL" swrid="5471726" athleteid="1977">
+              <RESULTS>
+                <RESULT eventid="1144" points="124" reactiontime="+94" swimtime="00:01:56.28" resultid="1978" heatid="2872" lane="5" entrytime="00:01:55.47" entrycourse="SCM">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:55.62" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1280" points="277" swimtime="00:00:45.57" resultid="1979" heatid="2899" lane="2" entrytime="00:00:46.85" />
+                <RESULT eventid="1348" points="140" reactiontime="+89" swimtime="00:00:51.41" resultid="1980" heatid="2912" lane="5" entrytime="00:00:49.92" />
+              </RESULTS>
+            </ATHLETE>
+          </ATHLETES>
+        </CLUB>
+        <CLUB type="CLUB" code="TM IRON TE" nation="POL" clubid="2483" name="Klub TM IRON TEAM">
+          <ATHLETES>
+            <ATHLETE firstname="Robert" lastname="Wojtaszewski" birthdate="1982-05-31" gender="M" nation="POL" athleteid="2484">
+              <RESULTS>
+                <RESULT eventid="1110" points="401" swimtime="00:01:23.26" resultid="2485" heatid="2869" lane="5" entrytime="00:01:15.00">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:37.28" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1212" points="412" swimtime="00:01:16.46" resultid="2486" heatid="2887" lane="1" entrytime="00:01:12.00">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:35.54" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1246" points="406" swimtime="00:01:07.03" resultid="2487" heatid="2893" lane="4" entrytime="00:01:05.00">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:30.64" />
+                  </SPLITS>
+                </RESULT>
+              </RESULTS>
+            </ATHLETE>
+          </ATHLETES>
+        </CLUB>
+        <CLUB type="CLUB" code="00309" nation="POL" clubid="2849" name="MKS Juvenia Białystok">
+          <ATHLETES>
+            <ATHLETE firstname="Dominika" lastname="Michalik" birthdate="1979-07-14" gender="F" nation="POL" license="500309600228" athleteid="2850">
+              <RESULTS>
+                <RESULT eventid="1059" points="636" swimtime="00:00:30.25" resultid="2851" heatid="2856" lane="1" entrytime="00:00:30.80" />
+                <RESULT eventid="1229" points="671" swimtime="00:01:05.19" resultid="2852" heatid="2889" lane="4" entrytime="00:01:04.92">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:31.46" />
+                  </SPLITS>
+                </RESULT>
+              </RESULTS>
+            </ATHLETE>
+          </ATHLETES>
+        </CLUB>
+        <CLUB type="CLUB" code="01203" nation="POL" region="03" clubid="2452" name="UKS ,,Trójka&apos;&apos; Puławy">
+          <ATHLETES>
+            <ATHLETE firstname="Sebastian" lastname="Gogacz" birthdate="1976-10-28" gender="M" nation="POL" license="501203700057" swrid="4754646" athleteid="2453">
+              <RESULTS>
+                <RESULT eventid="1110" points="423" swimtime="00:01:22.88" resultid="2454" heatid="2867" lane="6">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:39.70" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1314" points="534" swimtime="00:01:07.87" resultid="2455" heatid="2906" lane="3" entrytime="00:01:08.24" entrycourse="LCM">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:32.62" />
+                  </SPLITS>
+                </RESULT>
+              </RESULTS>
+            </ATHLETE>
+          </ATHLETES>
+        </CLUB>
+        <CLUB type="CLUB" code="EXOBO" nation="POL" clubid="1421" name="Ks Extreme Team Oborniki">
+          <ATHLETES>
+            <ATHLETE firstname="Janusz" lastname="Wolniewicz" birthdate="1948-12-22" gender="M" nation="POL" swrid="4754624" athleteid="1422">
+              <RESULTS>
+                <RESULT eventid="1076" points="329" swimtime="00:00:38.94" resultid="1423" heatid="2860" lane="5" entrytime="00:00:37.00" />
+                <RESULT eventid="1178" points="157" swimtime="00:00:54.73" resultid="1424" heatid="2876" lane="3" entrytime="00:00:50.00" />
+                <RESULT eventid="1246" points="280" swimtime="00:01:34.33" resultid="1425" heatid="2892" lane="6" entrytime="00:01:30.00">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:45.02" />
+                  </SPLITS>
+                </RESULT>
+              </RESULTS>
+            </ATHLETE>
+          </ATHLETES>
+        </CLUB>
+        <CLUB type="CLUB" code="CZER LESZ" nation="POL" clubid="2207" name="TEAM-ASY Czerwonka-Leszczyny">
+          <ATHLETES>
+            <ATHLETE firstname="Sebastian" lastname="Ślósarczyk" birthdate="2003-09-13" gender="M" nation="POL" athleteid="2208">
+              <RESULTS>
+                <RESULT eventid="1246" swimtime="00:01:23.22" resultid="2209" heatid="2892" lane="2" entrytime="00:01:26.86">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:39.00" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1314" swimtime="00:01:40.13" resultid="2210" heatid="2905" lane="3" entrytime="00:01:37.90">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:48.77" />
+                  </SPLITS>
+                </RESULT>
+              </RESULTS>
+            </ATHLETE>
+          </ATHLETES>
+        </CLUB>
+        <CLUB type="CLUB" code="03315" nation="POL" region="15" clubid="2396" name="KU AZS UAM Poznań">
+          <ATHLETES>
+            <ATHLETE firstname="Jacek" lastname="Thiem" birthdate="1963-02-17" gender="M" nation="POL" license="503315700211" swrid="4754725" athleteid="2397">
+              <RESULTS>
+                <RESULT eventid="1076" status="DNS" swimtime="00:00:00.00" resultid="2398" heatid="2858" lane="4" />
+                <RESULT eventid="1178" status="DNS" swimtime="00:00:00.00" resultid="2399" heatid="2877" lane="3" entrytime="00:00:40.04" entrycourse="SCM" />
+                <RESULT eventid="1314" status="DNS" swimtime="00:00:00.00" resultid="2400" heatid="2906" lane="5" entrytime="00:01:30.20" entrycourse="LCM" />
+              </RESULTS>
+            </ATHLETE>
+          </ATHLETES>
+        </CLUB>
+        <CLUB type="CLUB" code="GLIWICE" nation="POL" clubid="2099" name="niezrzeszony Gliwice">
+          <ATHLETES>
+            <ATHLETE firstname="Jerzy" lastname="Marciniszko" birthdate="1944-11-23" gender="M" nation="POL" swrid="4992778" athleteid="2100">
+              <RESULTS>
+                <RESULT eventid="1076" points="82" swimtime="00:01:05.96" resultid="2101" heatid="2858" lane="3" />
+                <RESULT eventid="1110" points="127" swimtime="00:02:49.96" resultid="2102" heatid="2866" lane="3">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:01:19.97" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1144" points="60" reactiontime="+113" swimtime="00:03:08.73" resultid="2103" heatid="2871" lane="2">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:01:41.81" />
+                  </SPLITS>
+                </RESULT>
+              </RESULTS>
+            </ATHLETE>
+          </ATHLETES>
+        </CLUB>
+        <CLUB type="CLUB" code="14814" nation="POL" region="14" clubid="2420" name="Stowarzyszenie Pływackie Legia Warszawa">
+          <ATHLETES>
+            <ATHLETE firstname="Bogdan" lastname="Dubiński" birthdate="1953-05-05" gender="M" nation="POL" license="514814700003" swrid="4992696" athleteid="2421">
+              <RESULTS>
+                <RESULT eventid="1076" points="384" swimtime="00:00:34.96" resultid="2422" heatid="2860" lane="4" entrytime="00:00:36.58" entrycourse="LCM" />
+                <RESULT eventid="1246" points="367" swimtime="00:01:20.68" resultid="2423" heatid="2890" lane="3" />
+                <RESULT eventid="1348" points="342" reactiontime="+71" swimtime="00:00:43.40" resultid="2424" heatid="2912" lane="2" entrytime="00:00:43.68" entrycourse="LCM" />
+              </RESULTS>
+            </ATHLETE>
+          </ATHLETES>
+        </CLUB>
+        <CLUB type="CLUB" code="DWCZE" nation="POL" clubid="2844" name="UKS Dwójeczka Częstochowa">
+          <ATHLETES>
+            <ATHLETE firstname="Ireneusz" lastname="Stachurski" birthdate="1969-07-22" gender="M" nation="POL" license="107311700001" athleteid="2845">
+              <RESULTS>
+                <RESULT eventid="1144" points="185" reactiontime="+98" swimtime="00:01:41.73" resultid="2846" heatid="2872" lane="3" entrytime="00:01:42.00" entrycourse="SCM">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:49.10" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1246" points="285" swimtime="00:01:18.25" resultid="2847" heatid="2892" lane="3" entrytime="00:01:19.00" entrycourse="SCM" />
+                <RESULT eventid="1314" points="174" swimtime="00:01:41.71" resultid="2848" heatid="2905" lane="4" entrytime="00:01:41.00" entrycourse="SCM">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:49.00" />
+                  </SPLITS>
+                </RESULT>
+              </RESULTS>
+            </ATHLETE>
+          </ATHLETES>
+        </CLUB>
+        <CLUB type="CLUB" code="RYDYŁT" nation="POL" clubid="2505" name="Rydułtowska Akademia Aktywnego Seniora" shortname="Rydułtowska Akademia Aktywnego">
+          <ATHLETES>
+            <ATHLETE firstname="Jerzy" lastname="Ciecior" birthdate="1953-11-24" gender="M" nation="POL" athleteid="2506">
+              <RESULTS>
+                <RESULT eventid="1144" points="326" reactiontime="+90" swimtime="00:01:38.35" resultid="2507" heatid="2873" lane="6" entrytime="00:01:33.00">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:47.43" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1178" points="310" swimtime="00:00:42.31" resultid="2508" heatid="2878" lane="6" entrytime="00:00:40.00" />
+                <RESULT eventid="1348" points="388" reactiontime="+89" swimtime="00:00:41.60" resultid="2509" heatid="2913" lane="6" entrytime="00:00:41.00" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Maria" lastname="Lippa" birthdate="1946-02-02" gender="F" nation="POL" athleteid="2518">
+              <RESULTS>
+                <RESULT eventid="1127" points="79" reactiontime="+185" swimtime="00:03:22.36" resultid="2519" heatid="2870" lane="4">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:01:39.11" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1229" points="61" swimtime="00:03:12.69" resultid="2520" heatid="2888" lane="1">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:01:27.09" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1331" points="68" reactiontime="+185" swimtime="00:01:35.57" resultid="2521" heatid="2907" lane="2" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Rudolf" lastname="Bugla" birthdate="1940-05-16" gender="M" nation="POL" athleteid="2514">
+              <RESULTS>
+                <RESULT eventid="1110" points="151" reactiontime="+148" swimtime="00:02:52.36" resultid="2515" heatid="2866" lane="5">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:01:24.21" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1280" points="145" reactiontime="+150" swimtime="00:01:18.79" resultid="2516" heatid="2898" lane="1" />
+                <RESULT eventid="1348" points="82" reactiontime="+97" swimtime="00:01:27.18" resultid="2517" heatid="2911" lane="1" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Władysław" lastname="Szurek" birthdate="1940-05-26" gender="M" nation="POL" athleteid="2510">
+              <RESULTS>
+                <RESULT eventid="1144" points="33" reactiontime="+104" swimtime="00:04:19.82" resultid="2511" heatid="2871" lane="4">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:01:57.37" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1246" points="52" swimtime="00:03:10.60" resultid="2512" heatid="2891" lane="1">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:01:27.32" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1348" points="39" reactiontime="+89" swimtime="00:01:51.77" resultid="2513" heatid="2910" lane="2" />
+              </RESULTS>
+            </ATHLETE>
+          </ATHLETES>
+        </CLUB>
+        <CLUB type="CLUB" nation="POL" clubid="2104" name="Masters Łódź">
+          <ATHLETES>
+            <ATHLETE firstname="Monika" lastname="Klarecka" birthdate="1977-06-06" gender="F" nation="POL" license="503605600029" swrid="5464091" athleteid="2105">
+              <RESULTS>
+                <RESULT eventid="1093" points="291" swimtime="00:01:46.60" resultid="2106" heatid="2865" lane="2" entrytime="00:01:45.46">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:52.39" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1195" points="248" swimtime="00:01:44.48" resultid="2107" heatid="2883" lane="6" entrytime="00:01:46.20">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:51.82" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1297" points="240" swimtime="00:01:42.11" resultid="2108" heatid="2903" lane="5" entrytime="00:01:43.36" />
+              </RESULTS>
+            </ATHLETE>
+          </ATHLETES>
+        </CLUB>
+        <CLUB type="CLUB" code="ŚLĘZA" nation="POL" clubid="2533" name="Swim Club Masters Ślęza">
+          <ATHLETES>
+            <ATHLETE firstname="Dariusz" lastname="Michalczuk" birthdate="1970-03-05" gender="M" nation="POL" athleteid="2534">
+              <RESULTS>
+                <RESULT eventid="1076" points="372" swimtime="00:00:32.50" resultid="2535" heatid="2861" lane="2" entrytime="00:00:32.00" />
+                <RESULT eventid="1246" points="327" swimtime="00:01:14.77" resultid="2536" heatid="2893" lane="5" entrytime="00:01:15.00">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:36.14" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1348" points="225" swimtime="00:00:43.86" resultid="2537" heatid="2912" lane="3" entrytime="00:00:42.00" />
+              </RESULTS>
+            </ATHLETE>
+          </ATHLETES>
+        </CLUB>
+        <CLUB type="CLUB" nation="POL" clubid="2258" name="Weteran  Zabrze">
+          <ATHLETES>
+            <ATHLETE firstname="Beata" lastname="Sulewska" birthdate="1972-11-02" gender="F" nation="POL" license="102611600016" swrid="4792005" athleteid="2259">
+              <RESULTS>
+                <RESULT eventid="1059" points="497" swimtime="00:00:33.17" resultid="2260" heatid="2855" lane="4" entrytime="00:00:33.00" />
+                <RESULT eventid="1093" points="650" swimtime="00:01:26.60" resultid="2261" heatid="2865" lane="3" entrytime="00:01:25.33">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:41.71" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1229" points="564" swimtime="00:01:10.94" resultid="2262" heatid="2889" lane="5" entrytime="00:01:09.00">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:34.92" />
+                  </SPLITS>
+                </RESULT>
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Genowefa" lastname="Drużyńska" birthdate="1951-02-18" gender="F" nation="POL" license="102611600038" swrid="4655173" athleteid="2263">
+              <RESULTS>
+                <RESULT eventid="1093" points="224" swimtime="00:02:34.58" resultid="2264" heatid="2865" lane="6" entrytime="00:02:30.00">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:01:12.39" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1195" points="198" swimtime="00:02:18.38" resultid="2265" heatid="2881" lane="3">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:01:06.92" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1263" points="286" swimtime="00:01:04.93" resultid="2266" heatid="2896" lane="4" entrytime="00:01:04.75" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+          </ATHLETES>
+        </CLUB>
+        <CLUB type="CLUB" code="06306" nation="POL" region="06" clubid="2350" name="Ks Korona 1919">
+          <ATHLETES>
+            <ATHLETE firstname="Agnieszka" lastname="Macierzewska" birthdate="1960-04-20" gender="F" nation="POL" license="506306600048" swrid="4992827" athleteid="2355">
+              <RESULTS>
+                <RESULT eventid="1059" points="525" swimtime="00:00:35.32" resultid="2356" heatid="2854" lane="3" entrytime="00:00:34.84" entrycourse="SCM" />
+                <RESULT eventid="1195" points="498" swimtime="00:01:31.09" resultid="2357" heatid="2882" lane="5">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:42.99" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1297" points="435" swimtime="00:01:34.31" resultid="2358" heatid="2903" lane="4" entrytime="00:01:31.81" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Mariusz" lastname="Baranik" birthdate="1969-06-29" gender="M" nation="POL" license="506306700027" swrid="4992740" athleteid="2367">
+              <RESULTS>
+                <RESULT eventid="1076" points="688" swimtime="00:00:26.48" resultid="2368" heatid="2863" lane="1" entrytime="00:00:26.59" entrycourse="SCM" />
+                <RESULT eventid="1178" points="678" swimtime="00:00:29.01" resultid="2369" heatid="2880" lane="6" entrytime="00:00:29.11" entrycourse="SCM" />
+                <RESULT eventid="1246" points="596" swimtime="00:01:01.18" resultid="2370" heatid="2894" lane="1" entrytime="00:01:01.90" entrycourse="LCM">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:29.29" />
+                  </SPLITS>
+                </RESULT>
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Agnieszka" lastname="Leńczowska-Tomaszewska" birthdate="1982-01-15" gender="F" nation="POL" license="506306600071" swrid="4992907" athleteid="2359">
+              <RESULTS>
+                <RESULT eventid="1059" points="576" swimtime="00:00:31.27" resultid="2360" heatid="2855" lane="5" entrytime="00:00:33.99" entrycourse="LCM" />
+                <RESULT eventid="1127" points="494" reactiontime="+65" swimtime="00:01:19.97" resultid="2361" heatid="2870" lane="3" entrytime="00:01:23.16" entrycourse="LCM">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:38.26" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1331" points="514" reactiontime="+61" swimtime="00:00:36.02" resultid="2362" heatid="2909" lane="5" entrytime="00:00:38.42" entrycourse="LCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Mariola" lastname="Kuliś" birthdate="1966-07-27" gender="F" nation="POL" license="506306600043" swrid="4992797" athleteid="2351">
+              <RESULTS>
+                <RESULT eventid="1059" points="730" swimtime="00:00:30.87" resultid="2352" heatid="2856" lane="6" entrytime="00:00:31.06" entrycourse="SCM" />
+                <RESULT eventid="1263" points="779" swimtime="00:00:38.20" resultid="2353" heatid="2897" lane="4" entrytime="00:00:38.70" entrycourse="SCM" />
+                <RESULT eventid="1331" points="542" reactiontime="+64" swimtime="00:00:36.94" resultid="2354" heatid="2909" lane="4" entrytime="00:00:37.30" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Paulina" lastname="Bielańska-Bugiel" birthdate="1984-04-20" gender="F" nation="POL" license="506306600072" swrid="5468078" athleteid="2363">
+              <RESULTS>
+                <RESULT eventid="1059" points="124" swimtime="00:00:50.35" resultid="2364" heatid="2853" lane="4" />
+                <RESULT eventid="1093" points="121" swimtime="00:02:19.59" resultid="2365" heatid="2864" lane="2">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:01:09.64" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1263" points="109" swimtime="00:01:06.28" resultid="2366" heatid="2896" lane="2" />
+              </RESULTS>
+            </ATHLETE>
+          </ATHLETES>
+        </CLUB>
+        <CLUB type="CLUB" code="WMT" nation="POL" clubid="2474" name="Warsaw Masters Team">
+          <ATHLETES>
+            <ATHLETE firstname="Leszek" lastname="Madej" birthdate="1960-06-17" gender="M" nation="POL" athleteid="2475">
+              <RESULTS>
+                <RESULT eventid="1076" points="704" swimtime="00:00:27.99" resultid="2476" heatid="2862" lane="5" entrytime="00:00:27.89" />
+                <RESULT comment="Rekord Polski Masters" eventid="1246" points="730" swimtime="00:01:02.04" resultid="2477" heatid="2894" lane="5" entrytime="00:01:00.00">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:30.45" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1348" points="584" reactiontime="+73" swimtime="00:00:35.22" resultid="2478" heatid="2911" lane="2" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Rafał" lastname="Skośkiewicz" birthdate="1966-05-05" gender="M" nation="POL" athleteid="2479">
+              <RESULTS>
+                <RESULT eventid="1076" points="653" swimtime="00:00:28.09" resultid="2480" heatid="2862" lane="6" entrytime="00:00:28.50" />
+                <RESULT eventid="1212" points="699" swimtime="00:01:09.05" resultid="2481" heatid="2886" lane="3" entrytime="00:01:15.00" />
+                <RESULT eventid="1314" points="696" swimtime="00:01:07.49" resultid="2482" heatid="2906" lane="4" entrytime="00:01:09.00">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:31.88" />
+                  </SPLITS>
+                </RESULT>
+              </RESULTS>
+            </ATHLETE>
+          </ATHLETES>
+        </CLUB>
+        <CLUB type="CLUB" code="05201" nation="POL" region="01" clubid="2341" name="KS JUST SWIM Jelenia Góra">
+          <ATHLETES>
+            <ATHLETE firstname="Anna" lastname="Lara" birthdate="1985-06-16" gender="F" nation="POL" license="505201600088" swrid="5435203" athleteid="2346">
+              <RESULTS>
+                <RESULT eventid="1195" points="313" swimtime="00:01:33.07" resultid="2347" heatid="2883" lane="1" entrytime="00:01:35.21" entrycourse="SCM">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:45.70" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1229" points="345" swimtime="00:01:18.38" resultid="2348" heatid="2888" lane="5">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:37.12" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1297" points="232" swimtime="00:01:39.74" resultid="2349" heatid="2902" lane="4">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:46.28" />
+                  </SPLITS>
+                </RESULT>
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Marek" lastname="Lipka" birthdate="1958-06-05" gender="M" nation="POL" license="505201700087" swrid="5435204" athleteid="2342">
+              <RESULTS>
+                <RESULT eventid="1178" points="263" swimtime="00:00:41.78" resultid="2343" heatid="2877" lane="4" entrytime="00:00:41.75" entrycourse="SCM" />
+                <RESULT eventid="1246" points="337" swimtime="00:01:20.31" resultid="2344" heatid="2890" lane="2">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:40.09" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1314" points="218" swimtime="00:01:40.10" resultid="2345" heatid="2905" lane="2" entrytime="00:01:42.81" entrycourse="LCM">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:47.69" />
+                  </SPLITS>
+                </RESULT>
+              </RESULTS>
+            </ATHLETE>
+          </ATHLETES>
+        </CLUB>
+        <CLUB type="CLUB" code="00612" nation="POL" region="12" clubid="2371" name="KS KSZO Ostrowiec Św.">
+          <ATHLETES>
+            <ATHLETE firstname="Stanisław" lastname="Sejmicki" birthdate="1961-05-04" gender="M" nation="POL" license="500612700426" athleteid="2372">
+              <RESULTS>
+                <RESULT eventid="1076" points="320" swimtime="00:00:36.40" resultid="2373" heatid="2858" lane="5" />
+                <RESULT eventid="1110" points="327" swimtime="00:01:40.97" resultid="2374" heatid="2866" lane="4">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:47.04" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1280" points="409" swimtime="00:00:42.46" resultid="2375" heatid="2898" lane="2" />
+              </RESULTS>
+            </ATHLETE>
+          </ATHLETES>
+        </CLUB>
+        <CLUB type="CLUB" code="03706" nation="POL" region="06" clubid="2425" name="Stowarzyszenie SIEMACHA">
+          <ATHLETES>
+            <ATHLETE firstname="Paulina" lastname="Palmowska- Latuszek" birthdate="1985-08-01" gender="F" nation="POL" license="503706600141" athleteid="2426">
+              <RESULTS>
+                <RESULT eventid="1127" points="532" reactiontime="+74" swimtime="00:01:14.58" resultid="2427" heatid="2870" lane="1">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:35.90" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1297" points="492" swimtime="00:01:17.68" resultid="2428" heatid="2902" lane="2">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:35.32" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1331" points="498" reactiontime="+68" swimtime="00:00:34.85" resultid="2429" heatid="2908" lane="5" />
+              </RESULTS>
+            </ATHLETE>
+          </ATHLETES>
+        </CLUB>
+        <CLUB type="CLUB" code="NK TEAM" nation="POL" clubid="2070" name="Nesse/Kozak Team">
+          <ATHLETES>
+            <ATHLETE firstname="Wojciech" lastname="Wodyński" birthdate="1977-02-28" gender="M" nation="POL" athleteid="2071">
+              <RESULTS>
+                <RESULT eventid="1076" points="307" swimtime="00:00:33.88" resultid="2072" heatid="2860" lane="2" entrytime="00:00:37.00" />
+                <RESULT eventid="1280" points="337" swimtime="00:00:41.15" resultid="2073" heatid="2899" lane="3" entrytime="00:00:46.00" />
+                <RESULT eventid="1348" points="218" reactiontime="+94" swimtime="00:00:43.58" resultid="2074" heatid="2912" lane="4" entrytime="00:00:42.00" />
+              </RESULTS>
+            </ATHLETE>
+          </ATHLETES>
+        </CLUB>
+        <CLUB type="CLUB" code="PI GUB" nation="POL" clubid="2185" name="Pionier Gubin">
+          <ATHLETES>
+            <ATHLETE firstname="Paweł" lastname="Krupiński" birthdate="2003-02-05" gender="M" nation="POL" athleteid="2186">
+              <RESULTS>
+                <RESULT eventid="1110" swimtime="00:01:39.10" resultid="2187" heatid="2867" lane="3" entrytime="00:01:42.71">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:46.77" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1212" swimtime="00:01:35.80" resultid="2188" heatid="2885" lane="4" entrytime="00:01:39.27">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:45.68" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1280" swimtime="00:00:45.57" resultid="2189" heatid="2899" lane="4" entrytime="00:00:46.19" />
+              </RESULTS>
+            </ATHLETE>
+          </ATHLETES>
+        </CLUB>
+        <CLUB type="CLUB" code="3 WATERS" nation="POL" clubid="2147" name="3Waters">
+          <ATHLETES>
+            <ATHLETE firstname="Sonia" lastname="Borkowska" birthdate="1975-09-09" gender="F" nation="POL" athleteid="2148">
+              <RESULTS>
+                <RESULT eventid="1059" points="503" swimtime="00:00:33.05" resultid="2149" heatid="2855" lane="1" entrytime="00:00:34.00" />
+                <RESULT eventid="1263" points="411" swimtime="00:00:44.41" resultid="2150" heatid="2897" lane="2" entrytime="00:00:44.00" />
+              </RESULTS>
+            </ATHLETE>
+          </ATHLETES>
+        </CLUB>
+        <CLUB type="CLUB" code="SWIM CLUB" nation="POL" clubid="2267" name="Swim Club Masters">
+          <ATHLETES>
+            <ATHLETE firstname="Radosław" lastname="Stefurak" birthdate="1974-09-07" gender="M" nation="POL" swrid="4429483" athleteid="2272">
+              <RESULTS>
+                <RESULT eventid="1110" points="408" swimtime="00:01:23.86" resultid="2273" heatid="2869" lane="6" entrytime="00:01:29.35" entrycourse="LCM">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:40.09" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1280" points="433" swimtime="00:00:37.87" resultid="2274" heatid="2900" lane="3" entrytime="00:00:40.18" entrycourse="LCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Joanna" lastname="Chojcan" birthdate="1986-06-01" gender="F" nation="POL" athleteid="2279">
+              <RESULTS>
+                <RESULT eventid="1161" points="498" swimtime="00:00:34.64" resultid="2280" heatid="2875" lane="5" entrytime="00:00:38.00" />
+                <RESULT eventid="1297" points="494" swimtime="00:01:17.55" resultid="2281" heatid="2903" lane="3" entrytime="00:01:27.00" />
+                <RESULT eventid="1331" points="454" reactiontime="+71" swimtime="00:00:35.95" resultid="2282" heatid="2909" lane="2" entrytime="00:00:38.00" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Marta" lastname="Burandt" birthdate="1972-09-01" gender="F" nation="POL" swrid="5471721" athleteid="2275">
+              <RESULTS>
+                <RESULT eventid="1161" points="454" swimtime="00:00:38.06" resultid="2276" heatid="2875" lane="2" entrytime="00:00:37.53" />
+                <RESULT eventid="1195" points="440" swimtime="00:01:29.20" resultid="2277" heatid="2883" lane="2" entrytime="00:01:30.00">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:41.64" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1229" points="444" swimtime="00:01:16.84" resultid="2278" heatid="2889" lane="1" entrytime="00:01:17.00">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:36.19" />
+                  </SPLITS>
+                </RESULT>
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Anna" lastname="Podulka" birthdate="1975-04-01" gender="F" nation="POL" athleteid="2283">
+              <RESULTS>
+                <RESULT eventid="1059" points="517" swimtime="00:00:32.76" resultid="2284" heatid="2855" lane="6" entrytime="00:00:34.00" />
+                <RESULT eventid="1161" points="436" swimtime="00:00:37.63" resultid="2285" heatid="2875" lane="1" entrytime="00:00:38.00" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Bartosz" lastname="Sikorski" birthdate="1973-03-01" gender="M" nation="POL" athleteid="2268">
+              <RESULTS>
+                <RESULT eventid="1110" points="274" swimtime="00:01:35.83" resultid="2269" heatid="2868" lane="4" entrytime="00:01:33.00">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:42.61" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1212" points="229" swimtime="00:01:34.25" resultid="2270" heatid="2886" lane="6" entrytime="00:01:30.00">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:46.76" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1280" points="336" swimtime="00:00:41.20" resultid="2271" heatid="2900" lane="2" entrytime="00:00:41.19" />
+              </RESULTS>
+            </ATHLETE>
+          </ATHLETES>
+          <RELAYS>
+            <RELAY agemax="-1" agemin="-1" agetotalmax="199" agetotalmin="160" gender="X" number="1">
+              <RESULTS>
+                <RESULT eventid="1382" points="443" swimtime="00:02:12.33" resultid="2286" heatid="2914" lane="4" entrytime="00:02:08.00">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:34.38" />
+                    <SPLIT distance="100" swimtime="00:01:07.42" />
+                    <SPLIT distance="150" swimtime="00:01:40.36" />
+                  </SPLITS>
+                  <RELAYPOSITIONS>
+                    <RELAYPOSITION athleteid="2268" number="1" />
+                    <RELAYPOSITION athleteid="2283" number="2" reactiontime="0" />
+                    <RELAYPOSITION athleteid="2272" number="3" reactiontime="0" />
+                    <RELAYPOSITION athleteid="2279" number="4" reactiontime="0" />
+                  </RELAYPOSITIONS>
+                </RESULT>
+              </RESULTS>
+            </RELAY>
+          </RELAYS>
+        </CLUB>
+        <CLUB type="CLUB" code="00115" nation="POL" region="15" clubid="2376" name="KS Warta Poznań">
+          <ATHLETES>
+            <ATHLETE firstname="Piotr" lastname="Witt" birthdate="1991-08-11" gender="M" nation="POL" license="500115700645" swrid="5062813" athleteid="2381">
+              <RESULTS>
+                <RESULT eventid="1076" points="641" swimtime="00:00:24.97" resultid="2382" heatid="2863" lane="4" entrytime="00:00:24.34" entrycourse="SCM" />
+                <RESULT eventid="1178" points="595" swimtime="00:00:27.19" resultid="2383" heatid="2880" lane="2" entrytime="00:00:26.52" entrycourse="SCM" />
+                <RESULT eventid="1246" points="603" swimtime="00:00:55.97" resultid="2384" heatid="2894" lane="4" entrytime="00:00:53.73" entrycourse="SCM">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:27.03" />
+                  </SPLITS>
+                </RESULT>
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Marcin" lastname="Szymkowiak" birthdate="1980-04-12" gender="M" nation="POL" license="500115700523" swrid="5312534" athleteid="2389">
+              <RESULTS>
+                <RESULT eventid="1110" points="671" swimtime="00:01:10.14" resultid="2390" heatid="2869" lane="3" entrytime="00:01:08.80" entrycourse="SCM">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:32.96" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1212" points="568" swimtime="00:01:08.72" resultid="2391" heatid="2887" lane="4" entrytime="00:01:03.59" entrycourse="SCM">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:33.31" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1280" points="718" swimtime="00:00:31.33" resultid="2392" heatid="2901" lane="4" entrytime="00:00:30.54" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Szymon" lastname="Wieja" birthdate="1978-09-08" gender="M" nation="POL" license="500115700467" swrid="5331775" athleteid="2385">
+              <RESULTS>
+                <RESULT eventid="1076" points="629" swimtime="00:00:26.55" resultid="2386" heatid="2858" lane="2" />
+                <RESULT eventid="1212" points="586" swimtime="00:01:08.01" resultid="2387" heatid="2884" lane="6">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:31.27" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1348" points="548" reactiontime="+59" swimtime="00:00:31.13" resultid="2388" heatid="2911" lane="4" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Anna" lastname="Krupińska" birthdate="1953-05-24" gender="F" nation="POL" license="500115600520" swrid="4992790" athleteid="2377">
+              <RESULTS>
+                <RESULT eventid="1059" points="252" swimtime="00:00:46.40" resultid="2378" heatid="2854" lane="5" entrytime="00:00:49.85" entrycourse="LCM" />
+                <RESULT eventid="1093" points="458" swimtime="00:01:54.74" resultid="2379" heatid="2865" lane="1" entrytime="00:02:00.01" entrycourse="LCM">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:55.77" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1263" points="432" swimtime="00:00:51.45" resultid="2380" heatid="2897" lane="1" entrytime="00:00:51.00" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Przemysław" lastname="Waraczewski" birthdate="1962-04-19" gender="M" nation="POL" license="100115700344" swrid="4992781" athleteid="2393">
+              <RESULTS>
+                <RESULT eventid="1110" points="546" swimtime="00:01:25.07" resultid="2394" heatid="2868" lane="3" entrytime="00:01:31.73" entrycourse="LCM">
+                  <SPLITS>
+                    <SPLIT distance="50" swimtime="00:00:39.39" />
+                  </SPLITS>
+                </RESULT>
+                <RESULT eventid="1280" points="542" swimtime="00:00:38.64" resultid="2395" heatid="2901" lane="6" entrytime="00:00:38.79" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+          </ATHLETES>
+        </CLUB>
+      </CLUBS>
+    </MEET>
+  </MEETS>
+</LENEX>

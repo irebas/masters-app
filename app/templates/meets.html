@@ -1,38 +1,71 @@
 {% extends "base.html" %}
-{% block title %}Meets{% endblock %}
+{% block title %}Rankings{% endblock %}
 {% block content %}
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.js"></script>
-<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/ui-lightness/jquery-ui.css" rel="stylesheet" type="text/css" />
 <br>
 <div class="container-fluid px-4">
+    <form method="POST" autocomplete="off" enctype="multipart/form-data">
+        <div class="card mb-4">
+            <div class="card-body">
+               <div class="input-group">
+                <span class="input-group-text" style="border-left: 0; border-right: 0;">Distance:</span>
+                <select name="distance" class="form-control form-select">
+                    <option value='{{ distance if distance }}' selected hidden>{{ distance if distance }}</option>
+                    {% for item in distances %}
+                        <option value='{{ item }}'>{{ item }}</option>
+                    {% endfor %}
+                </select>
+                <span class="input-group-text" style="border-left: 0; border-right: 0;">Gender:</span>
+                <select name="event_gender" class="form-control form-select">
+                    <option value='{{ event_gender if event_gender }}' selected hidden>{{ event_gender if event_gender }}</option>
+                    {% for item in genders %}
+                        <option value='{{ item }}'>{{ item }}</option>
+                    {% endfor %}
+                </select>
+                <input class="btn btn-primary btn-md" type="submit" name="show" value="Show records">
+               </div>
+            </div>
+        </div>
+    </form>
+    <br>
+
     <div class="card mb-4">
         <div class="card-header">
             <i class="fas fa-table me-1"></i>
-            All meets available in the DataBase:
+            Rankings:
         </div>
-    <div class="card-body">
-        <table id="datatablesSimple" class="table table-striped table-hover">
-            <thead>
-                <tr>
-                    <th>Meet name</th>
-                    <th>Meet city</th>
-                    <th>Meet date</th>
-                    <th>Meet year</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for item in meets %}
+        <div class="card-body">
+            {% for key, value in results.items() if results %}
+                <table id="{{ key }}" class="table table-striped table-hover caption-top">
+                <caption>{{ key }}</caption>
+                <thead>
                     <tr>
-                        <td>{{ item.meet_name }}</td>
-                        <td>{{ item.meet_city }}</td>
-                        <td>{{ item.meet_date }}</td>
-                        <td>{{ item.meet_year }}</td>
+                        <th>Rank</th>
+                        <th>Athlete</th>
+                        <th>Club name</th>
+                        <th>Time</th>
                     </tr>
-                {% endfor %}
-            </tbody>
-        </table>
-    </div>
+                </thead>
+                <tbody>
+                    {% for item in value %}
+                        <tr>
+                            <td>{{ item.place }}</td>
+                            <td>
+                                {% if item.type == 'INDIVIDUAL' %}
+                                    <a href="{{ url_for('app.athletes', athlete_name=item.athlete_name) | replace(',', '%2C') | replace('(', '%28') | replace(')', '%29') }}">{{ item.athlete_name }}</a>
+                                {% else %}
+                                    <b>{{ item.club_name }}</b>
+                                    <br>
+                                    <span style="font-size: 12px">{{ item.athlete_name }}</span>
+                                {% endif %}
+                            </td>
+                            <td>{{ item.club_name }}</td>
+                            <td>{{ item.swimtime }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% endfor %}
+        </div>
     </div>
 </div>
 {% endblock %}

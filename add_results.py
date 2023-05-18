@@ -11,6 +11,7 @@ from sqlalchemy import create_engine
 AGE_GROUPS_IND = ['20-24', '25-29', '30-34', '35-39', '40-44', '45-49', '50-54', '55-59', '60-64', '65-69', '70-74',
                   '75-79', '80-84', '85-89', '90-94', '95-99']
 
+
 def get_split_times(times_list: list):
     times = list()
     times.append(times_list[0])
@@ -229,8 +230,6 @@ class Results:
         if 'license' not in df_final.columns:
             df_final['license'] = pd.NA
 
-        custom_dict = {0: 'NA', 1: 'BACK', 2: 'BREAST', 3: 'FLY', 4: 'FREE'}
-        df_final['relay_stroke'] = df_final['relay_order'].map(custom_dict)
         df_final['distance'] = ['NA' if pd.isna(x) else x for x in df_final['distance']]
         # exclude non masters people, assign proper age group and exclude results without time and results PK
         df_final['age_group'] = [x for x in df_final['age_group_calc']]
@@ -240,20 +239,27 @@ class Results:
         for r in range(len(df_final)):
             if df_final.loc[r, 'type'] == 'RELAY':
                 df_final.loc[r, 'age_group'] = df_final.loc[r, 'age_group_lxf'].replace('280--1', '280-319')
-            elif df_final.loc[r, 'type'] == 'RELAY_SPLIT' and 'MEDLEY' in df_final.loc[r, 'distance']:
-                df_final.loc[r, 'distance'] = df_final.loc[r, 'distance'].replace('MEDLEY',
-                                                                                  df_final.loc[r, 'relay_stroke'])
+            if df_final.loc[r, 'type'] != 'RELAY' and 'MEDLEY' in df_final.loc[r, 'distance']:
+                if df_final.loc[r, 'relay_order'] == 1:
+                    df_final.loc[r, 'distance'] = df_final.loc[r, 'distance'].replace('MEDLEY', 'BACK')
+                elif df_final.loc[r, 'relay_order'] == 2:
+                    df_final.loc[r, 'distance'] = df_final.loc[r, 'distance'].replace('MEDLEY', 'BREAST')
+                elif df_final.loc[r, 'relay_order'] == 3:
+                    df_final.loc[r, 'distance'] = df_final.loc[r, 'distance'].replace('MEDLEY', 'FLY')
+                elif df_final.loc[r, 'relay_order'] == 4:
+                    df_final.loc[r, 'distance'] = df_final.loc[r, 'distance'].replace('MEDLEY', 'FREE')
 
         # temp column to create row_id
-        df_final['tmp'] = [x if x == 'RELAY' else y for x,y in zip(df_final['type'], df_final['athlete_id'])]
-        df_final['row_id'] = df_final['meet_code'] + '_' + df_final['resultid'] + '_' + \
-                             df_final['tmp'] + '_' + df_final['type']
+        df_final['tmp'] = [x if x == 'RELAY' else y for x, y in zip(df_final['type'], df_final['athlete_id'])]
+        df_final['row_id'] = df_final['meet_code'] + '_' + df_final['resultid'] + '_' + df_final['tmp'] + '_' + df_final['type']
         df_final['meet_year'] = [x[-4:] for x in df_final['meet_code']]
+        df_final['place'] = [0 if x == 1 else y for x, y in zip(df_final['relay_order'], df_final['place'])]
+
         # get only selected columns
         df_final = df_final[['meet_code', 'meet_name', 'meet_city', 'meet_year', 'course', 'date', 'distance',
                              'event_gender', 'age_group', 'athlete_name', 'athlete_id', 'birthdate', 'birth_year',
                              'gender', 'nation', 'swrid', 'license', 'club_name', 'place', 'swimtime',
-                             'type', 'row_id']]
+                             'type', 'row_id', 'relay_order']]
         df_final.reset_index(inplace=True, drop=True)
         return df_final
 
@@ -265,26 +271,37 @@ def get_all_results(file_name):
     df_all_results = Results.get_df_final(df_athletes_results=df_athletes_results,
                                           df_events_ranks=df_events_ranks,
                                           meet_code=meet_code)
+    # df_all_results[['date', 'birthdate']] = df_all_results[['date', 'birthdate']].apply(pd.to_datetime)
+
+    # pd.to_datetime(df_all_results['date']).dt.floor('D')
+    df_all_results[['place']] = df_all_results[['place']].apply(pd.to_numeric)
     return df_all_results
 
 
-def sqlite():
-    files_list = get_files_list(r'splash_files\Valid\MP')
-    with sqlite3.connect('masters.db') as conn:
-        # df_cor = pd.read_excel(r'splash_files\cor.xlsx', dtype=str)
-        # df_cor.to_sql('results', conn, if_exists='append', index=False)
+def sqlite_xls():
+    with sqlite3.connect('instance/masters.db') as conn:
+        df_cor = pd.read_excel(r'splash_files\cor.xlsx', dtype=str)
+        df_cor[['date', 'birthdate']] = df_cor[['date', 'birthdate']].apply(pd.to_datetime)
+        df_cor['date'] = df_cor['date'].dt.date
+        df_cor['birthdate'] = df_cor['birthdate'].dt.date
+        df_cor.to_sql('results', conn, if_exists='append', index=False)
+
+
+def sqlite(files_list):
+    with sqlite3.connect('instance/masters.db') as conn:
         for file in files_list:
             df_all_results = get_all_results(file)
             df_all_results.to_sql('results', conn, if_exists='append', index=False)
             print(f'{file} appended successfully!')
 
-def postgresql():
-    files_list = get_files_list(r'splash_files\Valid\MP')
+
+def postgresql(files_list):
     engine = create_engine(POSTGRES_URL)
     for file in files_list:
         df_all_results = get_all_results(file)
         df_all_results.to_sql('results', engine, if_exists='append', index=False)
         print(f'{file} appended successfully!')
+
 
 def get_files_list(root: str) -> list:
     files_list = list()
@@ -297,4 +314,9 @@ def get_files_list(root: str) -> list:
 
 
 if __name__ == '__main__':
-    postgresql()
+    # files_list_mp = get_files_list(r'splash_files\Valid\MP')
+    files_list_pp = get_files_list(r'splash_files\Valid\PP')
+    # sqlite(files_list_mp)
+    sqlite(files_list_pp)
+    # sqlite_xls()
+    # postgresql()
