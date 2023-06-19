@@ -50,7 +50,7 @@
                         <tr>
                             <td>{{ item.age_group }}</td>
                             <td>
-                                {% if item.type_ == 'INDIVIDUAL' %}
+                                {% if item.result_type == 'INDIVIDUAL' %}
                                     {{ item.athlete_name }}
                                 {% else %}
                                     <b>{{ item.club_name }}</b>

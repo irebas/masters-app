@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+{% block title %}Rankings{% endblock %}
+{% block content %}
+<br>
+<div class="container-fluid px-4">
+    <p><h2>API Documentation</h2></p>
+    <p>Get list of all athletes in the database with their parameters:</p>
+    <div class="card mb-4">
+        <div class="card-body">
+            <p>Example:</p>
+            <p><i><a href="/api/athletes" class="link-danger">/api/athletes</a></i></p>
+        </div>
+    </div>
+    <p>Get athlete's best results:</p>
+    <div class="card mb-4">
+        <div class="card-body">
+            <p>Parameters:</p>
+            <ul>
+                <li><b>athleteid</b> - first 3 letters of surname + first 3 letters of name + year of birth + gender (F or M)</li>
+            </ul>
+            <p>Example:</p>
+            <p><i><a href="/api/athletes?athlete_id=REBIGO1989M" class="link-danger">/api/athletes?athlete_id=REBIGO1989M</a></i></p>
+        </div>
+    </div>
+    <p>Get athlete's results for particular distance:</p>
+    <div class="card mb-4">
+        <div class="card-body">
+            <p>Parameters:</p>
+            <ul>
+                <li><b>athleteid</b> - first 3 letters of surname + first 3 letters of name + year of birth + gender (F or M)</li>
+                <li><b>distance</b> - meters + stroke (FREE, BREAST, BACK, FLY, MEDLEY)</li>
+            </ul>
+            <p>Example:</p>
+            <p><i><a href="/api/athletes_results?athlete_id=REBIGO1989M&distance=100 FLY" class="link-danger">/api/athletes_results?athlete_id=REBIGO1989M&distance=100 FLY</a></i></p>
+        </div>
+    </div>
+    <p>Get list of all meets in the database:</p>
+    <div class="card mb-4">
+        <div class="card-body">
+            <p>Example:</p>
+            <p><i><a href="/api/meets" class="link-danger">/api/meets</a></i></p>
+        </div>
+    </div>
+    <p>Get results of particular event in the selected meet:</p>
+    <div class="card mb-4">
+        <div class="card-body">
+            <p>Parameters:</p>
+            <ul>
+                <li><b>meet_code</b> - shortcut of the meet</li>
+                <li><b>distance</b></li>
+                <li><b>event_gender</b></li>
+            </ul>
+            <p>Example:</p>
+            <p><i><a href="/api/meets?meet_code=LMP_WAW_2023&event_gender=M&distance=100 FLY" class="link-danger">/api/meets?meet_code=LMP_WAW_2023&event_gender=M&distance=100 FLY</a></i></p>
+        </div>
+    </div>
+    <p>Get top results of particular event:</p>
+    <div class="card mb-4">
+        <div class="card-body">
+            <p>Parameters:</p>
+            <ul>
+                <li><b>year</b> - parameter not obligatory, if omitted rankings will be gotten for all year</li>
+                <li><b>course</b> - LCM or SCM</li>
+                <li><b>event_gender</b></li>
+                <li><b>distance</b></li>
+                <li><b>records_nb</b> - number of records to be listed (not obligatory)</li>
+            </ul>
+            <p>Example:</p>
+            <p><i><a href="/api/rankings?year=2023&event_gender=M&distance=100 FLY&course=LCM&records_nb=5" class="link-danger">/api/rankings?year=2023&event_gender=M&distance=100 FLY&course=LCM&records_nb=5</a></i></p>
+        </div>
+    </div>
+    <p>Get national records for particular event for all age groups:</p>
+    <div class="card mb-4">
+        <div class="card-body">
+            <p>Parameters:</p>
+            <ul>
+                <li><b>event_gender</b></li>
+                <li><b>distance</b></li>
+            </ul>
+            <p>Example:</p>
+            <p><i><a href="/api/records?event_gender=M&distance=100 FLY" class="link-danger">/api/records?event_gender=M&distance=100 FLY</a></i></p>
+        </div>
+    </div>
+</div>
+{% endblock %}

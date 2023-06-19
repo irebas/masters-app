@@ -1,7 +1,7 @@
-from flask import Flask, render_template
-from flask_sqlalchemy import SQLAlchemy
+from flask import Flask
 from app.views import bp_app
 import app.database
+
 
 def create_app():
     app = Flask(__name__)
@@ -16,3 +16,5 @@ def create_app():
     app.register_blueprint(bp_app)
 
     return app
+
+# https://codersdiaries.com/blog/flask-project-structure

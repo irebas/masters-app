@@ -19,7 +19,5 @@ d2 = {'USA': {'capital': 'Washington', 'curr': 'USD'},
       'POL': {'capital': 'Warsaw', 'curr': 'PLN'},
       'JAP': {'capital': 'Tokio', 'curr': 'JPY'}}
 
-# print(list(d2.keys()))
-# a = list(d2.values())
-
-athlete_name = 'PERL, Michal (1995)'
+a = dict({'kot': 'pies'})
+print(a)

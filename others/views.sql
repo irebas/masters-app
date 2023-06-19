@@ -45,7 +45,7 @@ FROM t1 INNER JOIN t_swrid ON t1.athlete_id = t_swrid.athlete_id
 WHERE t1.rank = 1;
 
 
-
+DROP VIEW national_records
 CREATE VIEW national_records AS
 WITH t1 AS (
 	SELECT
@@ -59,7 +59,7 @@ WITH t1 AS (
 		swimtime,
 		age_group,
 		COALESCE(gender, event_gender) AS gender,
-		type,
+		type AS result_type,
 		RANK() OVER (PARTITION BY course, distance, age_group, COALESCE(gender, event_gender), type ORDER BY swimtime ASC) AS rank
 	FROM results
 	WHERE nation = 'POL' OR nation IS NULL

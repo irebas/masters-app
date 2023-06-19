@@ -197,7 +197,7 @@ class Results:
                             d_result_rel_ind['athleteid'] = athleteid
                             d_result_rel_ind['club_name'] = club_name
                             d_result_rel_ind['athlete_name'] = athlete_name
-                            d_result_rel_ind['type'] = 'INDIVIDUAL' if k == 1 else 'RELAY_SPLIT'
+                            d_result_rel_ind['result_type'] = 'INDIVIDUAL' if k == 1 else 'RELAY_SPLIT'
                             d_result_rel_ind['relay_order'] = k
                             df_results_rel_ind = pd.concat([df_results_rel_ind, pd.DataFrame(data=[d_result_rel_ind])])
                         except KeyError:
@@ -209,8 +209,8 @@ class Results:
                     d_result['club_name'] = club_name
                     df_results_rel = pd.concat([df_results_rel, pd.DataFrame(data=[d_result])])
 
-        df_results['type'] = 'INDIVIDUAL'
-        df_results_rel['type'] = 'RELAY'
+        df_results['result_type'] = 'INDIVIDUAL'
+        df_results_rel['result_type'] = 'RELAY'
         df_results['relay_order'] = 0
         df_results_rel['relay_order'] = 0
         # merge invdividual results with relay results
@@ -237,9 +237,9 @@ class Results:
                             (df_final['distance'] != 'NA')]
         df_final.reset_index(inplace=True, drop=True)
         for r in range(len(df_final)):
-            if df_final.loc[r, 'type'] == 'RELAY':
+            if df_final.loc[r, 'result_type'] == 'RELAY':
                 df_final.loc[r, 'age_group'] = df_final.loc[r, 'age_group_lxf'].replace('280--1', '280-319')
-            if df_final.loc[r, 'type'] != 'RELAY' and 'MEDLEY' in df_final.loc[r, 'distance']:
+            if df_final.loc[r, 'result_type'] != 'RELAY' and 'MEDLEY' in df_final.loc[r, 'distance']:
                 if df_final.loc[r, 'relay_order'] == 1:
                     df_final.loc[r, 'distance'] = df_final.loc[r, 'distance'].replace('MEDLEY', 'BACK')
                 elif df_final.loc[r, 'relay_order'] == 2:
@@ -250,8 +250,8 @@ class Results:
                     df_final.loc[r, 'distance'] = df_final.loc[r, 'distance'].replace('MEDLEY', 'FREE')
 
         # temp column to create row_id
-        df_final['tmp'] = [x if x == 'RELAY' else y for x, y in zip(df_final['type'], df_final['athlete_id'])]
-        df_final['row_id'] = df_final['meet_code'] + '_' + df_final['resultid'] + '_' + df_final['tmp'] + '_' + df_final['type']
+        df_final['tmp'] = [x if x == 'RELAY' else y for x, y in zip(df_final['result_type'], df_final['athlete_id'])]
+        df_final['row_id'] = df_final['meet_code'] + '_' + df_final['resultid'] + '_' + df_final['tmp'] + '_' + df_final['result_type']
         df_final['meet_year'] = [x[-4:] for x in df_final['meet_code']]
         df_final['place'] = [0 if x == 1 else y for x, y in zip(df_final['relay_order'], df_final['place'])]
 
@@ -259,7 +259,9 @@ class Results:
         df_final = df_final[['meet_code', 'meet_name', 'meet_city', 'meet_year', 'course', 'date', 'distance',
                              'event_gender', 'age_group', 'athlete_name', 'athlete_id', 'birthdate', 'birth_year',
                              'gender', 'nation', 'swrid', 'license', 'club_name', 'place', 'swimtime',
-                             'type', 'row_id', 'relay_order']]
+                             'result_type', 'row_id']]
+        # rename license column as it is built-in name
+        df_final.rename(columns={'license': 'license_nb'}, inplace=True)
         df_final.reset_index(inplace=True, drop=True)
         return df_final
 
@@ -315,8 +317,9 @@ def get_files_list(root: str) -> list:
 
 if __name__ == '__main__':
     # files_list_mp = get_files_list(r'splash_files\Valid\MP')
-    files_list_pp = get_files_list(r'splash_files\Valid\PP')
-    # sqlite(files_list_mp)
-    sqlite(files_list_pp)
+    # files_list_pp = get_files_list(r'splash_files\Valid\PP')
+    files_list = get_files_list(r'splash_files\latest')
+    postgresql(files_list)
+    # sqlite(files_list_pp)
     # sqlite_xls()
     # postgresql()
