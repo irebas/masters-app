@@ -320,6 +320,6 @@ if __name__ == '__main__':
     # files_list_pp = get_files_list(r'splash_files\Valid\PP')
     files_list = get_files_list(r'splash_files\latest')
     postgresql(files_list)
-    # sqlite(files_list_pp)
+    sqlite(files_list)
     # sqlite_xls()
     # postgresql()
