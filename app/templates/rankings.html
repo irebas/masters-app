@@ -72,7 +72,7 @@
                         <tr>
                             <td>{{ loop.index }}</td>
                             <td>
-                                {% if item.type == 'INDIVIDUAL' %}
+                                {% if item.result_type == 'INDIVIDUAL' %}
                                     <a href="{{ url_for('app.athletes', athlete_name=item.athlete_name) | replace(',', '%2C') | replace('(', '%28') | replace(')', '%29') }}">{{ item.athlete_name }}</a>
                                 {% else %}
                                     <b>{{ item.club_name }}</b>
